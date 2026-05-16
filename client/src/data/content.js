@@ -44,26 +44,31 @@ export const FOCUS_AREAS = [
 		num: "01",
 		title: "Education, Training & Capacity Building",
 		desc: "Targeted training workshops, short courses, and systems strengthening for individuals, organisations, and governments across Africa.",
+		image: "/images/focus/education.jpg",
 	},
 	{
 		num: "02",
 		title: "International Law & Relations",
 		desc: "Research and dialogue at the intersection of international law, peace, security and governance with an African lens.",
+		image: "/images/focus/laws.jpg",
 	},
 	{
 		num: "03",
 		title: "Environment & Climate",
 		desc: "Applied research on climate change and environmental governance, integrating local ecological knowledge with global policy.",
+		image: "/images/focus/environment.avif",
 	},
 	{
 		num: "04",
 		title: "Peace, Security & Governance",
 		desc: "Conflict dynamics, post-conflict reconstruction, and governance challenges examined through scholar-practitioner perspectives.",
+		image: "/images/focus/peace.jpg",
 	},
 	{
 		num: "05",
 		title: "Development & Humanitarian Affairs",
 		desc: "Bridging academic research and humanitarian action — from fieldwork in conflict zones to development policy recommendations.",
+		image: "/images/focus/development.jpg",
 	},
 ];
 
@@ -100,11 +105,13 @@ export const TEAM = [
 		name: "Dr. James Nyawo",
 		role: "Founding Executive Director",
 		bio: "Ph.D. in International Law from Middlesex University, UK. A Zimbabwean scholar-practitioner with 20+ years in humanitarian field management — Angola, Uganda, Sudan, and South Sudan. Consultant for UNICEF, IOM, and UNESCO. Lecturer at Strathmore University, Nairobi. Deeply committed to the Pax Africana philosophy.",
+		image: "/founder.jpg",
 	},
 	{
 		name: "Dr. Saul Davis Sango",
 		role: "Director",
 		bio: "B.Sc. Statistics & Data Analysis, M.Sc. Industrial Diversity & Organizational Psychology, Ph.D. candidate in Psychology. Six Sigma Black Belt and PMP-certified. Kenyan training consultant and business development strategist. Expert in organizational psychology, data analytics, and change management.",
+		image: "/director.jpg",
 	},
 ];
 
