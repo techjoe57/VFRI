@@ -1,26 +1,14 @@
-import { useEffect, useRef } from "react";
-
-const cards = [
-	{
-		icon: "🌍",
-		title: "Regional Reach",
-		desc: "Active operations across East and Southern Africa — Zimbabwe, Kenya and beyond.",
-	},
-	{
-		icon: "📖",
-		title: "Research & Dialogue",
-		desc: "Policy-relevant research rooted in African knowledge systems.",
-	},
-	{
-		icon: "🎓",
-		title: "Capacity Building",
-		desc: "Training and systems strengthening for institutions across the continent.",
-	},
-];
+import { useEffect, useRef, useState } from "react";
+import { cards, videos } from "../data/content";
 
 export default function Hero() {
 	const leftRef = useRef(null);
 	const rightRef = useRef(null);
+	const videoARef = useRef(null);
+	const videoBRef = useRef(null);
+
+	const [activeVideo, setActiveVideo] = useState(0);
+	const [isVideoAActive, setIsVideoAActive] = useState(true);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -30,6 +18,22 @@ export default function Hero() {
 		return () => clearTimeout(timer);
 	}, []);
 
+	// CONTINUOUS VIDEO PLAYBACK
+	const handleVideoEnd = () => {
+		const nextVideo = (activeVideo + 1) % videos.length;
+
+		if (isVideoAActive) {
+			videoBRef.current.src = videos[nextVideo];
+			videoBRef.current.play();
+		} else {
+			videoARef.current.src = videos[nextVideo];
+			videoARef.current.play();
+		}
+
+		setActiveVideo(nextVideo);
+		setIsVideoAActive((prev) => !prev);
+	};
+
 	const scrollTo = (id) =>
 		document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
 
@@ -37,42 +41,36 @@ export default function Hero() {
 		<section
 			id="home"
 			className="min-h-screen bg-green-deep grid md:grid-cols-2 pt-20 relative overflow-hidden">
-			{" "}
-			{/* VIDEO BACKGROUND */}
 			{/* VIDEO BACKGROUND */}
 			<div className="absolute inset-0 z-0 overflow-hidden">
-				<div className="w-full h-full">
-					<video
-						autoPlay
-						muted
-						loop
-						playsInline
-						preload="auto"
-						className="w-full h-full object-cover">
-						<source src="/videos/hero-1.mp4" type="video/mp4" />
-					</video>
+				{/* VIDEO A */}
+				<video
+					ref={videoARef}
+					autoPlay
+					muted
+					playsInline
+					preload="auto"
+					onEnded={handleVideoEnd}
+					src={videos[0]}
+					className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+						isVideoAActive ? "opacity-100" : "opacity-0"
+					}`}
+				/>
 
-					<video
-						autoPlay
-						muted
-						loop
-						playsInline
-						preload="auto"
-						className="w-full h-full object-cover">
-						<source src="/videos/hero-2.mp4" type="video/mp4" />
-					</video>
-
-					<video
-						autoPlay
-						muted
-						loop
-						playsInline
-						preload="auto"
-						className="w-full h-full object-cover">
-						<source src="/videos/hero-3.mp4" type="video/mp4" />
-					</video>
-				</div>
+				{/* VIDEO B */}
+				<video
+					ref={videoBRef}
+					autoPlay
+					muted
+					playsInline
+					preload="auto"
+					onEnded={handleVideoEnd}
+					className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+						!isVideoAActive ? "opacity-100" : "opacity-0"
+					}`}
+				/>
 			</div>
+
 			{/* DARK OVERLAY */}
 			<div className="absolute inset-0 bg-black/60 z-[1]" />
 			{/* Background glows */}

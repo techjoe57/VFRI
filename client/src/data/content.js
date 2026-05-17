@@ -8,6 +8,30 @@ export const NAV_LINKS = [
 	{ label: "Achievements", href: "#achievements" },
 ];
 
+export const cards = [
+	{
+		icon: "🌍",
+		title: "Regional Reach",
+		desc: "Active operations across East and Southern Africa — Zimbabwe, Kenya and beyond.",
+	},
+	{
+		icon: "📖",
+		title: "Research & Dialogue",
+		desc: "Policy-relevant research rooted in African knowledge systems.",
+	},
+	{
+		icon: "🎓",
+		title: "Capacity Building",
+		desc: "Training and systems strengthening for institutions across the continent.",
+	},
+];
+
+export const videos = [
+	"/videos/hero-1.mp4",
+	"/videos/hero-3.mp4",
+	"/videos/hero-2.mp4",
+];
+
 export const VALUES = [
 	{
 		title: "Integrity",
