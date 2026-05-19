@@ -125,7 +125,7 @@ export default function Hero() {
 						<div
 							key={title}
 							className="bg-white/5 border border-gold/20 rounded-sm p-6 transition-all duration-200 hover:bg-gold/7 hover:border-gold/40">
-							<Icon className="text-2xl mb-3 text-crimson-deep" />{" "}
+							<Icon className="text-2xl mb-3 text-gold" />{" "}
 							<h4 className="font-display text-lg text-white mb-1.5">
 								{title}
 							</h4>

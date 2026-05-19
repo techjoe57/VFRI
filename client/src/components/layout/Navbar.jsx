@@ -20,7 +20,7 @@ export default function Navbar() {
 		<nav
 			className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300
       ${scrolled ? "py-1 px-7 md:px-11" : "py-3 px-7 md:px-11"}
-      bg-crimson backdrop-blur-md border-b border-gold/20`}>
+      bg-gold backdrop-blur-md border-b border-gold/20`}>
 			{/* Logo */}
 			<a
 				href="#home"
@@ -34,10 +34,10 @@ export default function Navbar() {
 					/>
 				</div>
 				<div className="leading-tight font-sans">
-					<strong className="block font-display font-bold text-md text-crimson-dark  tracking-wide">
+					<strong className="block font-display font-bold text-md text-crimson-deep  tracking-wide">
 						Victoria Falls Regional Institute
 					</strong>
-					<span className="text-[0.6rem] text-crimson-mid tracking-[0.12em] uppercase">
+					<span className="text-[0.6rem] text-crimson-dark tracking-[0.12em] uppercase">
 						Reimagining Africa Through Dialogue
 					</span>
 				</div>
@@ -49,7 +49,7 @@ export default function Navbar() {
 					<li key={href}>
 						<button
 							onClick={() => handleNav(href)}
-							className="text-crimson-mid text-sm font-bold tracking-widest uppercase hover:text-crimson-light transition-colors duration-200 bg-transparent border-0 cursor-pointer font-sans">
+							className="text-crimson-dark text-sm font-bold tracking-widest uppercase hover:text-crimson-light transition-colors duration-200 bg-transparent border-0 cursor-pointer font-sans">
 							{label}
 						</button>
 					</li>

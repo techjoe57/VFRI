@@ -66,7 +66,7 @@ export default function Contact() {
 		setTimeout(() => setStatus(null), 4000);
 	};
 
-	const inputCls = `w-full bg-white/6 border border-white/15 rounded-sm px-4 py-3
+	const inputCls = `w-full bg-crimson-mid border border-white/15 rounded-sm px-4 py-3
     text-white text-sm font-sans placeholder:text-white/25
     focus:outline-none focus:border-gold focus:bg-gold/5 transition-colors duration-200`;
 
@@ -211,7 +211,7 @@ export default function Contact() {
 							value={form.enquiryType}
 							onChange={handleChange}
 							required
-							className={`${inputCls} [&>option]:bg-green-deep`}>
+							className={`${inputCls} [&>option]:bg-crimson-deep`}>
 							<option value="">Select an option</option>
 							{ENQUIRY_TYPES.map((t) => (
 								<option key={t} value={t}>
