@@ -1,28 +1,21 @@
 import { useState } from "react";
 import { useReveal } from "../../hooks/useReveal";
-import { CONTACT } from "../../data/content";
-import axios from "axios";
-
-const ENQUIRY_TYPES = [
-	"Research Collaboration",
-	"Training / Workshop",
-	"Consultancy",
-	"Partnership / Funding",
-	"Media Enquiry",
-	"General Information",
-];
+import { CONTACT, ENQUIRY_TYPES } from "../../data/content";
+import { Building2, Globe, Mail, MapPin } from "lucide-react";
 
 function ContactItem({ label, children }) {
 	return (
 		<div className="flex gap-4 items-start">
-			<div className="w-10 h-10 flex-shrink-0 rounded-full border border-gold/30 flex items-center justify-center text-gold text-sm">
-				{label === "Harare"
-					? "🏛️"
-					: label === "Nairobi"
-						? "📍"
-						: label === "Email"
-							? "✉️"
-							: "🌐"}
+			<div className="flex-shrink-0  border-gold/30 flex items-center justify-center text-gold text-md">
+				{label === "Harare" ? (
+					<Building2 size={22} />
+				) : label === "Nairobi" ? (
+					<MapPin size={22} />
+				) : label === "Email" ? (
+					<Mail size={22} />
+				) : (
+					<Globe size={22} />
+				)}
 			</div>
 			<div>{children}</div>
 		</div>
@@ -48,10 +41,26 @@ export default function Contact() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+
 		setStatus("sending");
+
 		try {
-			await axios.post("/api/contact", form);
+			const response = await fetch("/api/contact", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(form),
+			});
+
+			const data = await response.json();
+
+			if (!response.ok) {
+				throw new Error(data.error || "Something went wrong");
+			}
+
 			setStatus("success");
+
 			setForm({
 				firstName: "",
 				lastName: "",
@@ -60,9 +69,11 @@ export default function Contact() {
 				enquiryType: "",
 				message: "",
 			});
-		} catch {
+		} catch (err) {
+			console.error(err);
 			setStatus("error");
 		}
+
 		setTimeout(() => setStatus(null), 4000);
 	};
 

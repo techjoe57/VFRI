@@ -21,6 +21,15 @@ export const NAV_LINKS = [
 	{ label: "Achievements", href: "#achievements" },
 ];
 
+export const ENQUIRY_TYPES = [
+	"Research Collaboration",
+	"Training / Workshop",
+	"Consultancy",
+	"Partnership / Funding",
+	"Media Enquiry",
+	"General Information",
+];
+
 export const cards = [
 	{
 		icon: Globe,
