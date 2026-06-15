@@ -5,25 +5,25 @@ export default {
 		extend: {
 			colors: {
 				crimson: {
-					deep: "#0B3D2E",
-					dark: "#14532D",
-					mid: "#166534",
-					light: "#4D8B5B",
+					deep: "#8B0000",
+					dark: "#C1121F",
+					mid: "#D62828",
+					light: "#E76F51",
 				},
 				gold: {
-					DEFAULT: "#D4A017",
-					light: "#E6BE3A",
-					pale: "#F7E7A9",
+					DEFAULT: "#F4C430",
+					light: "#FFD60A",
+					pale: "#FFF3B0",
 				},
-				rust: "#6B8E23",
+				rust: "#2D6A4F",
 				cream: {
-					DEFAULT: "#F8F7F2",
-					dark: "#ECE8D9",
+					DEFAULT: "#F8F9FA",
+					dark: "#E9ECEF",
 				},
 				ink: {
-					DEFAULT: "#1F2937",
-					mid: "#4B5563",
-					light: "#6B7280",
+					DEFAULT: "#495057",
+					mid: "#6C757D",
+					light: "#ADB5BD",
 				},
 			},
 			fontFamily: {
