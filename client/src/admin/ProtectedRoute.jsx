@@ -23,7 +23,7 @@ export default function ProtectedRoute() {
 		}
 
 		// ONLY YOUR ADMIN EMAIL
-		const allowedAdmin = "okundashedrack@gmail.com";
+		const allowedAdmin = "techjoe57@gmail.com";
 
 		if (user.email === allowedAdmin) {
 			setAuthorized(true);

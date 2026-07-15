@@ -99,6 +99,16 @@ export default function Navbar() {
 				))}
 			</ul>
 
+			{/* Desktop CTA Button */}
+			
+			<div className="hidden md:block">
+				<button 
+					onClick={() => navigate("/service-inquiry")}
+					className="bg-crimson-dark hover:bg-crimson-mid text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300">
+					Request Our Services
+				</button>
+			</div>
+
 			{/* Hamburger */}
 			<button
 				className="md:hidden flex flex-col gap-1.5 bg-transparent border-0 cursor-pointer p-1"

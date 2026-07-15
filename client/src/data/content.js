@@ -18,7 +18,7 @@ export const NAV_LINKS = [
 ];
 
 export const ABOUT_DROPDOWN = [
-	{ label: "Our Story", href: "#about", type: "scroll" },
+	{ label: "Who We Are", href: "#about", type: "scroll" },
 	{ label: "Programs", href: "/programs", type: "route" },
 	{ label: "News", href: "/news", type: "route" },
 	{ label: "Team", href: "/team", type: "route" },
