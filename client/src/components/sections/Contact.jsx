@@ -77,14 +77,26 @@ export default function Contact() {
 		setTimeout(() => setStatus(null), 4000);
 	};
 
-	const inputCls = `w-full bg-crimson-mid border border-white/15 rounded-sm px-4 py-3
-    text-white text-sm font-sans placeholder:text-white/25
-    focus:outline-none focus:border-gold focus:bg-gold/5 transition-colors duration-200`;
+	const inputCls = `
+	w-full bg-white/10 
+	border border-white/20
+	rounded-md 
+	px-4 
+	py-3
+    text-white 
+	text-sm 
+	placeholder:text-white/40
+    focus:outline-none 
+	focus:border-gold 
+	focus:bg-white/15 
+	transition-all
+	duration-200
+	`;
 
 	return (
 		<section
 			id="contact"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-crimson-deep grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
+			className="relative py-28 px-8 md:px-16 lg:px-20 bg-[#5E0A11] grid md:grid-cols-2 gap-20 lg:gap-28 items-start">
 			{/* Info */}
 			<div ref={leftRef} className="reveal">
 				<span
@@ -93,12 +105,12 @@ export default function Contact() {
 					Get In Touch
 				</span>
 				<h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight mb-6">
-					Contact VFRI
+					Let's Start the Conversation
 				</h2>
 				<p className="text-white/60 text-sm leading-[1.85] mb-10">
-					We welcome partnerships, research collaborations, media
-					enquiries, and institutional engagement. Reach us through
-					either of our offices.
+					Whether you're seeking research collaboration, institutional
+					partnerships, policy engagement, or simply want to learn more
+					about our work, we'd love to hear from you.
 				</p>
 
 				<div className="flex flex-col gap-6">
@@ -150,9 +162,11 @@ export default function Contact() {
 			</div>
 
 			{/* Form */}
-			<div ref={rightRef} className="reveal">
+			<div 
+				ref={rightRef} 
+				className="reveal bg-white/8 backdrop-blur-md border border-white/15 rounded-2xl p-8 md:p-10 shadow-2xl">
 				<h3 className="font-display text-2xl font-light text-white mb-7">
-					Send a Message
+					General Enquiries
 				</h3>
 
 				<form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -222,7 +236,7 @@ export default function Contact() {
 							value={form.enquiryType}
 							onChange={handleChange}
 							required
-							className={`${inputCls} [&>option]:bg-crimson-deep`}>
+							className={`${inputCls} [&>option]:bg-[#5E0A11]`}>
 							<option value="">Select an option</option>
 							{ENQUIRY_TYPES.map((t) => (
 								<option key={t} value={t}>
@@ -260,10 +274,11 @@ export default function Contact() {
 								? "Message Sent ✓"
 								: status === "error"
 									? "Error — Try Again"
-									: "Send Message"}
+									: "Send Enquiry"}
 					</button>
 				</form>
 			</div>
+			<div className="hidden md:block absolute left-1/2 top-20 bottom-20 w-px bg-white/10" />
 		</section>
 	);
 }
