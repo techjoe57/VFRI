@@ -22,7 +22,7 @@
 		@apply block w-7 h-px bg-gold;
 	}
 	.section-title {
-		@apply font-display font-light leading-tight text-crimson-deep;
+		@apply font-display font-light leading-tight; 
 	}
 	.btn-primary {
 		@apply inline-block bg-gold text-crimson-deep text-xs font-semibold tracking-widest uppercase

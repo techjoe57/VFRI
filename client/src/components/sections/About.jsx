@@ -8,7 +8,7 @@ export default function About() {
 	return (
 		<section
 			id="about"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-cream grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
+			className="py-24 px-8 md:px-16 lg:px-20 bg-cream grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
 			<div ref={leftRef} className="reveal">
 				<span className="section-label mb-4 block">Who We Are</span>
 
@@ -39,7 +39,7 @@ export default function About() {
 				</div>
 
 				{/* Challenge quote */}
-				<div className="bg-crimson-deep border-l-4 border-gold px-6 py-5 rounded-r-sm">
+				<div className="bg-green-deep border-l-4 border-gold px-6 py-5 rounded-r-sm">
 					<p className="font-display text-lg italic text-white/80 leading-relaxed">
 						"Discussions, policy formulations, and conferences about
 						Africa tend to be held without Africa. Those who possess
@@ -66,7 +66,7 @@ export default function About() {
 							{body}
 						</p>
 					</div>
-				))}
+				))}	
 			</div>
 		</section>
 	);

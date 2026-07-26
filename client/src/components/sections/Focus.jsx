@@ -8,15 +8,17 @@ export default function Focus() {
 	return (
 		<section
 			id="focus"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-cream-dark grid md:grid-cols-3 gap-12 lg:gap-20 items-start">
+			className="py-24 px-8 md:px-16 lg:px-20 bg-cream flex-1">
 			<div
 				ref={leftRef}
-				className="reveal md:col-span-1 md:sticky md:top-28">
-				<span className="section-label mb-4 block">What We Do</span>
-				<h2 className="section-title text-4xl md:text-5xl mb-6">
-					Focus Areas
-				</h2>
-				<p className="text-ink-light text-md leading-[1.85]">
+				className="reveal grid md:grid-cols-2 gap-8 mb-14 items-end">
+				<div>
+					<span className="section-label mb-4 block">What We Do</span>
+					<h2 className="section-title text-4xl md:text-5xl mb-6 text-green-deep">
+						Focus Areas
+					</h2>
+				</div>
+				<p className="text-ink-light text-md leading-[1.85] self-end">
 					VFRI's work is organised around five primary domains, each
 					grounded in African realities and aimed at global relevance.
 				</p>
@@ -24,11 +26,11 @@ export default function Focus() {
 
 			<div
 				ref={rightRef}
-				className="reveal md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-5">
+				className="reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 				{FOCUS_AREAS.map(({ num, title, desc, image }, i) => (
 					<div
 						key={num}
-						className={`card p-6 ${i === 0 ? "sm:col-span-2 bg-crimson-deep" : "bg-crimson-deep"}`}>
+						className={`card p-6 ${i === 0 ? "sm:col-span-2 bg-green-deep" : "bg-green-deep"}`}>
 						{/* IMAGE */}
 						<div className="h-52 overflow-hidden">
 							<img
@@ -39,7 +41,7 @@ export default function Focus() {
 						</div>
 
 						{/* CONTENT */}
-						<div className="p-6">
+						<div className="p-4">
 							<p
 								className={`font-display text-4xl font-light opacity-40 leading-none mb-3 text-gold`}>
 								{num}

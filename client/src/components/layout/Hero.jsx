@@ -40,7 +40,7 @@ export default function Hero() {
 	return (
 		<section
 			id="home"
-			className="min-h-screen bg-crimson-deep grid md:grid-cols-2 pt-20 relative overflow-hidden">
+			className="min-h-screen bg-green-deep grid md:grid-cols-2 pt-20 relative overflow-hidden">
 			{/* VIDEO BACKGROUND */}
 			<div className="absolute inset-0 z-0 overflow-hidden">
 				{/* VIDEO A */}
@@ -106,9 +106,9 @@ export default function Hero() {
 				</p>
 
 				<div className="flex flex-wrap gap-4">
-					<button
+					<button	
 						onClick={() => scrollTo("#about")}
-						className="btn-primary">
+						className="btn-primary text-green-deep">
 						Explore Our Work
 					</button>
 					<button
