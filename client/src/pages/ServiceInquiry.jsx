@@ -36,10 +36,6 @@ export default function ServiceInquiry() {
 
 		console.log(form);
 
-		alert(
-			"Your service inquiry has been received. We'll contact you soon."
-		);
-
 		setForm({
 			fullName: "",
 			organisation: "",

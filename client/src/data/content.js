@@ -34,6 +34,16 @@ export const ENQUIRY_TYPES = [
 	"General Information",
 ];
 
+export const SERVICES1 = [
+	"Policy Research",
+	"Policy Advisory",
+	"Leadership Development",
+	"Institutional Partnerships",
+	"Capacity Building",
+	"Consultancy",
+	"Monitoring & Evaluation",
+];
+
 export const cards = [
 	{
 		icon: Globe,
