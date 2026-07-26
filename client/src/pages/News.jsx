@@ -13,19 +13,19 @@ export default function News() {
 				<div>
 					<span className="section-label mb-4 block">Updates</span>
 					<h2 className="section-title text-4xl md:text-5xl">
-						News & Publications
+						News & Announcements
 					</h2>
 				</div>
 
 				<p className="text-ink-light text-md leading-[1.85] self-end">
-					Latest institutional updates, research outputs, and public
-					engagement activities.
+					Latest institutional updates, public engagement activities,
+					student events, and research-aligned announcements.
 				</p>
 			</div>
 
 			<div ref={gridRef} className="reveal grid md:grid-cols-3 gap-5">
-				{NEWS.map(({ title, date, summary, tag, image }) => (
-					<div key={title} className="card p-6 group">
+				{NEWS.map(({ title, date, summary, tag, image, link }) => (
+					<div key={title} className="card p-6 group flex flex-col">
 						{/* IMAGE */}
 						<div className="h-40 w-full mb-4 overflow-hidden rounded-sm">
 							<img
@@ -47,9 +47,19 @@ export default function News() {
 							{title}
 						</h3>
 
-						<p className="text-sm text-ink-light leading-relaxed">
+						<p className="text-sm text-ink-light leading-relaxed flex-1">
 							{summary}
 						</p>
+
+						{link && (
+							<a
+								href={link}
+								target="_blank"
+								rel="noreferrer"
+								className="mt-5 inline-flex self-start text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-crimson-dark hover:text-gold transition-colors">
+								Read More
+							</a>
+						)}
 					</div>
 				))}
 			</div>

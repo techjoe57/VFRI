@@ -47,8 +47,8 @@ export const cards = [
 	},
 	{
 		icon: GraduationCap,
-		title: "Capacity Building",
-		desc: "Training and systems strengthening for institutions across the continent.",
+		title: "Systems Thinking and Transformation",
+		desc: "Courses and learning pathways that help institutions diagnose complex challenges, strengthen systems, and lead practical transformation.",
 	},
 ];
 
@@ -262,27 +262,36 @@ export const PROGRAMS = [
 
 export const NEWS = [
 	{
-		title: "VFRI Launches Regional Research Collaboration Framework",
-		date: "March 2026",
+		title: "Culture Day Celebration",
+		date: "April 2026",
 		summary:
-			"A new framework connecting universities and policy institutes across Africa to strengthen collaborative research output.",
+			"VFRI celebrates African culture, identity, and shared heritage through dialogue, storytelling, and student-led cultural expression.",
 		tag: "Announcement",
 		image: "/images/news/news1.avif",
 	},
 	{
-		title: "Policy Dialogue on African Development Models Held in Nairobi",
-		date: "February 2026",
+		title: "ZIMAZA Day Competition",
+		date: "April 2026",
 		summary:
-			"Experts gathered in Nairobi to discuss alternative development models rooted in African epistemologies and local knowledge systems.",
+			"The ZIMAZA quiz and essay competition brings learners together to explore African history, geography, culture, and sustainable development.",
 		tag: "Event",
 		image: "/images/news/news2.avif",
 	},
 	{
-		title: "Publication: Rethinking Governance in Post-Colonial Africa",
-		date: "January 2026",
+		title: "Instagram Event Updates",
+		date: "March 2026",
 		summary:
-			"A research paper exploring governance transformation and institutional resilience in post-colonial African states.",
-		tag: "Publication",
+			"Follow VFRI's Instagram channels for event highlights, community moments, programme announcements, and visual updates from recent engagements.",
+		tag: "Social",
 		image: "/images/news/news3.avif",
+	},
+	{
+		title: "World Vision: Sudan's Children Carry the Deepest Scars",
+		date: "April 2026",
+		summary:
+			"Their efforts are aligned with World Vision, with respect to research on solutions for these dire issues affecting Sudan's children.",
+		tag: "Research Alignment",
+		image: "/images/focus/development.jpg",
+		link: "https://www.wvi.org/newsroom/sudan/three-years-agony-sudans-children-trapped-and-carry-deepest-scars",
 	},
 ];
