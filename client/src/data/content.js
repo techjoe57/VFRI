@@ -18,7 +18,7 @@ export const NAV_LINKS = [
 ];
 
 export const ABOUT_DROPDOWN = [
-	{ label: "Our Story", href: "#about", type: "scroll" },
+	{ label: "Who We Are", href: "#about", type: "scroll" },
 	{ label: "Programs", href: "/programs", type: "route" },
 	{ label: "News", href: "/news", type: "route" },
 	{ label: "Team", href: "/team", type: "route" },
@@ -32,6 +32,16 @@ export const ENQUIRY_TYPES = [
 	"Partnership / Funding",
 	"Media Enquiry",
 	"General Information",
+];
+
+export const SERVICES1 = [
+	"Policy Research",
+	"Policy Advisory",
+	"Leadership Development",
+	"Institutional Partnerships",
+	"Capacity Building",
+	"Consultancy",
+	"Monitoring & Evaluation",
 ];
 
 export const cards = [

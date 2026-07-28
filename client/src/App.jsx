@@ -15,6 +15,7 @@ import TeamManager from "./admin/managers/TeamManager";
 import AchievementsManager from "./admin/managers/AchievementsManager";
 import ServicesManager from "./admin/managers/ServicesManager";
 import FocusManager from "./admin/managers/FocusManager";
+import ServiceInquiry from "./pages/ServiceInquiry";
 
 export default function App() {
 	return (
@@ -22,6 +23,10 @@ export default function App() {
 			<Route element={<Layout />}>
 				<Route path="/" element={<Home />} />
 				<Route path="/programs" element={<Programs />} />
+				<Route
+					path="/service-inquiry"
+					element={<ServiceInquiry />}
+				/>
 				<Route path="news" element={<News />} />
 				<Route path="/team" element={<Team />} />
 				<Route path="/achievements" element={<Achievements />} />

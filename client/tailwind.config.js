@@ -5,10 +5,10 @@ export default {
 		extend: {
 			colors: {
 				crimson: {
-					deep: "#5E0A11",
-					dark: "#840309",
-					mid: "#86151E",
-					light: "#9D414B",
+					deep: "#0B3D2E",
+					dark: "#14532D",
+					mid: "#166534",
+					light: "#4D8B5B",
 				},
 				// Green colours
 				green: {
@@ -17,19 +17,19 @@ export default {
 					light: "#1d604d",
 				},
 				gold: {
-					DEFAULT: "#c8a84b",
-					light: "#e2c96a",
-					pale: "#f5ecc8",
+					DEFAULT: "#D4A017",
+					light: "#E6BE3A",
+					pale: "#F7E7A9",
 				},
-				rust: "#7a2e1e",
+				rust: "#6B8E23",
 				cream: {
-					DEFAULT: "#f5f0e8",
-					dark: "#ede5d4",
+					DEFAULT: "#F8F7F2",
+					dark: "#ECE8D9",
 				},
 				ink: {
-					DEFAULT: "#1a1208",
-					mid: "#3d2e1a",
-					light: "#7a6a52",
+					DEFAULT: "#1F2937",
+					mid: "#4B5563",
+					light: "#6B7280",
 				},
 			},
 			fontFamily: {

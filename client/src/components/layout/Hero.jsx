@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { cards, videos } from "../../data/content";
 
 export default function Hero() {
+	const navigate = useNavigate();
+
 	const leftRef = useRef(null);
 	const rightRef = useRef(null);
 	const videoARef = useRef(null);
@@ -72,7 +75,7 @@ export default function Hero() {
 			</div>
 
 			{/* DARK OVERLAY */}
-			<div className="absolute inset-0 bg-black/60 z-[1]" />
+			<div className="absolute inset-0 bg-black/70 z-[1]" />
 			{/* Background glows */}
 			<div className="absolute inset-0 pointer-events-none z-[2]">
 				<div className="absolute top-1/2 right-1/3 w-[500px] h-[500px] -translate-y-1/2 bg-gold/5 rounded-full blur-3xl" />
@@ -98,23 +101,24 @@ export default function Hero() {
 					Reimagining Africa Through Dialogue
 				</p>
 
-				<p className="text-md leading-relaxed text-white/65 max-width-sm max-w-[420px] mb-10">
-					A pan-African independent academic and research institute
-					with operational bases in Zimbabwe and Kenya — localising
-					the power of knowledge to shape global research and policy
-					from an African perspective.
+				<p className="text-md leading-relaxed text-white/80 max-w-[460px] mb-10">
+						We advance African-led research, policy dialogue, leadership
+						development, and strategic partnerships that drive sustainable
+						solutions across the continent and beyond.
 				</p>
 
 				<div className="flex flex-wrap gap-4">
-					<button	
-						onClick={() => scrollTo("#about")}
-						className="btn-primary text-green-deep">
-						Explore Our Work
-					</button>
 					<button
-						onClick={() => scrollTo("#contact")}
+						onClick={() => navigate("/service-inquiry")}
+						className="btn-primary">
+						Request Our Services
+					</button>
+
+					<button
+						onClick={() => navigate("/programs")}
 						className="btn-outline">
-						Partner With Us
+						Explore Programs
+
 					</button>
 				</div>
 			</div>
@@ -124,7 +128,7 @@ export default function Hero() {
 					{cards.map(({ icon: Icon, title, desc }) => (
 						<div
 							key={title}
-							className="bg-white/5 border border-gold/20 rounded-sm p-6 transition-all duration-200 hover:bg-gold/7 hover:border-gold/40">
+							className="bg-white/10 border border-gold/30 rounded-sm p-6 transition-all duration-200 hover:bg-gold/10 hover:border-gold/40">
 							<Icon className="text-2xl mb-3 text-gold" />{" "}
 							<h4 className="font-display text-lg text-white mb-1.5">
 								{title}
