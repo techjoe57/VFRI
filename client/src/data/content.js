@@ -18,10 +18,11 @@ export const NAV_LINKS = [
 ];
 
 export const ABOUT_DROPDOWN = [
-	{ label: "Who We Are", href: "#about", type: "scroll" },
+	// { label: "Who We Are", href: "#about", type: "scroll" },
+	{ label: "Our Story", href: "/our-story", type: "route", },
 	{ label: "Programs", href: "/programs", type: "route" },
 	{ label: "News", href: "/news", type: "route" },
-	{ label: "Team", href: "/team", type: "route" },
+	// { label: "Team", href: "/team", type: "route" },
 	{ label: "Achievements", href: "/achievements", type: "route" },
 ];
 

@@ -8,17 +8,17 @@ export default function About() {
 	return (
 		<section
 			id="about"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-cream grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+			className="py-12 px-6 md:px-10 lg:px-16 bg-cream grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
 			<div ref={leftRef} className="reveal">
 				<span className="section-label mb-4 block">Who We Are</span>
 
-				<h2 className="section-title text-4xl md:text-5xl mb-6">
+				<h2 className="section-title text-3xl md:text-4xl mb-4">
 					A Pan-African Voice
 					<br />
 					in Global Knowledge
 				</h2>
 
-				<p className="text-ink-light text-sm leading-[1.9] mb-8">
+				<p className="text-ink-light text-sm leading-[1.9] mb-4">
 					Victoria Falls Regional Institute is an independent academic
 					and research institute founded to localise the power of
 					knowledge in International Law, International Relations,
@@ -31,7 +31,7 @@ export default function About() {
 					<img
 						src="/images/about/about.avif"
 						alt="VFRI team discussion"
-						className="w-full h-[320px] object-cover transition duration-700 group-hover:scale-105"
+						className="w-full h-[250px] object-cover transition duration-700 group-hover:scale-105"
 					/>
 
 					{/* Optional overlay */}
@@ -39,7 +39,7 @@ export default function About() {
 				</div>
 
 				{/* Challenge quote */}
-				<div className="bg-green-deep border-l-4 border-gold px-6 py-5 rounded-r-sm">
+				<div className="bg-green-deep border-l-4 border-gold px-5 py-3 rounded-r-sm">
 					<p className="font-display text-lg italic text-white/80 leading-relaxed">
 						"Discussions, policy formulations, and conferences about
 						Africa tend to be held without Africa. Those who possess
