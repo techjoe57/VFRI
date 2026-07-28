@@ -10,6 +10,12 @@ export default {
 					mid: "#166534",
 					light: "#4D8B5B",
 				},
+				// Green colours
+				green: {
+					deep: "#0F382C", 
+					mid: "#154a3b",
+					light: "#1d604d",
+				},
 				gold: {
 					DEFAULT: "#D4A017",
 					light: "#E6BE3A",

@@ -256,7 +256,7 @@ export default function Contact() {
 							onChange={handleChange}
 							placeholder="Tell us about your enquiry or interest in VFRI..."
 							required
-							rows={5}
+							rows={5} 
 							className={`${inputCls} resize-none`}
 						/>
 					</div>
@@ -265,9 +265,9 @@ export default function Contact() {
 						type="submit"
 						disabled={status === "sending"}
 						className={`btn-primary w-full text-center mt-2 transition-all
-              ${status === "success" ? "!bg-crimson-mid !text-white" : ""}
-              ${status === "error" ? "!bg-rust !text-white" : ""}
-              ${status === "sending" ? "opacity-60 cursor-not-allowed" : ""}`}>
+						${status === "success" ? "!bg-crimson-mid !text-white" : ""}
+						${status === "error" ? "!bg-rust !text-white" : ""}
+						${status === "sending" ? "opacity-60 cursor-not-allowed" : ""}`}>
 						{status === "sending"
 							? "Sending…"
 							: status === "success"

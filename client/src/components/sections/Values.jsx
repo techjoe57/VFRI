@@ -8,7 +8,7 @@ export default function Values() {
 	return (
 		<section
 			id="values"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-crimson-deep relative overflow-hidden">
+			className="py-24 px-8 md:px-16 lg:px-20 bg-green-deep relative overflow-hidden">
 			{/* Kente top */}
 			<div className="absolute top-0 left-0 right-0 h-1.5 kente-bar" />
 
@@ -36,13 +36,13 @@ export default function Values() {
 
 			<div
 				ref={gridRef}
-				className="reveal grid grid-cols-2 md:grid-cols-4 gap-4">
+				className="reveal grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
 				{VALUES.map(({ title, desc, icon: Icon }, i) => (
 					<div
 						key={title}
 						className={`bg-white/5 border border-gold/15 rounded-sm p-5 transition-all duration-200
-              hover:bg-gold/8 hover:border-gold/35
-              ${i === VALUES.length - 1 ? "col-span-2 md:col-span-4 md:max-w-sm" : ""}`}>
+						hover:bg-gold/8 hover:border-gold/35
+						${i === VALUES.length - 1 ? "sm:col-span-2 md:col-span-1 md:max-w-sm" : ""}`}>
 						<Icon className="text-2xl mb-3 text-gold-light" />{" "}
 						<h4 className="font-display text-lg text-white mb-2">
 							{title}
