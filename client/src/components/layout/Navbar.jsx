@@ -51,6 +51,7 @@ export default function Navbar() {
 	location.pathname.includes("/news") ||
 	location.pathname.includes("/programs") ||
 	location.pathname.includes("/achievements") ||
+	location.pathname.includes("/our-story") ||
 	(location.pathname === "/" && (
 		activeSection === "focus" || 
 		activeSection === "values" || 
@@ -64,6 +65,9 @@ export default function Navbar() {
 	const hoverTextColor = isGreenPage ? "hover:text-green-mid" : "hover:text-crimson-light";
 	const hamburgerBgColor = isGreenPage ? "bg-green-deep" : "bg-crimson-mid";
 	const mobileMenuBg = isGreenPage ? "bg-green-deep" : "bg-crimson-mid";
+	const ctaBgColor = isGreenPage 
+    ? "bg-green-deep hover:bg-green-mid" 
+    : "bg-crimson-dark hover:bg-crimson-mid";
 
 	const handleNav = (item) => {
 		setMenuOpen(false);
@@ -152,7 +156,7 @@ export default function Navbar() {
 			<div className="hidden md:block">
 				<button 
 					onClick={() => navigate("/service-inquiry")}
-					className="bg-crimson-dark hover:bg-crimson-mid text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300">
+					className={`${ctaBgColor} text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300`}>
 					Request Our Services
 				</button>
 			</div>

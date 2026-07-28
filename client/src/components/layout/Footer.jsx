@@ -2,12 +2,12 @@ import { useLocation } from "react-router-dom";
 export default function Footer() {
 
 	const location = useLocation();
-	const greenPages = ["/team", "/news", "/programs", "/achievements"];
+	const greenPages = ["/team", "/news", "/programs", "/achievements", "/our-story"];
 	const isGreenPage = greenPages.includes(location.pathname);
 
 	return (
 		<footer
-			className={`${isGreenPage ? "bg-green-deep" : "bg-crimson-deep"} py-8 px-8 md:px-16 lg:px-20 flex flex-col md:flex-row items-center
+			className={`${isGreenPage ? "bg-green-deep" : "bg-crimson-deep"} py-8  px-8 md:px-16 lg:px-20 flex flex-col md:flex-row items-center
 			justify-between gap-4 border-t border-gold/15"`}>
 			<div className="font-sans text-md text-white/50 text-center md:text-left">
 				<span className="font-display text-gold-light font-semibold">
