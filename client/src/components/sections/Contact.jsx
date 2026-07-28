@@ -84,7 +84,7 @@ export default function Contact() {
 	return (
 		<section
 			id="contact"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-crimson-deep grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
+			className="py-24 px-8 md:px-16 lg:px-20 bg-crimson-deep grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
 			{/* Info */}
 			<div ref={leftRef} className="reveal">
 				<span
@@ -151,7 +151,7 @@ export default function Contact() {
 
 			{/* Form */}
 			<div ref={rightRef} className="reveal">
-				<h3 className="font-display text-2xl font-light text-white mb-7">
+				<h3 className="font-display text-2xl font-light text-white mb-4">
 					Send a Message
 				</h3>
 
@@ -242,7 +242,7 @@ export default function Contact() {
 							onChange={handleChange}
 							placeholder="Tell us about your enquiry or interest in VFRI..."
 							required
-							rows={5}
+							rows={5} 
 							className={`${inputCls} resize-none`}
 						/>
 					</div>
@@ -251,9 +251,9 @@ export default function Contact() {
 						type="submit"
 						disabled={status === "sending"}
 						className={`btn-primary w-full text-center mt-2 transition-all
-              ${status === "success" ? "!bg-crimson-mid !text-white" : ""}
-              ${status === "error" ? "!bg-rust !text-white" : ""}
-              ${status === "sending" ? "opacity-60 cursor-not-allowed" : ""}`}>
+						${status === "success" ? "!bg-crimson-mid !text-white" : ""}
+						${status === "error" ? "!bg-rust !text-white" : ""}
+						${status === "sending" ? "opacity-60 cursor-not-allowed" : ""}`}>
 						{status === "sending"
 							? "Sending…"
 							: status === "success"

@@ -25,7 +25,7 @@ export default function Services() {
 						&amp; Services
 					</h2>
 				</div>
-				<p className="text-ink-light text-md leading-[1.85] self-end">
+				<p className="text-ink-light text-md leading-[1.85] self-center">
 					Five interconnected services through which VFRI delivers its
 					mission — from hosted dialogues to long-term consultancy
 					engagements.
