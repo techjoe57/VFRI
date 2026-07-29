@@ -75,7 +75,7 @@ export default function Services() {
 							→
 						</p>
 						<h3 className="font-display text-xl text-white mb-2">
-							Partner With VFRI
+							Learn more about the Courses
 						</h3>
 						<p className="text-white/55 text-sm leading-relaxed mb-6">
 							Whether you're a development institution,

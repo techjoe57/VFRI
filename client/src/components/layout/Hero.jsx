@@ -102,9 +102,9 @@ export default function Hero() {
 				</p>
 
 				<p className="text-md leading-relaxed text-white/80 max-w-[460px] mb-10">
-						We advance African-led research, policy dialogue, leadership
+						{/* We advance African-led research, policy dialogue, leadership
 						development, and strategic partnerships that drive sustainable
-						solutions across the continent and beyond.
+						solutions across the continent and beyond. */}
 				</p>
 
 				<div className="flex flex-wrap gap-4">
