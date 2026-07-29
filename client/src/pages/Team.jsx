@@ -8,11 +8,9 @@ export default function Team() {
 	return (
 		<section
 			id="team"
-			className="pt-12 pb-12 px-6 md:px-10 lg:px-16 bg-green-deep relative"> 
+			className="pt-8 pb-12 px-6 md:px-10 lg:px-16 bg-green-deep relative"> 
 			{/* Kente bottom */}
 			<div className="absolute bottom-0 left-0 right-0 h-1.5 kente-bar" />
-
-				<div className="max-w-7xl mx-auto w-full"> 
 					<div ref={headRef} className="reveal mb-6">
 					<span
 						className="section-label mb-2 block"
@@ -52,7 +50,6 @@ export default function Team() {
 							</div>
 						</div>
 					))}
-				</div>
 			</div>
 		</section>
 	);

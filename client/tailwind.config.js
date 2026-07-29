@@ -4,11 +4,12 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				// Red colours
 				crimson: {
-					deep: "#0B3D2E",
-					dark: "#14532D",
-					mid: "#166534",
-					light: "#4D8B5B",
+					deep: "#5E0A11",
+					dark: "#840309",
+					mid: "#86151E",
+					light: "#9D414B",
 				},
 				// Green colours
 				green: {
