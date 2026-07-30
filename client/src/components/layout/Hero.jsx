@@ -37,9 +37,6 @@ export default function Hero() {
 		setIsVideoAActive((prev) => !prev);
 	};
 
-	const scrollTo = (id) =>
-		document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
-
 	return (
 		<section
 			id="home"
@@ -84,12 +81,12 @@ export default function Hero() {
 			{/* Kente border */}
 			<div className="absolute bottom-0 left-0 right-0 h-1.5 kente-bar z-[3]" />
 			{/* LEFT CONTENT */}
-			<div className="flex flex-col justify-center px-10 md:px-16 lg:px-20 py-20 relative z-[5]">
-				<span className="section-label mb-6">
+			<div className="flex flex-col justify-center px-6 py-16 md:px-12 md:py-20 lg:px-20 relative z-[5]">
+				<span className="section-label mb-5">
 					Pan-African Research Institute
 				</span>
 
-				<h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-white leading-[1.02] mb-4">
+				<h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-white leading-[1.04] mb-4">
 					Victoria Falls
 					<br />
 					<em className="text-gold-light not-italic font-light">
@@ -97,14 +94,8 @@ export default function Hero() {
 					</em>
 				</h1>
 
-				<p className="font-display text-xl italic text-white/80 mb-6 tracking-wide">
+				<p className="font-display text-xl italic text-white/80 mb-8">
 					Reimagining Africa Through Dialogue
-				</p>
-
-				<p className="text-md leading-relaxed text-white/80 max-w-[460px] mb-10">
-						{/* We advance African-led research, policy dialogue, leadership
-						development, and strategic partnerships that drive sustainable
-						solutions across the continent and beyond. */}
 				</p>
 
 				<div className="flex flex-wrap gap-4">
@@ -128,9 +119,9 @@ export default function Hero() {
 					{cards.map(({ icon: Icon, title, desc }) => (
 						<div
 							key={title}
-							className="bg-white/10 border border-gold/30 rounded-sm p-6 transition-all duration-200 hover:bg-gold/10 hover:border-gold/40">
-							<Icon className="text-2xl mb-3 text-gold" />{" "}
-							<h4 className="font-display text-lg text-white mb-1.5">
+							className="bg-white/10 border border-gold/30 rounded-sm p-5 transition-all duration-200 hover:bg-gold/10 hover:border-gold/40">
+							<Icon className="text-2xl mb-3 text-gold" />
+							<h4 className="card-title text-white mb-1.5">
 								{title}
 							</h4>
 							<p className="text-sm text-white/60 leading-relaxed">

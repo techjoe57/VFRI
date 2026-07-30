@@ -8,17 +8,17 @@ export default function Focus() {
 	return (
 		<section
 			id="focus"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-cream flex-1">
+			className="page-section bg-cream flex-1">
 			<div
 				ref={leftRef}
-				className="reveal grid md:grid-cols-2 gap-8 mb-14 items-end">
+				className="section-heading md:grid-cols-1">
 				<div>
 					<span className="section-label mb-4 block">What We Do</span>
-					<h2 className="section-title text-4xl md:text-5xl mb-6 text-green-deep">
+					<h2 className="section-title text-green-deep">
 						Focus Areas
 					</h2>
 				</div>
-				<p className="text-ink-light text-md leading-[1.85] self-end">
+				<p className="section-copy">
 					VFRI's work is organised around five primary domains, each
 					grounded in African realities and aimed at global relevance.
 				</p>
@@ -26,13 +26,12 @@ export default function Focus() {
 
 			<div
 				ref={rightRef}
-				className="reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+				className="reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 				{FOCUS_AREAS.map(({ num, title, desc, image }, i) => (
 					<div
 						key={num}
-						className={`card p-6 ${i === 0 ? "sm:col-span-2 bg-green-deep" : "bg-green-deep"}`}>
-						{/* IMAGE */}
-						<div className="h-52 overflow-hidden">
+						className={`card overflow-hidden ${i === 0 ? "sm:col-span-2 bg-green-deep" : "bg-green-deep"}`}>
+						<div className="h-48 overflow-hidden">
 							<img
 								src={image}
 								alt={title}

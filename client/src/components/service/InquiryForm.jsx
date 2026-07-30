@@ -114,38 +114,39 @@ export default function InquiryForm() {
 		return (
 			<section
 				id="inquiry-form"
-				className="py-24 bg-cream">
-				<div className="max-w-4xl mx-auto px-8">
+				className="page-section bg-cream">
+				<div className="max-w-4xl mx-auto">
 					<SuccessMessage />
 				</div>
 			</section>
 		);
 	}
 	const inputClass =
-		"w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:border-gold transition";
+		"w-full rounded-sm border border-black/10 px-4 py-3 text-sm text-ink focus:outline-none focus:border-gold transition";
+	const labelClass = "mb-1.5 flex items-center gap-2 text-sm text-ink";
 
 	return (
 		<section
 			id="inquiry-form"
-			className="py-24 bg-cream">
-			<div className="max-w-4xl mx-auto px-8">
-				<div className="bg-white rounded-2xl shadow-xl p-10">
-					<h2 className="font-display text-4xl text-center text-green-dark mb-3">
+			className="page-section bg-cream">
+			<div className="max-w-4xl mx-auto">
+				<div className="bg-white rounded-sm shadow-xl p-6 md:p-8">
+					<h2 className="section-title text-center text-green-deep mb-3">
 						Service Request Form
 					</h2>
-					<p className="text-center text-gray-600 mb-10">
+					<p className="section-copy mx-auto text-center mb-8">
 						Tell us about your project and we'll get back to you.
 					</p>
 
-					<form onSubmit={handleSubmit} className="space-y-8">
+					<form onSubmit={handleSubmit} className="space-y-6">
 						{/* PERSONAL DETAILS */}
 						<div>
-							<h3 className="font-semibold text-green-dark mb-5">
+							<h3 className="font-semibold text-green-deep mb-4">
 								Personal Details
 							</h3>
-							<div className="grid md:grid-cols-2 gap-6">
+							<div className="grid md:grid-cols-2 gap-5">
 								<div>
-									<label className="mb-2 flex items-center gap-2">
+									<label className={labelClass}>
 										<User size={18} />
 										Full Name
 									</label>
@@ -157,7 +158,7 @@ export default function InquiryForm() {
 									/>
 								</div>
 								<div>
-									<label className="mb-2 flex items-center gap-2">
+									<label className={labelClass}>
 										<Mail size={18} />
 										Email Address
 									</label>
@@ -173,12 +174,12 @@ export default function InquiryForm() {
 						</div>
 						{/* ORGANISATION */}
 						<div>
-							<h3 className="font-semibold text-green-dark mb-5">
+							<h3 className="font-semibold text-green-deep mb-4">
 								Organisation Details
 							</h3>
-							<div className="grid md:grid-cols-2 gap-6">
+							<div className="grid md:grid-cols-2 gap-5">
 								<div>
-									<label className="mb-2 flex items-center gap-2">
+									<label className={labelClass}>
 										<Building2 size={18} />
 										Organisation
 									</label>
@@ -190,7 +191,7 @@ export default function InquiryForm() {
 										required />
 								</div>
 								<div>
-									<label className="mb-2 flex items-center gap-2">
+									<label className={labelClass}>
 										<Phone size={18} />
 										Phone Number
 									</label>
@@ -202,8 +203,8 @@ export default function InquiryForm() {
 									/>
 								</div>
 							</div>
-							<div className="mt-6">
-								<label className="mb-2 flex items-center gap-2">
+							<div className="mt-5">
+								<label className={labelClass}>
 									<Globe size={18} />
 									Country
 								</label>
@@ -217,12 +218,12 @@ export default function InquiryForm() {
 						</div>
 						{/* PROJECT */}
 						<div>
-							<h3 className="font-semibold text-green-dark mb-5">
+							<h3 className="font-semibold text-green-deep mb-4">
 								Project Details
 							</h3>
-							<div className="grid md:grid-cols-2 gap-6">
+							<div className="grid md:grid-cols-2 gap-5">
 								<div>
-									<label className="mb-2 flex items-center gap-2">
+									<label className={labelClass}>
 										<FileText size={18} />
 										Service Required
 									</label>
@@ -243,7 +244,7 @@ export default function InquiryForm() {
 									</select>
 								</div>
 								<div>
-									<label className="mb-2 flex items-center gap-2">
+									<label className={labelClass}>
 										<CalendarDays size={18} />
 										Expected Timeline
 									</label>
@@ -256,8 +257,8 @@ export default function InquiryForm() {
 									/>
 								</div>
 							</div>
-							<div className="mt-6">
-								<label className="mb-2 flex items-center gap-2">
+							<div className="mt-5">
+								<label className={labelClass}>
 									<FileText size={18} />
 									Project Description
 								</label>
@@ -272,9 +273,9 @@ export default function InquiryForm() {
 								/>
 							</div>
 						</div>
-						<div className="pt-6">
+						<div className="pt-2">
 							{error && (
-								<div className="rounded-lg border border-red-300 bg-red-50 p-4 text-red-700">
+								<div className="rounded-sm border border-red-300 bg-red-50 p-4 text-sm text-red-700">
 									{error}
 								</div>
 							)}

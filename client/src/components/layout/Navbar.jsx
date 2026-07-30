@@ -11,7 +11,7 @@ export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [aboutOpen, setAboutOpen] = useState(false);
 	const navTextClass =
-		"font-sans text-[0.82rem] font-semibold tracking-[0.12em] uppercase";
+		"font-sans text-[0.78rem] font-semibold tracking-[0.12em] uppercase";
 
 	useEffect(() => {
 		const handler = () => setScrolled(window.scrollY > 60);
@@ -38,12 +38,9 @@ export default function Navbar() {
 		}
 	}, [location.pathname]);
 
-	// Reset active section when navigating to a new route
-	useEffect(() => {
-		setActiveSection("");
-	}, [location.pathname]);
-
 	// Check if the current route should use the green theme
+	const effectiveActiveSection =
+		location.pathname === "/" ? activeSection : "";
 	const isGreenPage =
 	location.pathname.includes("/focus") ||
 	location.pathname.includes("/environment") ||
@@ -54,10 +51,10 @@ export default function Navbar() {
 	location.pathname.includes("/our-story") ||
 	location.pathname.includes("/service-inquiry") ||
 	(location.pathname === "/" && (
-		activeSection === "focus" || 
-		activeSection === "values" || 
-		activeSection === "about" ||
-	 	activeSection === "home"
+		effectiveActiveSection === "focus" || 
+		effectiveActiveSection === "values" || 
+		effectiveActiveSection === "about" ||
+	 	effectiveActiveSection === "home"
 	));
 
 	//dynamic colour variables based on the route
@@ -97,7 +94,7 @@ export default function Navbar() {
 	return (
 		<nav
 			className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300
-      ${scrolled ? "py-1 px-7 md:px-11" : "py-3 px-7 md:px-11"}
+      ${scrolled ? "py-1.5 px-5 md:px-10" : "py-2.5 px-5 md:px-10"}
       bg-gold backdrop-blur-md border-b border-gold/20`}>
 			<a
 				href="#home"
@@ -105,7 +102,7 @@ export default function Navbar() {
 					handleNav({ label: "Home", href: "#home", type: "scroll" })
 				}
 				className="flex items-center gap-3 no-underline">
-				<div className="w-16 h-16 relative flex-shrink-0">
+				<div className="w-14 h-14 relative flex-shrink-0">
 					<img
 						src="/logo2.png"
 						alt="Logo"
@@ -113,7 +110,7 @@ export default function Navbar() {
 					/>
 				</div>
 				<div className="leading-tight font-sans">
-					<strong className={`block font-display font-bold text-md ${titleTextColor} tracking-wide`}>
+					<strong className={`block font-display text-lg font-semibold ${titleTextColor}`}>
 						Victoria Falls Regional Institute
 					</strong>
 					<span className={`text-[0.6rem] ${navTextColor} tracking-[0.12em] uppercase`}>
@@ -122,19 +119,19 @@ export default function Navbar() {
 				</div>
 			</a>
 
-			<ul className="hidden md:flex items-center gap-8 list-none">
+			<ul className="hidden md:flex items-center gap-6 list-none">
 				<li className="relative group">
-					<button className={`flex items-center gap-2 ${navTextColor} text-sm font-bold tracking-widest uppercase`}>
+					<button className={`flex items-center gap-2 ${navTextColor} ${navTextClass}`}>
 						About Us
 						<ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
 					</button>
 
-					<div className="absolute top-full left-0 mt-4 w-64 bg-white shadow-2xl rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+					<div className="absolute top-full left-0 mt-3 w-60 bg-white shadow-2xl rounded-sm overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
 						{ABOUT_DROPDOWN.map((item) => (
 							<button
 								key={item.label}
 								onClick={() => handleNav(item)}
-								className={`w-full text-left px-5 py-4 text-md ${navTextColor} hover:bg-gold/10 transition-colors`}>
+								className={`w-full px-4 py-3 text-left ${navTextColor} hover:bg-gold/10 transition-colors ${navTextClass}`}>
 								{item.label}
 							</button>
 						))}
@@ -145,7 +142,7 @@ export default function Navbar() {
 					<li key={item.label}>
 						<button
 							onClick={() => handleNav(item)}
-							className={`${navTextColor} text-sm font-bold tracking-widest uppercase ${hoverTextColor} transition-colors duration-200`}>
+							className={`${navTextColor} ${navTextClass} ${hoverTextColor} transition-colors duration-200`}>
 							{item.label}
 						</button>
 					</li>
@@ -157,7 +154,7 @@ export default function Navbar() {
 			<div className="hidden md:block">
 				<button 
 					onClick={() => navigate("/service-inquiry")}
-					className={`${ctaBgColor} text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300`}>
+					className={`${ctaBgColor} text-white text-xs font-semibold uppercase tracking-[0.12em] px-5 py-3 rounded-sm shadow-md transition-all duration-300`}>
 					Request Our Services
 				</button>
 			</div>
@@ -190,14 +187,14 @@ export default function Navbar() {
 								type: "scroll",
 							})
 						}
-						className={`px-8 py-5 text-gold text-left hover:bg-gold/10 transition-colors border-0 bg-transparent border-b border-white/5 ${navTextClass}`}>
+						className={`px-6 py-4 text-gold text-left hover:bg-gold/10 transition-colors border-0 bg-transparent border-b border-white/5 ${navTextClass}`}>
 						Home
 					</button>
 
 					<div className="border-b border-white/5">
 						<button
 							onClick={() => setAboutOpen(!aboutOpen)}
-							className={`w-full px-8 py-5 flex items-center justify-between text-gold hover:bg-gold/10 transition-colors bg-transparent border-0 ${navTextClass}`}>
+							className={`w-full px-6 py-4 flex items-center justify-between text-gold hover:bg-gold/10 transition-colors bg-transparent border-0 ${navTextClass}`}>
 							<span>About Us</span>
 							<ChevronDown
 								className={`h-4 w-4 transition-transform duration-300 ${
@@ -219,7 +216,7 @@ export default function Navbar() {
 										handleNav(item);
 										setAboutOpen(false);
 									}}
-									className={`w-full pl-14 pr-8 py-4 text-left text-gold/90 hover:bg-gold/10 hover:text-gold transition-colors bg-transparent border-0 border-t border-white/5 ${navTextClass}`}>
+									className={`w-full pl-12 pr-6 py-3 text-left text-gold/90 hover:bg-gold/10 hover:text-gold transition-colors bg-transparent border-0 border-t border-white/5 ${navTextClass}`}>
 									{item.label}
 								</button>
 							))}
@@ -230,7 +227,7 @@ export default function Navbar() {
 						<button
 							key={item.label}
 							onClick={() => handleNav(item)}
-							className={`px-8 py-5 text-gold text-left hover:bg-gold/10 transition-colors border-0 bg-transparent border-b border-white/5 ${navTextClass}`}>
+							className={`px-6 py-4 text-gold text-left hover:bg-gold/10 transition-colors border-0 bg-transparent border-b border-white/5 ${navTextClass}`}>
 							{item.label}
 						</button>
 					))}
