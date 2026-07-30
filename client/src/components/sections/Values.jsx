@@ -8,7 +8,7 @@ export default function Values() {
 	return (
 		<section
 			id="values"
-			className="py-20 px-8 md:px-16 lg:px-16 bg-green-deep relative overflow-hidden">
+			className="pt-12 pb-8 px-8 md:px-16 lg:px-20 bg-green-deep relative overflow-hidden">
 			{/* Kente top */}
 			<div className="absolute top-0 left-0 right-0 h-1.5 kente-bar" />
 

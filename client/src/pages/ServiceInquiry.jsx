@@ -52,9 +52,9 @@ export default function ServiceInquiry() {
 		"w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-gold focus:outline-none";
 
 	return (
-		<div className="bg-white min-h-screen">
+		<div className="bg-cream min-h-screen">
 			{/* Hero */}
-			<section className="bg-green-dark text-white py-24 px-8">
+			<section className="bg-green-deep text-white py-24 px-8">
 				<div className="max-w-5xl mx-auto">
 					<h1 className="font-display text-5xl mb-6">
 						Request Our Services
@@ -225,7 +225,7 @@ export default function ServiceInquiry() {
 
 						<button
 							type="submit"
-							className="btn-primary w-full">
+							className="btn-primary w-full text-green-deep">
 
 							Submit Service Request
 

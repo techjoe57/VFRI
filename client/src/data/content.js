@@ -49,7 +49,7 @@ export const cards = [
 	{
 		icon: Globe,
 		title: "Regional Reach",
-		desc: "Active operations across East and Southern Africa — Zimbabwe, Kenya and beyond.",
+		desc: "We advance African-led research, policy dialogue, leadership development, and strategic partnerships that drive sustainable solutions across the continent and beyond.",
 	},
 	{
 		icon: BookOpen,
