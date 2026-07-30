@@ -7,9 +7,8 @@ export default function Footer() {
 
 	return (
 		<footer
-			className={`${isGreenPage ? "bg-green-deep" : "bg-crimson-deep"} py-8  px-8 md:px-16 lg:px-20 flex flex-col md:flex-row items-center
-			justify-between gap-4 border-t border-gold/15"`}>
-			<div className="font-sans text-md text-white/50 text-center md:text-left">
+			className={`${isGreenPage ? "bg-green-deep" : "bg-crimson-deep"} px-6 py-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-3 border-t border-gold/15`}>
+			<div className="font-sans text-sm text-white/50 text-center md:text-left">
 				<span className="font-display text-gold-light font-semibold">
 					Victoria Falls Regional Institute
 				</span>

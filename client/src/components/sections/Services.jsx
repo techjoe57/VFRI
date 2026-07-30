@@ -11,21 +11,21 @@ export default function Services() {
 	return (
 		<section
 			id="services"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-white">
+			className="page-section bg-white">
 			<div
 				ref={headRef}
-				className="reveal grid md:grid-cols-2 gap-8 mb-14 items-end">
+				className="section-heading md:grid-cols-1">
 				<div>
 					<span className="section-label mb-4 block">
 						What We Offer
 					</span>
-					<h2 className="section-title text-4xl md:text-5xl">
+					<h2 className="section-title">
 						Primary Products
 						<br />
 						&amp; Services
 					</h2>
 				</div>
-				<p className="text-ink-light text-md leading-[1.85] self-center">
+				<p className="section-copy">
 					Five interconnected services through which VFRI delivers its
 					mission — from hosted dialogues to long-term consultancy
 					engagements.
@@ -38,7 +38,7 @@ export default function Services() {
 				{SERVICES.map(({ num, title, desc, image }) => (
 					<div
 						key={num}
-						className="relative group overflow-hidden rounded-sm border border-black/[0.06] p-7 transition-all duration-200 hover:shadow-xl hover:-translate-y-1">
+						className="relative group min-h-72 overflow-hidden rounded-sm border border-black/[0.06] p-6 transition-all duration-200 hover:shadow-xl hover:-translate-y-1">
 						{/* BACKGROUND IMAGE */}
 						<div
 							className="absolute inset-0 bg-center bg-cover scale-105 group-hover:scale-110 transition-transform duration-500"
@@ -50,11 +50,11 @@ export default function Services() {
 
 						{/* CONTENT */}
 						<div className="relative z-10">
-							<p className="font-display text-4xl text-gold/70 font-light mb-4">
+							<p className="font-display text-3xl text-gold/70 font-light mb-4">
 								{num}
 							</p>
 
-							<h3 className="font-display text-xl text-white mb-2">
+							<h3 className="card-title text-white mb-2">
 								{title}
 							</h3>
 
@@ -69,12 +69,12 @@ export default function Services() {
 				))}
 
 				{/* CTA card */}
-				<div className="bg-crimson-deep border border-gold/20 rounded-sm p-7 flex flex-col justify-between">
+				<div className="bg-crimson-deep border border-gold/20 rounded-sm p-6 flex flex-col justify-between">
 					<div>
-						<p className="font-display text-4xl text-gold/50 font-light mb-4">
+						<p className="font-display text-3xl text-gold/50 font-light mb-4">
 							→
 						</p>
-						<h3 className="font-display text-xl text-white mb-2">
+						<h3 className="card-title text-white mb-2">
 							Learn more about the Courses
 						</h3>
 						<p className="text-white/55 text-sm leading-relaxed mb-6">
@@ -86,7 +86,7 @@ export default function Services() {
 					</div>
 					<button
 						onClick={() => scrollTo("#contact")}
-						className="btn-primary self-start !text-[0.7rem] !px-5 !py-2">
+						className="btn-primary self-start !px-5 !py-2.5">
 						Get in Touch
 					</button>
 				</div>

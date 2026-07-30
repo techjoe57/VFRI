@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const SERVICES = [
+const SERVICES = [
 	"Policy Research",
 	"Policy Advisory",
 	"Leadership Development",
@@ -49,18 +49,19 @@ export default function ServiceInquiry() {
 	};
 
 	const inputClass =
-		"w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-gold focus:outline-none";
+		"w-full rounded-sm border border-black/10 px-4 py-3 text-sm text-ink focus:border-gold focus:outline-none";
+	const labelClass = "meta-label mb-1.5 block text-ink-light";
 
 	return (
 		<div className="bg-cream min-h-screen">
 			{/* Hero */}
-			<section className="bg-green-deep text-white py-24 px-8">
+			<section className="page-hero bg-green-deep text-white">
 				<div className="max-w-5xl mx-auto">
-					<h1 className="font-display text-5xl mb-6">
+					<h1 className="section-title text-white mb-5">
 						Request Our Services
 					</h1>
 
-					<p className="text-lg text-white/80 max-w-3xl leading-8">
+					<p className="dark-section-copy">
 						Thank you for your interest in working with the
 						Victoria Falls Regional Institute. Please complete the
 						form below and our team will contact you.
@@ -69,15 +70,15 @@ export default function ServiceInquiry() {
 			</section>
 
 			{/* Form */}
-			<section className="py-20 px-8">
-				<div className="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl p-10">
+			<section className="page-section">
+				<div className="max-w-4xl mx-auto bg-white shadow-xl rounded-sm p-6 md:p-8">
 
 					<form
 						onSubmit={handleSubmit}
-						className="space-y-6">
+						className="space-y-5">
 
 						<div>
-							<label>Full Name</label>
+							<label className={labelClass}>Full Name</label>
 
 							<input
 								name="fullName"
@@ -89,7 +90,7 @@ export default function ServiceInquiry() {
 						</div>
 
 						<div>
-							<label>Organisation</label>
+							<label className={labelClass}>Organisation</label>
 
 							<input
 								name="organisation"
@@ -100,10 +101,10 @@ export default function ServiceInquiry() {
 							/>
 						</div>
 
-						<div className="grid md:grid-cols-2 gap-6">
+						<div className="grid md:grid-cols-2 gap-5">
 
 							<div>
-								<label>Email Address</label>
+								<label className={labelClass}>Email Address</label>
 
 								<input
 									type="email"
@@ -116,7 +117,7 @@ export default function ServiceInquiry() {
 							</div>
 
 							<div>
-								<label>Phone Number</label>
+								<label className={labelClass}>Phone Number</label>
 
 								<input
 									name="phone"
@@ -128,10 +129,10 @@ export default function ServiceInquiry() {
 
 						</div>
 
-						<div className="grid md:grid-cols-2 gap-6">
+						<div className="grid md:grid-cols-2 gap-5">
 
 							<div>
-								<label>Country</label>
+								<label className={labelClass}>Country</label>
 
 								<input
 									name="country"
@@ -142,7 +143,7 @@ export default function ServiceInquiry() {
 							</div>
 
 							<div>
-								<label>Expected Timeline</label>
+								<label className={labelClass}>Expected Timeline</label>
 
 								<input
 									name="timeline"
@@ -157,7 +158,7 @@ export default function ServiceInquiry() {
 
 						<div>
 
-							<label>Service Required</label>
+							<label className={labelClass}>Service Required</label>
 
 							<select
 								name="service"
@@ -208,7 +209,7 @@ export default function ServiceInquiry() {
 
 						<div>
 
-							<label>
+							<label className={labelClass}>
 								Project Description
 							</label>
 

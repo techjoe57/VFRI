@@ -5,32 +5,32 @@ export default function InquiryHero() {
 	const navigate = useNavigate();
 
 	return (
-		<section className="relative overflow-hidden bg-green-dark text-white">
-			<div className="absolute inset-0 bg-gradient-to-r from-green-dark via-green-dark/95 to-green-dark/80" />
+		<section className="relative overflow-hidden bg-green-deep text-white">
+			<div className="absolute inset-0 bg-gradient-to-r from-green-deep via-green-deep/95 to-green-deep/80" />
 
 			<div className="absolute -top-40 -right-24 h-96 w-96 rounded-full bg-gold/10 blur-3xl" />
 
-			<div className="relative max-w-7xl mx-auto px-8 md:px-16 lg:px-20 py-28">
+			<div className="page-hero section-inner">
 
 				<p className="section-label mb-5">
 					Service Enquiry
 				</p>
 
-				<h1 className="font-display text-5xl md:text-6xl max-w-3xl leading-tight text-white">
+				<h1 className="font-display text-4xl md:text-5xl lg:text-6xl max-w-3xl leading-tight text-white">
 					Request Our
 					<span className="text-gold">
 						{" "}Professional Services
 					</span>
 				</h1>
 
-				<p className="mt-8 max-w-2xl text-white/80 leading-8 text-lg">
+				<p className="dark-section-copy mt-6">
 					Partner with the Victoria Falls Regional Institute to
 					deliver impactful research, policy development,
 					capacity building and institutional transformation
 					across Africa.
 				</p>
 
-				<div className="flex flex-wrap gap-5 mt-10">
+				<div className="flex flex-wrap gap-4 mt-8">
 
 					<button
 						className="btn-primary"

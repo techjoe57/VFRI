@@ -6,7 +6,7 @@ import { Building2, Globe, Mail, MapPin } from "lucide-react";
 function ContactItem({ label, children }) {
 	return (
 		<div className="flex gap-4 items-start">
-			<div className="flex-shrink-0  border-gold/30 flex items-center justify-center text-gold text-md">
+			<div className="flex-shrink-0 border-gold/30 flex items-center justify-center text-gold">
 				{label === "Harare" ? (
 					<Building2 size={22} />
 				) : label === "Nairobi" ? (
@@ -80,7 +80,7 @@ export default function Contact() {
 	const inputCls = `
 	w-full bg-white/10 
 	border border-white/20
-	rounded-md 
+	rounded-sm 
 	px-4 
 	py-3
     text-white 
@@ -96,7 +96,7 @@ export default function Contact() {
 	return (
 		<section
 			id="contact"
-			className="relative py-28 px-8 md:px-16 lg:px-20 bg-[#5E0A11] grid md:grid-cols-2 gap-20 lg:gap-28 items-start">
+			className="relative page-section bg-[#5E0A11] grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
 			{/* Info */}
 			<div ref={leftRef} className="reveal">
 				<span
@@ -104,18 +104,18 @@ export default function Contact() {
 					style={{ color: "#c8a84b" }}>
 					Get In Touch
 				</span>
-				<h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight mb-6">
+				<h2 className="section-title text-white mb-5">
 					Let's Start the Conversation
 				</h2>
-				<p className="text-white/60 text-sm leading-[1.85] mb-10">
+				<p className="dark-section-copy mb-8">
 					Whether you're seeking research collaboration, institutional
 					partnerships, policy engagement, or simply want to learn more
 					about our work, we'd love to hear from you.
 				</p>
 
-				<div className="flex flex-col gap-6">
+				<div className="flex flex-col gap-5">
 					<ContactItem label="Harare">
-						<p className="text-gold text-[0.65rem] tracking-[0.15em] uppercase mb-1">
+						<p className="meta-label text-gold mb-1">
 							{CONTACT.harare.label}
 						</p>
 						<p className="text-white/75 text-sm leading-relaxed">
@@ -126,7 +126,7 @@ export default function Contact() {
 						</p>
 					</ContactItem>
 					<ContactItem label="Nairobi">
-						<p className="text-gold text-[0.65rem] tracking-[0.15em] uppercase mb-1">
+						<p className="meta-label text-gold mb-1">
 							{CONTACT.nairobi.label}
 						</p>
 						<p className="text-white/75 text-sm leading-relaxed">
@@ -137,7 +137,7 @@ export default function Contact() {
 						</p>
 					</ContactItem>
 					<ContactItem label="Email">
-						<p className="text-gold text-[0.65rem] tracking-[0.15em] uppercase mb-1">
+						<p className="meta-label text-gold mb-1">
 							Email
 						</p>
 						<a
@@ -147,7 +147,7 @@ export default function Contact() {
 						</a>
 					</ContactItem>
 					<ContactItem label="Website">
-						<p className="text-gold text-[0.65rem] tracking-[0.15em] uppercase mb-1">
+						<p className="meta-label text-gold mb-1">
 							Website
 						</p>
 						<a
@@ -164,15 +164,15 @@ export default function Contact() {
 			{/* Form */}
 			<div 
 				ref={rightRef} 
-				className="reveal bg-white/8 backdrop-blur-md border border-white/15 rounded-2xl p-8 md:p-10 shadow-2xl">
-				<h3 className="font-display text-2xl font-light text-white mb-7">
+				className="reveal bg-white/8 backdrop-blur-md border border-white/15 rounded-sm p-6 md:p-8 shadow-2xl">
+				<h3 className="card-title font-light text-white mb-6">
 					General Enquiries
 				</h3>
 
 				<form onSubmit={handleSubmit} className="flex flex-col gap-4">
-					<div className="grid grid-cols-2 gap-4">
+					<div className="grid sm:grid-cols-2 gap-4">
 						<div>
-							<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
+							<label className="meta-label block text-white/50 mb-1.5">
 								First Name
 							</label>
 							<input
@@ -185,7 +185,7 @@ export default function Contact() {
 							/>
 						</div>
 						<div>
-							<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
+							<label className="meta-label block text-white/50 mb-1.5">
 								Last Name
 							</label>
 							<input
@@ -200,7 +200,7 @@ export default function Contact() {
 					</div>
 
 					<div>
-						<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
+						<label className="meta-label block text-white/50 mb-1.5">
 							Email Address
 						</label>
 						<input
@@ -215,7 +215,7 @@ export default function Contact() {
 					</div>
 
 					<div>
-						<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
+						<label className="meta-label block text-white/50 mb-1.5">
 							Organisation
 						</label>
 						<input
@@ -228,7 +228,7 @@ export default function Contact() {
 					</div>
 
 					<div>
-						<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
+						<label className="meta-label block text-white/50 mb-1.5">
 							Nature of Enquiry
 						</label>
 						<select
@@ -247,7 +247,7 @@ export default function Contact() {
 					</div>
 
 					<div>
-						<label className="block text-white/50 text-[0.75rem] tracking-widest uppercase mb-1.5">
+						<label className="meta-label block text-white/50 mb-1.5">
 							Message
 						</label>
 						<textarea
