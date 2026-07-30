@@ -128,8 +128,8 @@ export const VALUES = [
 export const FOCUS_AREAS = [
 	{
 		num: "01",
-		title: "Education, Training &\nCapacity Building",
-		desc: "Empowering key stakeholders through targeted capacity-building\nworkshops, specialized short courses, and strategic systems\nstrengthening tailored for leaders, non-governmental organisations,\nand governments across Africa.",
+		title: "Education, Training & Capacity Building",
+		desc: "Targeted training workshops, short courses, and systems strengthening for individuals, organisations, and governments across Africa.",
 		image: "/images/focus/education.jpg",
 	},
 	{
