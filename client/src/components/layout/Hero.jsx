@@ -110,7 +110,7 @@ export default function Hero() {
 				<div className="flex flex-wrap gap-4">
 					<button
 						onClick={() => navigate("/service-inquiry")}
-						className="btn-primary">
+						className="btn-primary text-green-deep">
 						Request Our Services
 					</button>
 
