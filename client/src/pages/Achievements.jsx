@@ -8,18 +8,18 @@ export default function Achievements() {
 	return (
 		<section
 			id="achievements"
-			className="pt-36 pb-24 px-8 md:px-16 lg:px-20 bg-cream flex-1">
-			<div className="max-w-7xl mx-auto w-full"> 
+			className="page-hero bg-cream flex-1">
+			<div className="section-inner"> 
 				<div
 					ref={headRef}
-					className="reveal grid md:grid-cols-2 gap-8 mb-14 items-end">
+					className="section-heading">
 					<div>
 						<span className="section-label mb-4 block">Impact</span>
-						<h2 className="section-title text-4xl md:text-5xl">
+						<h2 className="section-title">
 							Achievements
 						</h2>
 					</div>
-					<p className="text-ink-light text-md leading-[1.85] self-end">
+					<p className="section-copy self-end">
 						From university keynotes in Zimbabwe to cross-border student
 						competitions in Nairobi — VFRI turns its mission into
 						measurable impact on the ground.
@@ -30,7 +30,7 @@ export default function Achievements() {
 					{ACHIEVEMENTS.map(({ title, desc, image }) => (
 						<div
 							key={title}
-							className="flex flex-col md:flex-row gap-6 bg-white border border-black/[0.06] rounded-sm p-7 overflow-hidden
+							className="relative flex flex-col md:flex-row gap-5 bg-white border border-black/[0.06] rounded-sm p-5 overflow-hidden
 							transition-all duration-200 hover:shadow-xl">
 							{/* IMAGE */}
 							<div className="w-full md:w-40 h-40 md:h-auto overflow-hidden rounded-sm flex-shrink-0">
@@ -44,7 +44,7 @@ export default function Achievements() {
 							{/* Left accent bar */}
 							<div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold to-crimson-mid" />
 							<div>
-								<h3 className="font-display text-xl text-crimson-deep mb-3">
+								<h3 className="card-title text-crimson-deep mb-3">
 									{title}
 								</h3>
 								<p className="text-ink-light text-sm leading-relaxed">

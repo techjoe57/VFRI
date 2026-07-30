@@ -8,26 +8,26 @@ export default function Values() {
 	return (
 		<section
 			id="values"
-			className="pt-12 pb-8 px-8 md:px-16 lg:px-20 bg-green-deep relative overflow-hidden">
+			className="page-section bg-green-deep relative overflow-hidden">
 			{/* Kente top */}
 			<div className="absolute top-0 left-0 right-0 h-1.5 kente-bar" />
 
 			<div
 				ref={headRef}
-				className="reveal grid md:grid-cols-1 gap-8 mb-12 items-end">
+				className="reveal grid md:grid-cols-3 gap-6 mb-10 items-end">
 				<div className="md:col-span-1">
 					<span
 						className="section-label mb-4 block"
 						style={{ color: "#c8a84b" }}>
 						What We Stand For
 					</span>
-					<h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight">
+					<h2 className="section-title text-white">
 						Our Core
 						<br />
 						Values
 					</h2>
 				</div>
-				<p className="md:col-span-2 text-white/60 text-md leading-[1.85] self-end">
+				<p className="md:col-span-2 dark-section-copy self-end">
 					Seven principles guide every decision, dialogue, and
 					deliverable at VFRI — from how we conduct research to how we
 					engage partners and communities across Africa and beyond.
@@ -43,8 +43,8 @@ export default function Values() {
 						className={`bg-white/5 border border-gold/15 rounded-sm p-5 transition-all duration-200
 						hover:bg-gold/8 hover:border-gold/35
 						${i === VALUES.length - 1 ? "sm:col-span-2 md:col-span-1 md:max-w-sm" : ""}`}>
-						<Icon className="text-2xl mb-3 text-gold-light" />{" "}
-						<h4 className="font-display text-lg text-white mb-2">
+						<Icon className="text-2xl mb-3 text-gold-light" />
+						<h4 className="card-title text-white mb-2">
 							{title}
 						</h4>
 						<p className="text-sm text-white/55 leading-relaxed">

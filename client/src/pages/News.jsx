@@ -6,27 +6,27 @@ export default function News() {
 	const gridRef = useReveal();
 
 	return (
-		<section id="news" className="pt-36 pb-24 px-8 md:px-16 lg:px-20 bg-white flex-1">
-			<div className="max-w-7xl mx-auto w-full"> 
+		<section id="news" className="page-hero bg-white flex-1">
+			<div className="section-inner"> 
 				<div
 					ref={headRef}
-					className="reveal grid md:grid-cols-2 gap-8 mb-14 items-end">
+					className="section-heading">
 					<div>
 						<span className="section-label mb-4 block">Updates</span>
-						<h2 className="section-title text-4xl md:text-5xl">
+						<h2 className="section-title">
 							News & Publications
 						</h2>
 					</div>
 
-					<p className="text-ink-light text-md leading-[1.85] self-end">
+					<p className="section-copy self-end">
 						Latest institutional updates, research outputs, and public
 						engagement activities.
 					</p>
 				</div>
 
 				<div ref={gridRef} className="reveal grid grid-cols-1 lg:grid-cols-2 gap-5">
-					{NEWS.map(({ title, date, summary, tag, image }) => (
-						<div key={title} className="card p-6 group flex flex-col sm:flex-row gap-5 items-start">
+					{NEWS.map(({ title, date, summary, tag, image, link, linkLabel }) => (
+						<div key={title} className="card p-5 group flex flex-col sm:flex-row gap-5 items-start">
 							{/* IMAGE */}
 							<div className="w-full sm:w-40 sm:h-40 h-48 flex-shrink-0 overflow-hidden rounded-sm">
 								<img
@@ -37,7 +37,7 @@ export default function News() {
 							</div>
 							<div className="flex-1 flex flex-col">
 								<div className="flex justify-between items-center mb-3">
-									<span className="text-[0.7rem] text-gold uppercase tracking-[0.2em]">
+									<span className="meta-label text-gold">
 										{tag}
 									</span>
 									<span className="text-[0.6rem] text-ink-light">
@@ -45,13 +45,23 @@ export default function News() {
 									</span>
 								</div>
 
-								<h3 className="font-display text-lg text-crimson-deep mb-3 group-hover:text-crimson-dark transition-colors">
+								<h3 className="card-title text-crimson-deep mb-3 group-hover:text-crimson-dark transition-colors">
 									{title}
 								</h3>
 
 								<p className="text-sm text-ink-light leading-relaxed">
 									{summary}
 								</p>
+
+								{link && (
+									<a
+										href={link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="mt-4 inline-flex self-start text-xs font-semibold uppercase tracking-[0.14em] text-gold transition-colors hover:text-crimson-deep">
+										{linkLabel || "Read more"}
+									</a>
+								)}
 							</div>
 						</div>
 					))}

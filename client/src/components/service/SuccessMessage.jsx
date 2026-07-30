@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 export default function SuccessMessage() {
 	return (
-		<div className="rounded-2xl bg-white shadow-xl p-12 text-center">
+		<div className="rounded-sm bg-white shadow-xl p-8 md:p-10 text-center">
 
 			<CheckCircle2
 				size={70}
 				className="mx-auto text-green-600 mb-6"
 			/>
 
-			<h2 className="font-display text-4xl text-green-dark mb-4">
+			<h2 className="section-title text-green-deep mb-4">
 				Thank You!
 			</h2>
 
-			<p className="text-gray-600 max-w-xl mx-auto mb-10">
+			<p className="section-copy mx-auto mb-8">
 				Your service inquiry has been received successfully.
 				A member of our team will contact you shortly.
 			</p>

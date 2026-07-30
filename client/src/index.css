@@ -9,29 +9,50 @@
 		scroll-behavior: smooth;
 	}
 	body {
-		@apply font-sans bg-cream text-ink;
+		@apply bg-cream font-sans text-base leading-relaxed text-ink antialiased;
 	}
 }
 
 @layer components {
+	.page-section {
+		@apply px-6 py-16 md:px-12 md:py-20 lg:px-20;
+	}
+	.page-hero {
+		@apply px-6 pb-16 pt-32 md:px-12 md:pb-20 lg:px-20;
+	}
+	.section-inner {
+		@apply mx-auto w-full max-w-7xl;
+	}
+	.section-heading {
+		@apply reveal mb-10 grid gap-5 md:grid-cols-2 md:items-end;
+	}
 	.section-label {
-		@apply inline-flex items-center gap-2 text-gold text-xs tracking-[0.2em] uppercase font-sans;
+		@apply inline-flex items-center gap-2 font-sans text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-gold;
 	}
 	.section-label::before {
 		content: "";
 		@apply block w-7 h-px bg-gold;
 	}
 	.section-title {
-		@apply font-display font-light leading-tight; 
+		@apply font-display text-3xl font-light leading-tight md:text-4xl lg:text-5xl;
+	}
+	.section-copy {
+		@apply max-w-3xl text-sm leading-7 text-ink-light md:text-base;
+	}
+	.dark-section-copy {
+		@apply max-w-3xl text-sm leading-7 text-white/70 md:text-base;
+	}
+	.card-title {
+		@apply font-display text-xl leading-snug;
+	}
+	.meta-label {
+		@apply text-[0.68rem] font-semibold uppercase tracking-[0.14em];
 	}
 	.btn-primary {
-		@apply inline-block bg-gold text-crimson-deep text-xs font-semibold tracking-widest uppercase
-           px-8 py-3 rounded-sm transition-all duration-200 hover:bg-gold-light hover:-translate-y-px cursor-pointer;
+		@apply inline-flex items-center justify-center rounded-sm bg-gold px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-crimson-deep transition-all duration-200 hover:-translate-y-px hover:bg-gold-light cursor-pointer;
 	}
 	.btn-outline {
-		@apply inline-block bg-transparent text-white/80 border border-white/30 text-xs
-           tracking-widest uppercase px-8 py-3 rounded-sm transition-all duration-200
-           hover:border-gold hover:text-gold cursor-pointer;
+		@apply inline-flex items-center justify-center rounded-sm border border-white/30 bg-transparent px-6 py-3 text-xs uppercase tracking-[0.14em] text-white/80 transition-all duration-200 hover:border-gold hover:text-gold cursor-pointer;
 	}
 	.card {
 		@apply bg-white border border-black/[0.06] rounded-sm transition-all duration-200

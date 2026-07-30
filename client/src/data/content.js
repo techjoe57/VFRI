@@ -304,5 +304,6 @@ export const NEWS = [
 		tag: "Research Alignment",
 		image: "/images/focus/development.jpg",
 		link: "https://www.wvi.org/newsroom/sudan/three-years-agony-sudans-children-trapped-and-carry-deepest-scars",
+		linkLabel: "Read the World Vision story",
 	},
 ];
