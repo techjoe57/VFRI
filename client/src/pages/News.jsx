@@ -24,34 +24,35 @@ export default function News() {
 					</p>
 				</div>
 
-				<div ref={gridRef} className="reveal grid grid-cols-1 lg:grid-cols-3 gap-5">
+				<div ref={gridRef} className="reveal grid grid-cols-1 lg:grid-cols-2 gap-5">
 					{NEWS.map(({ title, date, summary, tag, image }) => (
-						<div key={title} className="card p-6 group">
+						<div key={title} className="card p-6 group flex flex-col sm:flex-row gap-5 items-start">
 							{/* IMAGE */}
-							<div className="h-40 w-full mb-4 overflow-hidden rounded-sm">
+							<div className="w-full sm:w-40 sm:h-40 h-48 flex-shrink-0 overflow-hidden rounded-sm">
 								<img
 									src={image}
 									alt={title}
 									className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
 								/>
 							</div>
+							<div className="flex-1 flex flex-col">
+								<div className="flex justify-between items-center mb-3">
+									<span className="text-[0.7rem] text-gold uppercase tracking-[0.2em]">
+										{tag}
+									</span>
+									<span className="text-[0.6rem] text-ink-light">
+										{date}
+									</span>
+								</div>
 
-							<div className="flex justify-between items-center mb-3">
-								<span className="text-[0.7rem] text-gold uppercase tracking-[0.2em]">
-									{tag}
-								</span>
-								<span className="text-[0.6rem] text-ink-light">
-									{date}
-								</span>
+								<h3 className="font-display text-lg text-crimson-deep mb-3 group-hover:text-crimson-dark transition-colors">
+									{title}
+								</h3>
+
+								<p className="text-sm text-ink-light leading-relaxed">
+									{summary}
+								</p>
 							</div>
-
-							<h3 className="font-display text-lg text-crimson-deep mb-3 group-hover:text-crimson-dark transition-colors">
-								{title}
-							</h3>
-
-							<p className="text-sm text-ink-light leading-relaxed">
-								{summary}
-							</p>
 						</div>
 					))}
 				</div>
