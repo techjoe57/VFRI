@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 export default function Footer() {
 
 	const location = useLocation();
-	const greenPages = ["/team", "/news", "/programs", "/achievements", "/our-story"];
+	const greenPages = ["/team", "/news", "/programs", "/achievements", "/our-story", "/service-inquiry"];
 	const isGreenPage = greenPages.includes(location.pathname);
 
 	return (

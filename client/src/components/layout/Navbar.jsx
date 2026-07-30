@@ -52,6 +52,7 @@ export default function Navbar() {
 	location.pathname.includes("/programs") ||
 	location.pathname.includes("/achievements") ||
 	location.pathname.includes("/our-story") ||
+	location.pathname.includes("/service-inquiry") ||
 	(location.pathname === "/" && (
 		activeSection === "focus" || 
 		activeSection === "values" || 

@@ -32,6 +32,7 @@ export default function Team() {
 							<div className="w-full md:w-40 h-40 md:h-auto flex-shrink-0 border border-gold/30 rounded-sm bg-gold/8 overflow-hidden">
 								{" "}
 								<img
+									alt= {name}
 									src={image}
 									loading="lazy"
 									className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
