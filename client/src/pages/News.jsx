@@ -25,7 +25,7 @@ export default function News() {
 				</div>
 
 				<div ref={gridRef} className="reveal grid grid-cols-1 lg:grid-cols-2 gap-5">
-					{NEWS.map(({ title, date, summary, tag, image }) => (
+					{NEWS.map(({ title, date, summary, tag, image, link, linkLabel }) => (
 						<div key={title} className="card p-5 group flex flex-col sm:flex-row gap-5 items-start">
 							{/* IMAGE */}
 							<div className="w-full sm:w-40 sm:h-40 h-48 flex-shrink-0 overflow-hidden rounded-sm">
@@ -52,6 +52,16 @@ export default function News() {
 								<p className="text-sm text-ink-light leading-relaxed">
 									{summary}
 								</p>
+
+								{link && (
+									<a
+										href={link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="mt-4 inline-flex self-start text-xs font-semibold uppercase tracking-[0.14em] text-gold transition-colors hover:text-crimson-deep">
+										{linkLabel || "Read more"}
+									</a>
+								)}
 							</div>
 						</div>
 					))}
