@@ -14,7 +14,7 @@ export default function Values() {
 
 			<div
 				ref={headRef}
-				className="reveal grid md:grid-cols-3 gap-8 mb-12 items-end">
+				className="reveal grid md:grid-cols-1 gap-8 mb-12 items-end">
 				<div className="md:col-span-1">
 					<span
 						className="section-label mb-4 block"
