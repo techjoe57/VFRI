@@ -8,13 +8,13 @@ export default function Values() {
 	return (
 		<section
 			id="values"
-			className="py-24 px-8 md:px-16 lg:px-20 bg-green-deep relative overflow-hidden">
+			className="py-20 px-8 md:px-16 lg:px-16 bg-green-deep relative overflow-hidden">
 			{/* Kente top */}
 			<div className="absolute top-0 left-0 right-0 h-1.5 kente-bar" />
 
 			<div
 				ref={headRef}
-				className="reveal grid md:grid-cols-3 gap-8 mb-12 items-end">
+				className="reveal grid md:grid-cols-1 gap-8 mb-12 items-end">
 				<div className="md:col-span-1">
 					<span
 						className="section-label mb-4 block"
