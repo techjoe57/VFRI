@@ -7,9 +7,13 @@
 @layer base {
 	html {
 		scroll-behavior: smooth;
+		font-size: 18px;
 	}
 	body {
 		@apply bg-cream font-sans text-base leading-relaxed text-ink antialiased;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 0.88em;
 	}
 }
 
@@ -34,6 +38,7 @@
 		@apply block w-7 h-px bg-gold;
 	}
 	.section-title {
+<<<<<<< Updated upstream
 		@apply font-display text-3xl font-light leading-tight md:text-4xl lg:text-5xl;
 	}
 	.section-copy {
@@ -47,6 +52,10 @@
 	}
 	.meta-label {
 		@apply text-[0.68rem] font-semibold uppercase tracking-[0.14em];
+=======
+		@apply font-display font-light leading-tight; 
+		font-size: 0.88em;
+>>>>>>> Stashed changes
 	}
 	.btn-primary {
 		@apply inline-flex items-center justify-center rounded-sm bg-gold px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-crimson-deep transition-all duration-200 hover:-translate-y-px hover:bg-gold-light cursor-pointer;

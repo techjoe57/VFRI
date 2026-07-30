@@ -39,6 +39,7 @@ export default function Focus() {
 							/>
 						</div>
 
+<<<<<<< Updated upstream
 						<div className="p-5">
 							<p className="font-display text-3xl font-light opacity-45 leading-none mb-3 text-gold">
 								{num}
@@ -49,6 +50,26 @@ export default function Focus() {
 							</h3>
 
 							<p className="text-sm leading-relaxed text-white/60">
+=======
+						{/* CONTENT */}
+						<div className="p-4 flex-1 flex flex-col">
+							<p
+								className={`font-display text-4xl font-light opacity-40 leading-none mb-3 text-gold`}>
+								{num}
+							</p>
+
+							<h3
+								className={`font-display text-xl mb-2 ${
+									i === 0 ? "text-white" : "text-white"
+								} whitespace-pre-line`}>
+								{title}
+							</h3>
+
+							<p
+								className={`text-sm leading-relaxed ${
+									i === 0 ? "text-white/60" : "text-white/60"
+								} whitespace-pre-line mt-auto`}>
+>>>>>>> Stashed changes
 								{desc}
 							</p>
 						</div>
