@@ -1,5 +1,6 @@
 import { useReveal } from "../../hooks/useReveal";
 import { SERVICES } from "../../data/content";
+import { Link } from "react-router-dom";
 
 export default function Services() {
 	const headRef = useReveal();
@@ -84,11 +85,11 @@ export default function Services() {
 							exchange.
 						</p>
 					</div>
-					<button
-						onClick={() => scrollTo("#contact")}
-						className="btn-primary self-start !px-5 !py-2.5">
-						Get in Touch
-					</button>
+					<Link
+						to="/programs"
+						className="btn-primary self-start !px-5 !py-2.5 inline-block text-center">
+						Explore Programs
+					</Link>
 				</div>
 			</div>
 		</section>
