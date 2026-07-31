@@ -177,31 +177,6 @@ export default function ServiceInquiry() {
 		{service}
 	</option>
 ))}
-                                
-{/* 
-								<option>
-									Research
-								</option>
-
-								<option>
-									Policy Advisory
-								</option>
-
-								<option>
-									Training
-								</option>
-
-								<option>
-									Institutional Partnership
-								</option>
-
-								<option>
-									Consultancy
-								</option>
-
-								<option>
-									Other
-								</option> */}
 
 							</select>
 

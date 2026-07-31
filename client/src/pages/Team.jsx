@@ -8,7 +8,7 @@ export default function Team({ compact = false }) {
 	return (
 		<section
 			id="team"
-			className={`${compact ? "page-section" : "page-hero"} bg-green-deep relative`}> 
+			className={`${compact ? "page-section" : "page-hero"} bg-green-deep/90 backdrop-blur-sm relative`}> 
 			{/* Kente bottom */}
 			<div className="absolute bottom-0 left-0 right-0 h-1.5 kente-bar" />
 					<div ref={headRef} className="reveal mb-8">

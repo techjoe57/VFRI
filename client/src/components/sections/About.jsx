@@ -8,7 +8,7 @@ export default function About() {
 	return (
 		<section
 			id="about"
-			className="page-section bg-cream grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+			className="page-section bg-cream/80 backdrop-blur-sm grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
 			<div ref={leftRef} className="reveal">
 				<span className="section-label mb-4 block">Who We Are</span>
 
