@@ -29,7 +29,7 @@ export default function OurStory() {
 
 				<About />
 				<Values />
-				<Team />
+				<Team compact={true}/>
 			</div>
 		</div>
 	);
