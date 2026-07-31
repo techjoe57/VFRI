@@ -4,25 +4,33 @@ import Values from "../components/sections/Values";
 
 export default function OurStory() {
 	return (
-		<>
-			<section className="page-hero bg-green-deep text-white text-center">
-				<div className="max-w-4xl mx-auto px-6">
-					<h1 className="section-title text-white mb-5">
-						Our Story
-					</h1>
+		<div
+			className="min-h-screen bg-fixed bg-cover bg-center bg-no-repeat"
+			style={{
+				backgroundImage:
+					"url('/images/about/victoria_falls.jpg')",
+			}}
+		>
+			{/* Global overlay */}
+			<div className="bg-black/35 min-h-screen">
+				{/* Hero */}
+				<section className="relative min-h-[340px] flex items-center justify-center px-6">
+					<div className="text-center text-white max-w-4xl">
+						<h1 className="font-display text-5xl md:text-6xl mb-4">
+							Our Story
+						</h1>
 
-					<p className="dark-section-copy mx-auto">
-						Learn about the vision behind the Victoria Falls Regional
-						Institute, our journey, and the people driving our mission
-						to reimagine Africa through dialogue.
-					</p>
-				</div>
-			</section>
+						<p className="text-lg md:text-xl text-white/90 leading-relaxed">
+							Learn about the vision behind the Victoria Falls Regional Institute, 
+							our journey, and the people driving our mission to reimagine Africa through dialogue.
+						</p>
+					</div>
+				</section>
 
-			<About />
-			<Values />
-
-			<Team compact />
-		</>
+				<About />
+				<Values />
+				<Team />
+			</div>
+		</div>
 	);
 }

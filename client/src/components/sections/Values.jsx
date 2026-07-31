@@ -8,7 +8,7 @@ export default function Values() {
 	return (
 		<section
 			id="values"
-			className="page-section bg-green-deep relative overflow-hidden">
+			className="page-section bg-green-deep/90 backdrop-blur-sm relative overflow-hidden">
 			{/* Kente top */}
 			<div className="absolute top-0 left-0 right-0 h-1.5 kente-bar" />
 
