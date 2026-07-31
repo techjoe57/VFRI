@@ -7,9 +7,13 @@
 @layer base {
 	html {
 		scroll-behavior: smooth;
+		font-size: 18px;
 	}
 	body {
 		@apply bg-cream font-sans text-base leading-relaxed text-ink antialiased;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 0.88em;
 	}
 }
 
