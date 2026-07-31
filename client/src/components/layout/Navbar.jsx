@@ -119,7 +119,7 @@ export default function Navbar() {
 				</div>
 			</a>
 
-			<ul className="hidden md:flex items-center gap-6 list-none">
+			<ul className="hidden xl:flex items-center gap-6 list-none">
 				<li className="relative group">
 					<button className={`flex items-center gap-2 ${navTextColor} ${navTextClass}`}>
 						About Us
@@ -151,7 +151,7 @@ export default function Navbar() {
 
 			{/* Desktop CTA Button */}
 			
-			<div className="hidden md:block">
+			<div className="hidden xl:block">
 				<button 
 					onClick={() => navigate("/service-inquiry")}
 					className={`${ctaBgColor} text-white text-xs font-semibold uppercase tracking-[0.12em] px-5 py-3 rounded-sm shadow-md transition-all duration-300`}>
@@ -161,7 +161,7 @@ export default function Navbar() {
 
 			{/* Hamburger */}
 			<button
-				className="md:hidden flex flex-col gap-1.5 bg-transparent border-0 cursor-pointer p-1"
+				className="xl:hidden flex flex-col gap-1.5 bg-transparent border-0 cursor-pointer p-1"
 				onClick={() => setMenuOpen(!menuOpen)}
 				aria-label="Toggle menu">
 				<span
@@ -177,7 +177,7 @@ export default function Navbar() {
 
 			{/* Mobile Menu */}
 			{menuOpen && (
-				<div className={`absolute top-full left-0 right-0 ${mobileMenuBg} border-t border-gold/20 flex flex-col md:hidden shadow-2xl overflow-hidden`}>
+				<div className={`absolute top-full left-0 right-0 ${mobileMenuBg} border-t border-gold/20 flex flex-col xl:hidden shadow-2xl overflow-hidden`}>
 					{/* Home */}
 					<button
 						onClick={() =>
@@ -234,15 +234,13 @@ export default function Navbar() {
 
 					<div className="p-6">
 						<button
-							onClick={() =>
-								handleNav({
-									label: "Contact",
-									href: "#contact",
-									type: "scroll",
-								})
+							onClick={() => {
+								setMenuOpen(false);
+								navigate("/service-inquiry");}		
 							}
-							className="btn-primary w-full text-center">
-							Contact Us
+							className={`${ctaBgColor} text-white w-full text-center uppercase tracking-[0.12em] 
+							font-semibold text-xs py-3 rounded-sm shadow-md transition-all duration-300`}>
+							Request Our Services
 						</button>
 					</div>
 				</div>

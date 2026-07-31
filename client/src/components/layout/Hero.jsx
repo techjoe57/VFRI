@@ -114,7 +114,7 @@ export default function Hero() {
 				</div>
 			</div>
 			{/* Right — cards */}
-			<div className="hidden md:flex items-center justify-center px-8 py-16 relative z-10">
+			<div className="flex items-center justify-center px-6 pb-16 pt-4 md:px-8 md:py-16 relative z-10">
 				<div className="grid gap-4 w-full max-w-[420px]">
 					{cards.map(({ icon: Icon, title, desc }) => (
 						<div

@@ -14,8 +14,8 @@ export default function Values() {
 
 			<div
 				ref={headRef}
-				className="reveal grid md:grid-cols-3 gap-6 mb-10 items-end">
-				<div className="md:col-span-1">
+				className="reveal grid lg:grid-cols-3 gap-6 mb-10 items-end">
+				<div className="lg:col-span-1">
 					<span
 						className="section-label mb-4 block"
 						style={{ color: "#c8a84b" }}>
@@ -27,7 +27,7 @@ export default function Values() {
 						Values
 					</h2>
 				</div>
-				<p className="md:col-span-2 dark-section-copy self-end">
+				<p className="lg:col-span-2 dark-section-copy self-end">
 					Seven principles guide every decision, dialogue, and
 					deliverable at VFRI — from how we conduct research to how we
 					engage partners and communities across Africa and beyond.
@@ -36,13 +36,13 @@ export default function Values() {
 
 			<div
 				ref={gridRef}
-				className="reveal grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+				className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 				{VALUES.map(({ title, desc, icon: Icon }, i) => (
 					<div
 						key={title}
 						className={`bg-white/5 border border-gold/15 rounded-sm p-5 transition-all duration-200
 						hover:bg-gold/8 hover:border-gold/35
-						${i === VALUES.length - 1 ? "sm:col-span-2 md:col-span-1 md:max-w-sm" : ""}`}>
+						${i === VALUES.length - 1 ? "sm:col-span-2 lg:col-span-1 md:max-w-sm" : ""}`}>
 						<Icon className="text-2xl mb-3 text-gold-light" />
 						<h4 className="card-title text-white mb-2">
 							{title}
