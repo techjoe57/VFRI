@@ -28,7 +28,7 @@ export default function Programs() {
 
 				<div ref={gridRef} className="reveal grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 					{PROGRAMS.map(
-						({ title, category, description, status, image }) => (
+						({ title, category, description, image }) => (
 							<div
 								key={title}
 								className="card p-5 relative overflow-hidden">
@@ -54,10 +54,6 @@ export default function Programs() {
 								<p className="text-ink-light text-sm leading-relaxed mb-4">
 									{description}
 								</p>
-
-								<span className="text-[0.6rem] text-white bg-crimson-deep px-2 py-1 rounded-sm">
-									{status}
-								</span>
 							</div>
 						),
 					)}
