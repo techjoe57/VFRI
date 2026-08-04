@@ -95,7 +95,7 @@ export default function Hero() {
 				</h1>
 
 				<p className="font-display text-xl italic text-white/80 mb-8">
-					Reimagining Africa Through Dialogue
+					Advancing African-led research and dialogue that connects local knowledge with global research and policymaking.				
 				</p>
 
 				<div className="flex flex-wrap gap-4">

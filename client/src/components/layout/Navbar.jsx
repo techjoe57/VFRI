@@ -149,15 +149,7 @@ export default function Navbar() {
 				))}
 			</ul>
 
-			{/* Desktop CTA Button */}
-			
-			<div className="hidden xl:block">
-				<button 
-					onClick={() => navigate("/service-inquiry")}
-					className={`${ctaBgColor} text-white text-xs font-semibold uppercase tracking-[0.12em] px-5 py-3 rounded-sm shadow-md transition-all duration-300`}>
-					Request Our Services
-				</button>
-			</div>
+		
 
 			{/* Hamburger */}
 			<button
@@ -232,17 +224,7 @@ export default function Navbar() {
 						</button>
 					))}
 
-					<div className="p-6">
-						<button
-							onClick={() => {
-								setMenuOpen(false);
-								navigate("/service-inquiry");}		
-							}
-							className={`${ctaBgColor} text-white w-full text-center uppercase tracking-[0.12em] 
-							font-semibold text-xs py-3 rounded-sm shadow-md transition-all duration-300`}>
-							Request Our Services
-						</button>
-					</div>
+					
 				</div>
 			)}
 		</nav>
