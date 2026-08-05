@@ -94,7 +94,7 @@ export default function Hero() {
 					</em>
 				</h1>
 
-				<p className="font-display text-xl italic text-white/80 mb-8">
+				<p className="font-sans text-lg text-white/80 mb-8">
 					Advancing African led Institutions with capacity building, research and dialogue that connects global policy making with strategic transformation.
 				</p>
 
