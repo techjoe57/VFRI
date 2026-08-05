@@ -49,17 +49,17 @@ export const cards = [
 	{
 		icon: Globe,
 		title: "Regional Reach",
-		desc: "We advance African-led research, policy dialogue, leadership development, and strategic partnerships that drive sustainable solutions across the continent and beyond.",
+		desc: "Our major operational presence in Zimbabwe and Kenya allows us to extend our Regional and Continental engagement with projects and programmes in Sudan, Malawi, Zambia, Uganda, Angola and South Sudan.",
 	},
 	{
 		icon: BookOpen,
-		title: "Research & Dialogue",
-		desc: "Policy-relevant research rooted in African knowledge systems.",
+		title: "Policy and Research Dialogues",
+		desc: "We offer platforms for robust engagement on Africa's contemporary and historical issues",
 	},
 	{
 		icon: GraduationCap,
-		title: "Systems Thinking and Transformation",
-		desc: "Courses and learning pathways that help institutions diagnose complex challenges, strengthen systems, and lead practical transformation.",
+		title: "Systems Strengthening Courses",
+		desc: "We run Capacity-building programmmes for individuals, organisations and businesses to foster skills transfer.",
 	},
 ];
 

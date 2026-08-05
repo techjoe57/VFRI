@@ -90,7 +90,7 @@ export default function Hero() {
 					Victoria Falls
 					<br />
 					<em className="text-gold-light not-italic font-light">
-						Regional Institute
+						Regional Institute For Strategic Studies
 					</em>
 				</h1>
 
