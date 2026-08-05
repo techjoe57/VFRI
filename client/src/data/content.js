@@ -240,6 +240,16 @@ export const CONTACT = {
 
 export const PROGRAMS = [
 	{
+		title: "World Vision: Sudan's Children Carry the Deepest Scars",
+		category: "Research Program",
+		description:
+			"Their efforts are aligned with World Vision, with respect to research on solutions for these dire issues affecting Sudan's children.",
+		image: "/images/focus/development.jpg",
+		link: "https://www.wvi.org/newsroom/sudan/three-years-agony-sudans-children-trapped-and-carry-deepest-scars",
+		linkLabel: "Read the World Vision story",
+		status: "Active",
+	},
+	{
 		title: "African Governance Research Initiative",
 		category: "Research Program",
 		description:
@@ -290,14 +300,5 @@ export const NEWS = [
 		tag: "Social",
 		image: "/images/news/news3.avif",
 	},
-	{
-		title: "World Vision: Sudan's Children Carry the Deepest Scars",
-		date: "April 2026",
-		summary:
-			"Their efforts are aligned with World Vision, with respect to research on solutions for these dire issues affecting Sudan's children.",
-		tag: "Research Alignment",
-		image: "/images/focus/development.jpg",
-		link: "https://www.wvi.org/newsroom/sudan/three-years-agony-sudans-children-trapped-and-carry-deepest-scars",
-		linkLabel: "Read the World Vision story",
-	},
+	
 ];
