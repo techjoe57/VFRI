@@ -11,7 +11,7 @@ export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [aboutOpen, setAboutOpen] = useState(false);
 	const navTextClass =
-		"font-sans text-[0.78rem] font-semibold tracking-[0.12em] uppercase";
+		"font-sans text-[1.05em] font-semibold tracking-[0.06em] normal-case";
 
 	useEffect(() => {
 		const handler = () => setScrolled(window.scrollY > 60);
@@ -110,10 +110,10 @@ export default function Navbar() {
 					/>
 				</div>
 				<div className="leading-tight font-sans">
-					<strong className={`block font-display text-lg font-semibold ${titleTextColor}`}>
+					<strong className={`block font-sans text-xl font-semibold tracking-[0.06em] ${titleTextColor}`}>
 						Victoria Falls Regional Institute
 					</strong>
-					<span className={`text-[0.6rem] ${navTextColor} tracking-[0.12em] uppercase`}>
+					<span className={`font-medium text-[0.78em] ${navTextColor} tracking-[0.06em] normal-case`}>
 						Reimagining Africa Through Dialogue
 					</span>
 				</div>
@@ -222,9 +222,7 @@ export default function Navbar() {
 							className={`px-6 py-4 text-gold text-left hover:bg-gold/10 transition-colors border-0 bg-transparent border-b border-white/5 ${navTextClass}`}>
 							{item.label}
 						</button>
-					))}
-
-					
+					))}	
 				</div>
 			)}
 		</nav>

@@ -38,7 +38,7 @@
 		@apply block w-7 h-px bg-gold;
 	}
 	.section-title {
-		@apply font-display text-3xl font-light leading-tight md:text-4xl lg:text-5xl;
+		@apply font-sans text-3xl font-light leading-tight md:text-4xl lg:text-5xl;
 	}
 	.section-copy {
 		@apply max-w-3xl text-sm leading-7 text-ink-light md:text-base;
@@ -47,7 +47,7 @@
 		@apply max-w-3xl text-sm leading-7 text-white/70 md:text-base;
 	}
 	.card-title {
-		@apply font-display text-xl leading-snug;
+		@apply font-sans text-xl leading-snug;
 	}
 	.meta-label {
 		@apply text-[0.68rem] font-semibold uppercase tracking-[0.14em];
