@@ -86,7 +86,7 @@ export default function Hero() {
 					Pan-African Research Institute
 				</span>
 
-				<h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-white leading-[1.04] mb-4">
+				<h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-light text-white leading-[1.04] mb-4">
 					Victoria Falls
 					<br />
 					<em className="text-gold-light not-italic font-light">
