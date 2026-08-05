@@ -90,12 +90,12 @@ export default function Hero() {
 					Victoria Falls
 					<br />
 					<em className="text-gold-light not-italic font-light">
-						Regional Institute
+						Regional Institute For Strategic Studies
 					</em>
 				</h1>
 
-				<p className="font-sans text-lg text-white/80 mb-8">
-					Advancing African-led research and dialogue that connects local knowledge with global research and policymaking.				
+				<p className="font-display text-xl italic text-white/80 mb-8">
+					Advancing African led Institutions with capacity building, research and dialogue that connects global policy making with strategic transformation.
 				</p>
 
 				<div className="flex flex-wrap gap-4">
