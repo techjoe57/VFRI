@@ -86,9 +86,9 @@ export default function Services() {
 						</p>
 					</div>
 					<Link
-						to="/programs"
+						to="/service-inquiry"
 						className="btn-primary self-start !px-5 !py-2.5 inline-block text-center">
-						Explore Programs
+						Request our services
 					</Link>
 				</div>
 			</div>
