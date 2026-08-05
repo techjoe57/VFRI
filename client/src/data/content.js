@@ -59,7 +59,7 @@ export const cards = [
 	{
 		icon: GraduationCap,
 		title: "Systems Strengthening Courses",
-		desc: "We run Capacity-building programmmes for individuals, organisations and businesses to foster skills transfer.",
+		desc: "We run Capacity-building programmmes for individuals, organisations and businesses to foster skills and knowledge transfer.",
 	},
 ];
 
@@ -162,31 +162,25 @@ export const SERVICES = [
 	{
 		num: "01",
 		title: "Policy & Research Dialogues",
-		desc: "Platforms for robust engagement on Africa's contemporary and historical issues — convening scholars, practitioners, and policymakers.",
+		desc: "We offer platforms for diverse and robust engagement on Africa's contemporary and historical issues — convening scholars, practitioners, and policymakers.",
 		image: "/images/services/dialogue.avif",
 	},
 	{
 		num: "02",
 		title: "Training Workshops & Short Courses",
-		desc: "Targeted programmes on African affairs including international law, governance, humanitarian response and regional integration.",
+		desc: "We organise and run targeted programmes that enhance the understanding of African affairs in International Law, Governance, Humanitarian Response and Regional Integration.",
 		image: "/images/services/training.avif",
-	},
-	{
-		num: "03",
-		title: "Research Programs",
-		desc: "In-depth studies focused on African issues, integrating local perspectives and feeding directly into global policy conversations.",
-		image: "/images/services/research.avif",
 	},
 	{
 		num: "04",
 		title: "Systems Strengthening Courses",
-		desc: "Capacity-building programmes for individuals, organisations and businesses to foster skills transfer and institutional resilience.",
+		desc: "We run capacity-building programmes for individuals, organisations and businesses to foster skills transfer and institutional resilience.",
 		image: "/images/services/development.avif",
 	},
 	{
 		num: "05",
 		title: "Consultancy Services",
-		desc: "Expertise in research methodologies, sustainable development strategies, and community engagement practices.",
+		desc: "We offer expertise in Research Methodologies, Sustainable Development Strategies, and Community Engagement Practices.",
 		image: "/images/services/consultancy.avif",
 	},
 ];
@@ -246,6 +240,16 @@ export const CONTACT = {
 
 export const PROGRAMS = [
 	{
+		title: "World Vision: Sudan's Children Carry the Deepest Scars",
+		category: "Research Program",
+		description:
+			"Their efforts are aligned with World Vision, with respect to research on solutions for these dire issues affecting Sudan's children.",
+		image: "/images/focus/development.jpg",
+		link: "https://www.wvi.org/newsroom/sudan/three-years-agony-sudans-children-trapped-and-carry-deepest-scars",
+		linkLabel: "Read the World Vision story",
+		status: "Active",
+	},
+	{
 		title: "African Governance Research Initiative",
 		category: "Research Program",
 		description:
@@ -296,14 +300,5 @@ export const NEWS = [
 		tag: "Social",
 		image: "/images/news/news3.avif",
 	},
-	{
-		title: "World Vision: Sudan's Children Carry the Deepest Scars",
-		date: "April 2026",
-		summary:
-			"Their efforts are aligned with World Vision, with respect to research on solutions for these dire issues affecting Sudan's children.",
-		tag: "Research Alignment",
-		image: "/images/focus/development.jpg",
-		link: "https://www.wvi.org/newsroom/sudan/three-years-agony-sudans-children-trapped-and-carry-deepest-scars",
-		linkLabel: "Read the World Vision story",
-	},
+	
 ];
