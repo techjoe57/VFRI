@@ -21,9 +21,7 @@ export default function Services() {
 						What We Offer
 					</span>
 					<h2 className="section-title">
-						Primary Products
-						<br />
-						&amp; Services
+						 Services
 					</h2>
 				</div>
 				<p className="section-copy">
@@ -76,7 +74,7 @@ export default function Services() {
 							→
 						</p>
 						<h3 className="card-title text-white mb-2">
-							Learn more about the Courses
+							We are always listening.
 						</h3>
 						<p className="text-white/55 text-sm leading-relaxed mb-6">
 							Whether you're a development institution,

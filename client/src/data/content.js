@@ -59,7 +59,7 @@ export const cards = [
 	{
 		icon: GraduationCap,
 		title: "Systems Strengthening Courses",
-		desc: "We run Capacity-building programmmes for individuals, organisations and businesses to foster skills transfer.",
+		desc: "We run Capacity-building programmmes for individuals, organisations and businesses to foster skills and knowledge transfer.",
 	},
 ];
 
@@ -162,31 +162,25 @@ export const SERVICES = [
 	{
 		num: "01",
 		title: "Policy & Research Dialogues",
-		desc: "Platforms for robust engagement on Africa's contemporary and historical issues — convening scholars, practitioners, and policymakers.",
+		desc: "We offer platforms for diverse and robust engagement on Africa's contemporary and historical issues — convening scholars, practitioners, and policymakers.",
 		image: "/images/services/dialogue.avif",
 	},
 	{
 		num: "02",
 		title: "Training Workshops & Short Courses",
-		desc: "Targeted programmes on African affairs including international law, governance, humanitarian response and regional integration.",
+		desc: "We organise and run targeted programmes that enhance the understanding of African affairs in International Law, Governance, Humanitarian Response and Regional Integration.",
 		image: "/images/services/training.avif",
-	},
-	{
-		num: "03",
-		title: "Research Programs",
-		desc: "In-depth studies focused on African issues, integrating local perspectives and feeding directly into global policy conversations.",
-		image: "/images/services/research.avif",
 	},
 	{
 		num: "04",
 		title: "Systems Strengthening Courses",
-		desc: "Capacity-building programmes for individuals, organisations and businesses to foster skills transfer and institutional resilience.",
+		desc: "We run capacity-building programmes for individuals, organisations and businesses to foster skills transfer and institutional resilience.",
 		image: "/images/services/development.avif",
 	},
 	{
 		num: "05",
 		title: "Consultancy Services",
-		desc: "Expertise in research methodologies, sustainable development strategies, and community engagement practices.",
+		desc: "We offer expertise in Research Methodologies, Sustainable Development Strategies, and Community Engagement Practices.",
 		image: "/images/services/consultancy.avif",
 	},
 ];
