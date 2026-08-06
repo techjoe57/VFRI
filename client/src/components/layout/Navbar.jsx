@@ -96,12 +96,7 @@ export default function Navbar() {
 			className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300
       ${scrolled ? "py-1.5 px-5 md:px-10" : "py-2.5 px-5 md:px-10"}
       bg-gold backdrop-blur-md border-b border-gold/20`}>
-			<a
-				href="#home"
-				onClick={() =>
-					handleNav({ label: "Home", href: "#home", type: "scroll" })
-				}
-				className="flex items-center gap-3 no-underline">
+			<div className="flex items-center gap-3 no-underline">
 				<div className="w-14 h-14 relative flex-shrink-0">
 					<img
 						src="/logo2.png"
@@ -117,9 +112,19 @@ export default function Navbar() {
 						Reimagining Africa Through Dialogue
 					</span>
 				</div>
-			</a>
+			</div>
 
 			<ul className="hidden xl:flex items-center gap-6 list-none">
+				<li>
+					<button
+						onClick={() =>
+							handleNav({ label: "Home", href: "#home", type: "scroll" })
+						}
+						className={`${navTextColor} ${navTextClass} ${hoverTextColor} transition-colors duration-200`}>
+						Home
+					</button>
+				</li>
+
 				<li className="relative group">
 					<button className={`flex items-center gap-2 ${navTextColor} ${navTextClass}`}>
 						About Us
