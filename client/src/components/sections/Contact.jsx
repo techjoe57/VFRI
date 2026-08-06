@@ -104,10 +104,10 @@ export default function Contact() {
 					style={{ color: "#c8a84b" }}>
 					Get In Touch
 				</span>
-				<h2 className="section-title text-white mb-5">
+				<h2 className="section-title text-white mb-8">
 					Let's Start the Conversation
 				</h2>
-				<p className="dark-section-copy mb-8">
+				<p className="dark-section-copy mb-10">
 					Whether you're seeking research collaboration, institutional
 					partnerships, policy engagement, or simply want to learn more
 					about our work, we'd love to hear from you.
@@ -115,7 +115,7 @@ export default function Contact() {
 
 				<div className="flex flex-col gap-5">
 					<ContactItem label="Harare">
-						<p className="meta-label text-gold mb-1">
+						<p className="meta-label text-gold mb-2">
 							{CONTACT.harare.label}
 						</p>
 						<p className="text-white/75 text-sm leading-relaxed">
@@ -126,7 +126,7 @@ export default function Contact() {
 						</p>
 					</ContactItem>
 					<ContactItem label="Nairobi">
-						<p className="meta-label text-gold mb-1">
+						<p className="meta-label text-gold mb-2">
 							{CONTACT.nairobi.label}
 						</p>
 						<p className="text-white/75 text-sm leading-relaxed">
@@ -137,7 +137,7 @@ export default function Contact() {
 						</p>
 					</ContactItem>
 					<ContactItem label="Email">
-						<p className="meta-label text-gold mb-1">
+						<p className="meta-label text-gold mb-2">
 							Email
 						</p>
 						<a
@@ -147,7 +147,7 @@ export default function Contact() {
 						</a>
 					</ContactItem>
 					<ContactItem label="Website">
-						<p className="meta-label text-gold mb-1">
+						<p className="meta-label text-gold mb-2">
 							Website
 						</p>
 						<a
@@ -164,8 +164,8 @@ export default function Contact() {
 			{/* Form */}
 			<div 
 				ref={rightRef} 
-				className="reveal bg-white/8 backdrop-blur-md border border-white/15 rounded-sm p-6 md:p-8 shadow-2xl">
-				<h3 className="card-title font-light text-white mb-6">
+				className="reveal bg-white/8 backdrop-blur-md border border-white/15 rounded-sm p-4 md:p-8 shadow-2xl">
+				<h3 className="card-title font-light text-white mb-4">
 					General Enquiries
 				</h3>
 
@@ -256,7 +256,7 @@ export default function Contact() {
 							onChange={handleChange}
 							placeholder="Tell us about your enquiry or interest in VFRI..."
 							required
-							rows={5} 
+							rows={2} 
 							className={`${inputCls} resize-none`}
 						/>
 					</div>
