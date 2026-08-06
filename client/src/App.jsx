@@ -19,29 +19,32 @@ import Achievements from "./pages/Achievements";
 import ServiceInquiry from "./pages/ServiceInquiry";
 import RootsForward from "./pages/RootsForward";
 import RootsForwardLayout from "./components/roots-forward/RootsForwardLayout";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
 	return (
-		<Routes>
-			<Route element={<Layout />}>
-				<Route path="/" element={<Home />} />
-				<Route path="/our-story" element={<OurStory />} />
-				<Route path="/programs" element={<Programs />} />
-				<Route
-					path="/service-inquiry"
-					element={<ServiceInquiry />}
-				/>
-				<Route path="news" element={<News />} />
-				<Route path="/team" element={<Team />} />
-				<Route path="/achievements" element={<Achievements />} />
-			</Route>
+		<>
+			<ScrollToTop />
+			<Routes>
+				<Route element={<Layout />}>
+					<Route path="/" element={<Home />} />
+					<Route path="/our-story" element={<OurStory />} />
+					<Route path="/programs" element={<Programs />} />
+					<Route
+						path="/service-inquiry"
+						element={<ServiceInquiry />}
+					/>
+					<Route path="news" element={<News />} />
+					<Route path="/team" element={<Team />} />
+					<Route path="/achievements" element={<Achievements />} />
+				</Route>
 
-			<Route element={<RootsForwardLayout />}>
-				<Route path="/roots-forward" element={<RootsForward />} />
-			</Route>
+				<Route element={<RootsForwardLayout />}>
+					<Route path="/roots-forward" element={<RootsForward />} />
+				</Route>
 
-			{/* Admin */}
-{/* 
+				{/* Admin */}
+{/*
 <Route path="/admin/login" element={<Login />} />
 
 <Route element={<ProtectedRoute />}>
@@ -56,6 +59,7 @@ export default function App() {
   </Route>
 </Route>
 */}
-		</Routes>
+			</Routes>
+		</>
 	);
 }

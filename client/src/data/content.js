@@ -261,6 +261,7 @@ export const PROGRAMS = [
 		description:
 			"Roots is a three week residential program in Victoria Falls, Zimbabwe, for young adults of Zimbabwean, Zambian or African descent who have grown up in the Diaspora. It provides heritage, digital and leadership skill training to successful participants.",
 		image: "/images/programs/climate.avif",
+		internalLink: "/roots-forward",
 	},
 ];
 
