@@ -85,4 +85,71 @@
 		opacity: 1;
 		transform: translateY(0);
 	}
+
+	/* Roots Forward — scroll-triggered reveal (shared across the whole page) */
+	.rf-fade-up {
+		opacity: 0;
+		transform: translateY(28px);
+		transition: opacity 0.85s ease-out, transform 0.85s ease-out;
+	}
+	.rf-fade-up.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	.rf-reveal-left {
+		opacity: 0;
+		transform: translateX(-28px);
+		transition: opacity 0.85s ease-out, transform 0.85s ease-out;
+	}
+	.rf-reveal-left.visible {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	.rf-reveal-right {
+		opacity: 0;
+		transform: translateX(28px);
+		transition: opacity 0.85s ease-out, transform 0.85s ease-out;
+	}
+	.rf-reveal-right.visible {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	.rf-reveal-scale {
+		opacity: 0;
+		transform: scale(0.97);
+		transition: opacity 0.85s ease-out, transform 0.85s ease-out;
+	}
+	.rf-reveal-scale.visible {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	/* Small, reusable stagger steps (~120ms apart) applied alongside the
+	   rf-* reveal classes above to sequence groups within a section. */
+	.rf-delay-0 {
+		transition-delay: 0ms;
+	}
+	.rf-delay-1 {
+		transition-delay: 120ms;
+	}
+	.rf-delay-2 {
+		transition-delay: 240ms;
+	}
+	.rf-delay-3 {
+		transition-delay: 360ms;
+	}
+	.rf-delay-4 {
+		transition-delay: 480ms;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.rf-fade-up,
+	.rf-reveal-left,
+	.rf-reveal-right,
+	.rf-reveal-scale {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
 }
