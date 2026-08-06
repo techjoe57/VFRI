@@ -12,14 +12,17 @@ export default function Achievements() {
 			<div className="section-inner"> 
 				<div
 					ref={headRef}
-					className="section-heading">
+					className="section-heading mx-auto max-w-4xl text-center">
+					<div className="mb-4 flex justify-center">
+						<span className="section-label">Impact</span>
+					</div>
+
 					<div>
-						<span className="section-label mb-4 block">Impact</span>
 						<h2 className="section-title">
 							Achievements
 						</h2>
 					</div>
-					<p className="section-copy self-end">
+					<p className="section-copy mx-auto">
 						From university keynotes in Zimbabwe to cross-border student
 						competitions in Nairobi — VFRI turns its mission into
 						measurable impact on the ground.

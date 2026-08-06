@@ -6,89 +6,234 @@ export default function Services() {
 	const headRef = useReveal();
 	const gridRef = useReveal();
 
-	const scrollTo = (id) =>
-		document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+	const topRow = SERVICES.slice(0, 3);
+	const bottomRow = SERVICES.slice(3);
+
+	const ServiceCard = ({ num, title, desc, image }) => (
+		<div
+			className="
+				group
+				relative
+				flex
+				min-h-[360px]
+				flex-col
+				justify-end
+				overflow-hidden
+				rounded-sm
+				border
+				border-gold/20
+				shadow-lg
+				transition-all
+				duration-300
+				hover:-translate-y-2
+				hover:shadow-2xl
+			"
+		>
+			{/* Background Image */}
+			<div
+				className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+				style={{ backgroundImage: `url(${image})` }}
+			/>
+
+			{/* Overlay */}
+			<div className="absolute inset-0 bg-gradient-to-t from-black via-black/65 to-black/20 transition-colors duration-300 group-hover:from-black/90" />
+
+			{/* Accent Bar */}
+			<div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold via-crimson-mid to-gold" />
+
+			{/* Content */}
+			<div className="relative z-10 p-5">
+				<p className="mb-3 text-5xl font-extralight tracking-tight text-gold/70">
+					{num}
+				</p>
+
+				<h3 className="card-title mb-3 text-white">
+					{title}
+				</h3>
+
+				<p className="text-sm leading-7 text-white/75">
+					{desc}
+				</p>
+			</div>
+		</div>
+	);
 
 	return (
 		<section
 			id="services"
-			className="page-section bg-white">
-			<div
-				ref={headRef}
-				className="section-heading md:grid-cols-1">
-				<div>
-					<span className="section-label mb-4 block">
-						What We Offer
-					</span>
-					<h2 className="section-title">
-						 Services
-					</h2>
-				</div>
-				<p className="section-copy">
-					Five interconnected services through which VFRI delivers its
-					mission — from hosted dialogues to long-term consultancy
-					engagements.
-				</p>
+			className="page-section bg-green-deep/90 scroll-mt-28 relative overflow-hidden"
+		>
+			{/* Background Glow */}
+			<div className="absolute inset-0 pointer-events-none">
+				<div className="absolute top-1/3 right-1/4 w-[450px] h-[450px] bg-gold/5 rounded-full blur-3xl" />
+				<div className="absolute bottom-0 left-1/4 w-[350px] h-[350px] bg-green-mid/10 rounded-full blur-3xl" />
 			</div>
 
-			<div
-				ref={gridRef}
-				className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-				{SERVICES.map(({ num, title, desc, image }) => (
-					<div
-						key={num}
-						className="relative group min-h-72 overflow-hidden rounded-sm border border-black/[0.06] p-6 transition-all duration-200 hover:shadow-xl hover:-translate-y-1">
-						{/* BACKGROUND IMAGE */}
-						<div
-							className="absolute inset-0 bg-center bg-cover scale-105 group-hover:scale-110 transition-transform duration-500"
-							style={{ backgroundImage: `url(${image})` }}
+			<div className="relative z-10 mx-auto w-full max-w-[1500px]">
+
+				{/* Heading */}
+				<div
+					ref={headRef}
+					className="reveal max-w-4xl mx-auto text-center mb-8"
+				>
+					<div className="flex justify-center mb-3">
+						<span
+							className="section-label"
+							style={{ color: "#c8a84b" }}
+						>
+							What We Offer
+						</span>
+					</div>
+
+					<h2 className="section-title text-white mb-4">
+						Services
+					</h2>
+
+					<p className="dark-section-copy mx-auto">
+						Five interconnected services through which VFRI delivers
+						its mission, from hosted dialogue and policy research to
+						long-term consultancy and institutional partnerships.
+					</p>
+				</div>
+
+				<div ref={gridRef} className="reveal">
+					{/* Tablet and mobile grid */}
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:hidden">
+					{SERVICES.map((service) => (
+						<ServiceCard
+							key={service.num}
+							{...service}
 						/>
+					))}
 
-						{/* DARK OVERLAY (VERY IMPORTANT FOR READABILITY) */}
-						<div className="absolute inset-0 bg-black/55 group-hover:bg-black/45 transition-colors duration-300" />
-
-						{/* CONTENT */}
-						<div className="relative z-10">
-							<p className="font-display text-3xl text-gold/70 font-light mb-4">
-								{num}
+					<div
+						className="
+							w-full
+							min-h-[360px]
+							flex
+							flex-col
+							justify-between
+							rounded-sm
+							border
+							border-gold/20
+							bg-white/5
+							backdrop-blur-sm
+							p-6
+							shadow-lg
+							transition-all
+							duration-300
+							hover:bg-white/10
+							hover:-translate-y-2
+							hover:shadow-2xl
+						"
+					>
+						<div>
+							<p className="mb-4 text-5xl font-extralight text-gold/60">
+								→
 							</p>
 
-							<h3 className="card-title text-white mb-2">
-								{title}
+							<h3 className="card-title mb-4 text-white">
+								Let's Work Together
 							</h3>
 
-							<p className="text-white/70 text-sm leading-relaxed">
-								{desc}
+							<p className="text-sm leading-7 text-white/70">
+								Whether you're a university,
+								development institution,
+								NGO, think tank, or policy
+								body, we welcome
+								opportunities for research,
+								training, strategic dialogue,
+								and knowledge exchange.
 							</p>
 						</div>
 
-						{/* Animated bottom border */}
-						<div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-crimson-mid scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+						<Link
+							to="/service-inquiry"
+							className="btn-primary mt-8 w-fit"
+						>
+							Request Our Services
+						</Link>
 					</div>
-				))}
-
-				{/* CTA card */}
-				<div className="bg-crimson-deep border border-gold/20 rounded-sm p-6 flex flex-col justify-between">
-					<div>
-						<p className="font-display text-3xl text-gold/50 font-light mb-4">
-							→
-						</p>
-						<h3 className="card-title text-white mb-2">
-							We are always listening.
-						</h3>
-						<p className="text-white/55 text-sm leading-relaxed mb-6">
-							Whether you're a development institution,
-							university, or policy body — we welcome
-							collaboration on research, training, and knowledge
-							exchange.
-						</p>
-					</div>
-					<Link
-						to="/service-inquiry"
-						className="btn-primary self-start !px-5 !py-2.5 inline-block text-center">
-						Request our services
-					</Link>
 				</div>
+
+					<div className="hidden xl:block">
+					{/* Top Row */}
+					<div className="grid grid-cols-3 gap-6">
+						{topRow.map((service) => (
+							<ServiceCard
+								key={service.num}
+								{...service}
+							/>
+						))}
+					</div>
+
+					{/* Bottom Row */}
+					<div className="mt-6 flex flex-wrap justify-center gap-6">
+
+						{bottomRow.map((service) => (
+							<div
+								key={service.num}
+								className="w-full max-w-[420px]"
+							>
+								<ServiceCard {...service} />
+							</div>
+						))}
+
+						{/* CTA Card */}
+						<div
+							className="
+								w-full
+								max-w-[420px]
+								min-h-[360px]
+								flex
+								flex-col
+								justify-between
+								rounded-sm
+								border
+								border-gold/20
+								bg-white/5
+								backdrop-blur-sm
+								p-6
+								shadow-lg
+								transition-all
+								duration-300
+								hover:bg-white/10
+								hover:-translate-y-2
+								hover:shadow-2xl
+							"
+						>
+							<div>
+								<p className="mb-4 text-5xl font-extralight text-gold/60">
+									â†’
+								</p>
+
+								<h3 className="card-title mb-4 text-white">
+									Let's Work Together
+								</h3>
+
+								<p className="text-sm leading-7 text-white/70">
+									Whether you're a university,
+									development institution,
+									NGO, think tank, or policy
+									body, we welcome
+									opportunities for research,
+									training, strategic dialogue,
+									and knowledge exchange.
+								</p>
+							</div>
+
+							<Link
+								to="/service-inquiry"
+								className="btn-primary mt-8 w-fit"
+							>
+								Request Our Services
+							</Link>
+						</div>
+
+					</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
 	);

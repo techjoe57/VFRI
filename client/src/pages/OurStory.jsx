@@ -14,9 +14,9 @@ export default function OurStory() {
 			{/* Global overlay */}
 			<div className="bg-black/35 min-h-screen">
 				{/* Hero */}
-				<section className="relative min-h-[340px] flex items-center justify-center px-6">
+				<section className="relative min-h-[340px] flex items-center justify-center px-6 pt-32 sm:pt-24 md:pt-20">
 					<div className="text-center text-white max-w-4xl">
-						<h1 className="font-display text-5xl md:text-6xl mb-4">
+						<h1 className="font-display text-5xl md:text-6xl mt-4 md:mt-8 mb-4">
 							Our Story
 						</h1>
 

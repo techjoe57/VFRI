@@ -172,13 +172,13 @@ export const SERVICES = [
 		image: "/images/services/training.avif",
 	},
 	{
-		num: "04",
+		num: "03",
 		title: "Systems Strengthening Courses",
 		desc: "We run capacity-building programmes for individuals, organisations and businesses to foster skills transfer and institutional resilience.",
 		image: "/images/services/development.avif",
 	},
 	{
-		num: "05",
+		num: "04",
 		title: "Consultancy Services",
 		desc: "We offer expertise in Research Methodologies, Sustainable Development Strategies, and Community Engagement Practices.",
 		image: "/images/services/consultancy.avif",

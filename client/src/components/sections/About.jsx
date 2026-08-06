@@ -2,71 +2,94 @@ import { vms } from "../../data/content";
 import { useReveal } from "../../hooks/useReveal";
 
 export default function About() {
-	const leftRef = useReveal();
-	const rightRef = useReveal();
+	const revealRef = useReveal();
 
 	return (
 		<section
 			id="about"
-			className="page-section bg-cream/80 backdrop-blur-sm grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-			<div ref={leftRef} className="reveal">
-				<span className="section-label mb-4 block">Who We Are</span>
+			className="scroll-mt-28 relative bg-cream/70 backdrop-blur-sm overflow-hidden py-10"
+		>
+			{/* Background Accent */}
+			<div className="absolute inset-0 pointer-events-none">
+				<div className="absolute right-0 top-32 w-[650px] h-[650px] rounded-full bg-gold/5 blur-3xl" />
+				<div className="absolute left-0 bottom-0 w-[500px] h-[500px] rounded-full bg-green-mid/5 blur-3xl" />
+			</div>
 
-				<h2 className="section-title mb-4">
-					A Pan-African Voice
-					<br />
-					in Global Knowledge
-				</h2>
+			<div
+				ref={revealRef}
+				className="relative z-10 max-w-7xl mx-auto px-6"
+			>
+				{/* Heading */}
+				<div className="max-w-5xl mx-auto text-center">
+					<span className="section-label mb-4 block">
+						Who We Are
+					</span>
 
-				<p className="section-copy mb-5">
-					Victoria Falls Regional Institute is an independent academic
-					and research institute founded to localise the power of
-					knowledge in International Law, International Relations,
-					Peace & Security, Governance, Development, and Humanitarian
-					Affairs.
-				</p>
+					<h2 className="section-title mb-6">
+						A Pan-African Voice
+						<br />
+						in Global Knowledge
+					</h2>
 
-				{/* IMAGE */}
-				<div className="relative overflow-hidden rounded-sm mb-6 group">
-					<img
-						src="/images/about/about.avif"
-						alt="VFRI team discussion"
-						className="w-full h-[250px] object-cover transition duration-700 group-hover:scale-105"
-					/>
-
-					{/* Optional overlay */}
-					<div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-				</div>
-
-				{/* Challenge quote */}
-				<div className="bg-green-deep border-l-4 border-gold px-5 py-4 rounded-r-sm">
-					<p className="font-display text-lg italic text-white/80 leading-relaxed">
-						"Discussions, policy formulations, and conferences about
-						Africa tend to be held without Africa. Those who possess
-						African wisdom, knowledge and experiences are often
-						denied access to such platforms — due to visa
-						restrictions, financial barriers, and systemic
-						exclusion."
+					<p className="section-copy mx-auto max-w-5xl text-lg">
+						Victoria Falls Regional Institute is an independent
+						academic and research institute founded to localise the
+						power of knowledge in International Law, International
+						Relations, Peace & Security, Governance, Development,
+						and Humanitarian Affairs.
 					</p>
 				</div>
-			</div>
-			<div ref={rightRef} className="reveal flex flex-col gap-5">
-				{vms.map(({ label, title, body }) => (
-					<div
-						key={label}
-						className="card relative overflow-hidden p-5">
-						<div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-crimson-mid" />
-						<p className="meta-label text-gold mb-1.5">
-							{label}
-						</p>
-						<h3 className="card-title text-crimson-deep mb-2">
-							{title}
-						</h3>
-						<p className="text-ink-light text-sm leading-relaxed">
-							{body}
+
+				{/* Image + Floating Quote */}
+				<div className="relative mt-12 mb-24 max-w-6xl mx-auto">
+					<div className="overflow-hidden rounded-sm shadow-2xl group">
+						<img
+							src="/images/about/about.avif"
+							alt="VFRI team discussion"
+							className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+						/>
+
+						<div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+					</div>
+
+					{/* Floating Quote */}
+					<div className="absolute left-1/2 -bottom-12 -translate-x-1/2 w-[92%] max-w-4xl bg-green-deep border-l-4 border-gold rounded-sm px-8 py-6 shadow-2xl backdrop-blur-md">
+						<p className="font-display text-lg italic leading-relaxed text-white/85 text-center">
+							"Discussions, policy formulations, and conferences
+							about Africa tend to be held without Africa. Those
+							who possess African wisdom, knowledge and
+							experiences are often denied access to such
+							platforms due to visa restrictions, financial
+							barriers, and systemic exclusion."
 						</p>
 					</div>
-				))}	
+				</div>
+
+				{/* Cards */}
+				<div className="relative -mt-2">
+					<div className="grid md:grid-cols-3 gap-6">
+						{vms.map(({ label, title, body }) => (
+							<div
+								key={label}
+								className="relative h-full rounded-sm bg-white shadow-xl border border-gold/15 p-7 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+							>
+								<div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold via-crimson-mid to-gold" />
+
+								<p className="meta-label text-gold mb-2">
+									{label}
+								</p>
+
+								<h3 className="card-title text-crimson-deep mb-4">
+									{title}
+								</h3>
+
+								<p className="text-sm text-ink-light leading-7">
+									{body}
+								</p>
+							</div>
+						))}
+					</div>
+				</div>
 			</div>
 		</section>
 	);
