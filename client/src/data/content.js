@@ -243,62 +243,62 @@ export const PROGRAMS = [
 		title: "World Vision: Sudan's Children Carry the Deepest Scars",
 		category: "Research Program",
 		description:
-			"Their efforts are aligned with World Vision, with respect to research on solutions for these dire issues affecting Sudan's children.",
+			"In this program, we integrate the World Vision's Fragile Context Programme Approach built around the Survive-Adapt-Thrive continuum and a six step implementation cycle to operationalise anticipatory action within the Humanitarian-Development-Peace Nexus in Protracted Emergencies in Sudan.",
 		image: "/images/focus/development.jpg",
 		link: "https://www.wvi.org/newsroom/sudan/three-years-agony-sudans-children-trapped-and-carry-deepest-scars",
 		linkLabel: "Read the World Vision story",
-		status: "Active",
 	},
 	{
-		title: "African Governance Research Initiative",
-		category: "Research Program",
-		description:
-			"A multi-country study examining governance systems across East and Southern Africa, focusing on institutional reform and policy harmonisation.",
-		status: "Active",
-		image: "/images/programs/governance.avif",
-	},
-	{
-		title: "Youth Leadership & Policy Training",
+		title: "Africa Forward",
 		category: "Capacity Building",
 		description:
-			"A structured training program equipping young African leaders with skills in governance, diplomacy, and policy analysis.",
-		status: "Ongoing",
+			"Africa Forward is a 4 month programme featuring a masterclass and hackathon with a focus on finance, technology, marketing, and data.",
 		image: "/images/programs/youth.avif",
 	},
 	{
-		title: "Climate & Environment Knowledge Lab",
-		category: "Research & Innovation",
+		title: "Roots Forward",
+		category: "Capacity Building & Innovation",
 		description:
-			"Interdisciplinary research on climate resilience, environmental governance, and indigenous ecological knowledge systems.",
-		status: "Active",
+			"Roots is a three week residential program in Victoria Falls, Zimbabwe, for young adults of Zimbabwean, Zambian or African descent who have grown up in the Diaspora. It provides heritage, digital and leadership skill training to successful participants.",
 		image: "/images/programs/climate.avif",
+		internalLink: "/roots-forward",
 	},
 ];
 
 export const NEWS = [
 	{
-		title: "Culture Day Celebration",
-		date: "April 2026",
+		title: "Africa Forward",
+		date: "August 2026",
 		summary:
-			"VFRI celebrates African culture, identity, and shared heritage through dialogue, storytelling, and student-led cultural expression.",
-		tag: "Announcement",
-		image: "/images/news/news1.avif",
+			"We partnered with Momentum Labs to bring together professionals from across Africa to explore the future of finance, marketing, technology, and entrepreneurship.The session was filled with practical insights, thoughtful discussions, and perspectives from leaders who are actively shaping their industries.",
+		tag: "Event",
+		image: "/images/news/news3.avif",
+	},
+	{
+		title: "Africa Forward",
+		date: "November 2025",
+		summary:
+			"We hosted our first ever Africa Forward - IT & Tech Innovation Masterclass and Hackathon. 60+ participants aand 7+ solutions were built demonstrating the creativity and resilience of Africa's growing tech ecosystem.",
+		tag: "Instagram Event Updates",
+		image: "/images/news/news3.avif",
 	},
 	{
 		title: "ZIMAZA Day Competition",
-		date: "April 2026",
+		date: "September 2025",
 		summary:
-			"The ZIMAZA quiz and essay competition brings learners together to explore African history, geography, culture, and sustainable development.",
+			"The ZIMAZA quiz and essay competition brought learners together to explore African history, geography, culture, and sustainable development.",
 		tag: "Event",
 		image: "/images/news/news2.avif",
 	},
+
 	{
-		title: "Instagram Event Updates",
-		date: "March 2026",
+		title: "Culture Day Celebration",
+		date: "July 2026",
 		summary:
-			"Follow VFRI's Instagram channels for event highlights, community moments, programme announcements, and visual updates from recent engagements.",
-		tag: "Social",
-		image: "/images/news/news3.avif",
+			"We sponsored a quiz on Zimbabwean general knowledge during the Zimbabwe Culture Day in Nairobi, Kenya, where participants were divided into different totem and clan groups to showcase the depth of their knowledge of Zimbabwe. Administered via the Kahoot platform to guarantee complete fairness and transparency, the quiz was ultimately won by the Elephants (Samanyangas).",
+		tag: "Instagram Event Updates",
+		image: "/images/news/news1.avif",
 	},
+	
 	
 ];

@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { useReveal } from "../hooks/useReveal";
 import { PROGRAMS } from "../data/content";
 
 export default function Programs() {
+	const navigate = useNavigate();
 	const headRef = useReveal();
 	const gridRef = useReveal();
 
@@ -95,6 +98,16 @@ export default function Programs() {
 								<p className="flex-grow text-sm leading-7 text-ink-light">
 									{description}
 								</p>
+
+								{internalLink && (
+									<button
+										type="button"
+										onClick={() => navigate(internalLink)}
+										className="group mt-auto inline-flex w-fit items-center gap-2 rounded-sm bg-gold px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-crimson-deep transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-crimson-deep hover:text-cream hover:shadow-lg hover:shadow-crimson-deep/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold cursor-pointer">
+										Explore Roots Forward
+										<ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+									</button>
+								)}
 							</div>
 						)
 					)}
