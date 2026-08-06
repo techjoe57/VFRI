@@ -8,54 +8,95 @@ export default function Programs() {
 	return (
 		<section
 			id="programs"
-			className="page-hero bg-cream flex-1">
-			<div className="section-inner"> 
+			className="scroll-mt-28 relative overflow-hidden bg-cream pt-36 pb-6 sm:pt-28 lg:pt-16"
+		>
+			{/* Background Glow */}
+			<div className="absolute inset-0 pointer-events-none">
+				<div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-gold/5 blur-3xl" />
+			</div>
+
+			<div className="relative z-10 mx-auto max-w-7xl px-6 lg:py-2">
+				{/* Heading */}
 				<div
 					ref={headRef}
-					className="section-heading">
-					<div>
-						<span className="section-label mb-4 block">What We Do</span>
-						<h2 className="section-title">
-							Programs & Initiatives
-						</h2>
+					className="reveal mx-auto mb-10 max-w-4xl text-center"
+				>
+					<div className="mb-4 flex justify-center">
+						<span className="section-label">
+							What We Do
+						</span>
 					</div>
 
-					<p className="section-copy self-end">
-						Structured initiatives driving research, capacity building,
-						and policy innovation across Africa.
+					<h2 className="section-title mt-10 mb-5">
+						Programs & Initiatives
+					</h2>
+
+					<p className="section-copy mx-auto">
+						Structured initiatives driving research,
+						capacity building, and policy innovation across
+						Africa.
 					</p>
 				</div>
 
-				<div ref={gridRef} className="reveal grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+				{/* Program Cards */}
+				<div
+					ref={gridRef}
+					className="reveal grid grid-cols-1 gap-6 md:grid-cols-2"
+				>
 					{PROGRAMS.map(
-						({ title, category, description, image }) => (
+						({
+							title,
+							category,
+							description,
+							image,
+						}) => (
 							<div
 								key={title}
-								className="card p-5 relative overflow-hidden">
-								{/* IMAGE */}
-								<div className="h-40 w-full mb-4 overflow-hidden rounded-sm">
+								className="
+									group
+									relative
+									flex
+									h-full
+									flex-col
+									overflow-hidden
+									rounded-sm
+									border
+									border-black/5
+									bg-white/70
+									p-6
+									backdrop-blur-sm
+									shadow-lg
+									transition-all
+									duration-300
+									hover:-translate-y-2
+									hover:shadow-2xl
+								"
+							>
+								{/* Accent Bar */}
+								<div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-gold via-crimson-mid to-gold" />
+
+								{/* Image */}
+								<div className="mb-5 overflow-hidden rounded-sm">
 									<img
 										src={image}
 										alt={title}
-										className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+										className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
 									/>
 								</div>
 
-								<div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-crimson-mid" />
-
-								<p className="meta-label text-gold mb-2">
+								<p className="meta-label mb-2 text-gold">
 									{category}
 								</p>
 
-								<h3 className="card-title text-crimson-deep mb-3">
+								<h3 className="card-title mb-3 text-crimson-deep">
 									{title}
 								</h3>
 
-								<p className="text-ink-light text-sm leading-relaxed mb-4">
+								<p className="flex-grow text-sm leading-7 text-ink-light">
 									{description}
 								</p>
 							</div>
-						),
+						)
 					)}
 				</div>
 			</div>

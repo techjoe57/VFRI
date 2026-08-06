@@ -10,15 +10,18 @@ export default function News() {
 			<div className="section-inner"> 
 				<div
 					ref={headRef}
-					className="section-heading">
+					className="section-heading mx-auto max-w-4xl text-center">
+					<div className="mb-4 flex justify-center">
+						<span className="section-label">Updates</span>
+					</div>
+
 					<div>
-						<span className="section-label mb-4 block">Updates</span>
 						<h2 className="section-title">
 							News & Publications
 						</h2>
 					</div>
 
-					<p className="section-copy self-end">
+					<p className="section-copy mx-auto">
 						Latest institutional updates, research outputs, and public
 						engagement activities.
 					</p>
