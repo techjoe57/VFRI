@@ -52,6 +52,7 @@ export default function Programs() {
 							category,
 							description,
 							image,
+							internalLink
 						}) => (
 							<div
 								key={title}
