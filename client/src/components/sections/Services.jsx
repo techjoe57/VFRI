@@ -61,7 +61,7 @@ export default function Services() {
 	return (
 		<section
 			id="services"
-			className="page-section bg-green-deep/90 scroll-mt-28 relative overflow-hidden"
+			className="page-section bg-[#244F46] scroll-mt-28 relative overflow-hidden"
 		>
 			{/* Background Glow */}
 			<div className="absolute inset-0 pointer-events-none">
@@ -235,6 +235,25 @@ export default function Services() {
 				</div>
 
 			</div>
+
+			{/* Angled Divider overlapping the next section 
+			<div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none pointer-events-none">
+				<svg
+					className="relative block w-full h-12 md:h-20 text-[#5E0A11]"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none"
+					>
+					<path
+						d="M1200 0L0 120V120H1200V0Z"
+						fill="currentColor"
+					/>
+				</svg> 
+			</div> */}
+			{/* Smooth transition into Contact section */}
+<div className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none">
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#244F46] to-[#5E0A11]" />
+</div>
+
 		</section>
 	);
 }
