@@ -6,7 +6,7 @@ export default function RootsForwardLocation() {
 
 	return (
 		<section id="victoria-falls" className="bg-cream">
-			<div className="mx-auto w-full max-w-7xl px-6 py-20 md:px-12 md:py-28 lg:px-20">
+			<div className="rf-section-py mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-20">
 				<div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
 					{/* TEXT */}
 					<div ref={textRef} className="rf-fade-up rf-delay-0 max-w-xl">
@@ -37,17 +37,14 @@ export default function RootsForwardLocation() {
 					</div>
 
 					{/* IMAGE TREATMENT */}
-					{/* TODO: replace with real photography favouring young people together, conversation, community and everyday life connected to Victoria Falls / Zimbabwe. Avoid safari, wildlife, sunset/acacia or generic travel-brochure imagery — the visual language should be about people, not the destination. */}
 					<div
 						ref={imageRef}
-						className="rf-reveal-scale rf-delay-1 relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-green-mid/20 via-gold/20 to-[#C8763F]/20 md:aspect-[16/10] lg:aspect-[4/3]">
-						<div className="absolute -top-8 -right-8 h-40 w-40 rounded-full bg-gold/20 blur-3xl" />
-						<div className="absolute -bottom-10 -left-6 h-44 w-44 rounded-full bg-green-mid/20 blur-3xl" />
-						<div className="absolute inset-0 flex items-center justify-center">
-							<span className="rounded-full bg-cream/80 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.1em] text-ink/70">
-								Photography coming soon
-							</span>
-						</div>
+						className="rf-reveal-scale rf-delay-1 relative h-[270px] w-full overflow-hidden rounded-2xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:aspect-[4/3]">
+						<img
+							src="/images/roots-forward/victoria-falls-location.png"
+							alt="Young Roots Forward participants standing together overlooking Victoria Falls"
+							className="block h-full w-full object-cover object-[42%_center]"
+						/>
 					</div>
 				</div>
 			</div>

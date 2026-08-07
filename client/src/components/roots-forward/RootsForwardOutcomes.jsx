@@ -34,8 +34,26 @@ export default function RootsForwardOutcomes() {
 	];
 
 	return (
-		<section id="what-you-leave-with" className="bg-cream-dark">
-			<div className="mx-auto w-full max-w-3xl px-6 py-20 md:px-12 md:py-28">
+		<section
+			id="what-you-leave-with"
+			className="relative overflow-hidden bg-[#F2E8D3]">
+			{/* Right-side motif — an oversized, very low-opacity vertical
+			    word fills the wide-desktop side gutter (the numbered list
+			    keeps its comfortable reading width) and reinforces the
+			    section's forward/progress idea. Hidden below lg so
+			    tablet/mobile keep full width for content. */}
+			<span
+				aria-hidden="true"
+				className="pointer-events-none absolute -right-4 top-1/2 hidden -translate-y-1/2 rotate-90 select-none whitespace-nowrap font-sans text-[6.5rem] font-bold uppercase leading-none tracking-[0.22em] text-ink/[0.05] lg:block xl:-right-8 xl:text-[8rem] 2xl:-right-12 2xl:text-[9rem]">
+				Forward
+			</span>
+
+			<div className="rf-section-py relative mx-auto w-full max-w-3xl px-6 md:px-12">
+				<span
+					aria-hidden="true"
+					className="mb-8 block h-px w-16 bg-gradient-to-r from-transparent via-gold to-transparent md:mb-10"
+				/>
+
 				<div ref={introRef} className="rf-fade-up rf-delay-0">
 					<h2 className="font-sans text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl">
 						What you leave with

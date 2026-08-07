@@ -8,10 +8,13 @@ export default function RootsForwardPillars() {
 	const skillsImageRef = useRootsForwardReveal();
 	const futureTextRef = useRootsForwardReveal();
 	const futureImageRef = useRootsForwardReveal();
+	const rootsLineRef = useRootsForwardReveal();
+	const skillsLineRef = useRootsForwardReveal();
+	const futureLineRef = useRootsForwardReveal();
 
 	return (
 		<section id="whats-included" className="scroll-mt-24 bg-cream md:scroll-mt-28">
-			<div className="mx-auto w-full max-w-7xl px-6 pt-28 pb-20 md:px-12 md:pt-36 md:pb-28 lg:px-20">
+			<div className="mx-auto w-full max-w-7xl px-6 pt-20 pb-14 md:px-12 md:pt-24 md:pb-20 lg:px-20 lg:pb-24">
 				{/* INTRO */}
 				<div ref={introRef} className="rf-fade-up max-w-2xl">
 					<h2 className="font-sans text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl">
@@ -26,23 +29,31 @@ export default function RootsForwardPillars() {
 				{/* PILLARS */}
 				<div className="mt-16 flex flex-col gap-16 md:mt-20 md:gap-20">
 					{/* ROOTS */}
-					<div className="grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
+					<div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
+						{/* Journey line — desktop only. Roots is the first
+						    node, so its track/fill only extend downward,
+						    toward Skills. */}
+						<div className="pointer-events-none absolute left-1/2 top-0 -bottom-10 hidden w-px -translate-x-1/2 bg-ink/10 lg:block" />
+						<div
+							ref={rootsLineRef}
+							className="rf-line-fill-wrap pointer-events-none absolute left-1/2 top-0 -bottom-10 hidden w-px -translate-x-1/2 lg:block">
+							<span className="rf-line-bar absolute inset-0 bg-gold" />
+							<span className="rf-line-dot absolute left-1/2 top-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold" />
+						</div>
+
 						<div
 							ref={rootsImageRef}
-							className="rf-reveal-left relative order-1 aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-[#C8763F]/30 via-gold/20 to-cream-dark lg:order-1">
-							<div className="absolute -top-8 -left-8 h-40 w-40 rounded-full bg-gold/20 blur-3xl" />
-							<div className="absolute -bottom-10 -right-6 h-44 w-44 rounded-full bg-[#C8763F]/20 blur-3xl" />
-							{/* TODO: replace with real photography of Roots Forward participants engaging with heritage/culture */}
-							<div className="absolute inset-0 flex items-center justify-center">
-								<span className="rounded-full bg-cream/80 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.1em] text-ink/70">
-									Photography coming soon
-								</span>
-							</div>
+							className="rf-reveal-left relative order-2 aspect-[4/3] w-full overflow-hidden rounded-2xl bg-cream-dark lg:order-1">
+							<img
+								src="/images/roots-forward/roots-heritage.png"
+								alt="Elders and young adults from a Roots Forward cohort sitting together in conversation"
+								className="block h-full w-full object-cover"
+							/>
 						</div>
 
 						<div
 							ref={rootsTextRef}
-							className="rf-fade-up rf-delay-1 relative order-2 lg:order-2">
+							className="rf-fade-up rf-delay-1 relative order-1 lg:order-2">
 							<span
 								aria-hidden="true"
 								className="pointer-events-none absolute -top-10 -left-1 select-none text-[110px] font-bold leading-none text-gold/10 md:-top-14 md:text-[140px]">
@@ -70,23 +81,31 @@ export default function RootsForwardPillars() {
 					</div>
 
 					{/* SKILLS */}
-					<div className="grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
+					<div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
+						{/* Journey line — the middle node, so its track/fill
+						    extend both up (toward Roots) and down (toward
+						    Future) to keep the line visually continuous. */}
+						<div className="pointer-events-none absolute -top-10 -bottom-10 left-1/2 hidden w-px -translate-x-1/2 bg-ink/10 lg:block" />
+						<div
+							ref={skillsLineRef}
+							className="rf-line-fill-wrap pointer-events-none absolute -top-10 -bottom-10 left-1/2 hidden w-px -translate-x-1/2 lg:block">
+							<span className="rf-line-bar absolute inset-0 bg-gold" />
+							<span className="rf-line-dot absolute left-1/2 top-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold" />
+						</div>
+
 						<div
 							ref={skillsImageRef}
-							className="rf-reveal-right relative order-1 aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-green-mid/25 via-green-light/15 to-cream-dark lg:order-2">
-							<div className="absolute -top-8 -right-8 h-40 w-40 rounded-full bg-green-mid/20 blur-3xl" />
-							<div className="absolute -bottom-10 -left-6 h-44 w-44 rounded-full bg-green-light/20 blur-3xl" />
-							{/* TODO: replace with real photography of Roots Forward participants building skills/working with tech */}
-							<div className="absolute inset-0 flex items-center justify-center">
-								<span className="rounded-full bg-cream/80 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.1em] text-ink/70">
-									Photography coming soon
-								</span>
-							</div>
+							className="rf-reveal-right relative order-2 h-[270px] w-full overflow-hidden rounded-2xl bg-cream-dark md:h-auto md:aspect-[4/3] lg:order-2">
+							<img
+								src="/images/roots-forward/skills-workshop.png"
+								alt="Roots Forward participants collaborating on laptops during a skills workshop"
+								className="block h-full w-full object-cover"
+							/>
 						</div>
 
 						<div
 							ref={skillsTextRef}
-							className="rf-fade-up rf-delay-1 relative order-2 lg:order-1">
+							className="rf-fade-up rf-delay-1 relative order-1 lg:order-1">
 							<span
 								aria-hidden="true"
 								className="pointer-events-none absolute -top-10 -left-1 select-none text-[110px] font-bold leading-none text-green-mid/10 md:-top-14 md:text-[140px]">
@@ -113,23 +132,30 @@ export default function RootsForwardPillars() {
 					</div>
 
 					{/* FUTURE */}
-					<div className="grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
+					<div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
+						{/* Journey line — the final node, so its track/fill
+						    only extend upward, toward Skills. */}
+						<div className="pointer-events-none absolute -top-10 bottom-0 left-1/2 hidden w-px -translate-x-1/2 bg-ink/10 lg:block" />
+						<div
+							ref={futureLineRef}
+							className="rf-line-fill-wrap pointer-events-none absolute -top-10 bottom-0 left-1/2 hidden w-px -translate-x-1/2 lg:block">
+							<span className="rf-line-bar absolute inset-0 bg-gold" />
+							<span className="rf-line-dot absolute left-1/2 top-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold" />
+						</div>
+
 						<div
 							ref={futureImageRef}
-							className="rf-reveal-left relative order-1 aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-crimson-mid/25 via-crimson-light/15 to-cream-dark lg:order-1">
-							<div className="absolute -top-8 -left-8 h-40 w-40 rounded-full bg-crimson-mid/20 blur-3xl" />
-							<div className="absolute -bottom-10 -right-6 h-44 w-44 rounded-full bg-crimson-light/20 blur-3xl" />
-							{/* TODO: replace with real photography of Roots Forward participants presenting/pitching projects */}
-							<div className="absolute inset-0 flex items-center justify-center">
-								<span className="rounded-full bg-cream/80 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.1em] text-ink/70">
-									Photography coming soon
-								</span>
-							</div>
+							className="rf-reveal-left relative order-2 h-[270px] w-full overflow-hidden rounded-2xl bg-cream-dark md:h-auto md:aspect-[4/3] lg:order-1">
+							<img
+								src="/images/roots-forward/future-presentation.png"
+								alt="A young Roots Forward participant presenting a project to the rest of her team"
+								className="block h-full w-full object-cover object-[55%_center]"
+							/>
 						</div>
 
 						<div
 							ref={futureTextRef}
-							className="rf-fade-up rf-delay-1 relative order-2 lg:order-2">
+							className="rf-fade-up rf-delay-1 relative order-1 lg:order-2">
 							<span
 								aria-hidden="true"
 								className="pointer-events-none absolute -top-10 -left-1 select-none text-[110px] font-bold leading-none text-crimson-mid/10 md:-top-14 md:text-[140px]">

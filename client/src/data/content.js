@@ -275,10 +275,18 @@ export const NEWS = [
 		image: "/images/news/news3.avif",
 	},
 	{
+		title: "Culture Day Celebration",
+		date: "July 2026",
+		summary:
+			"We sponsored a quiz on Zimbabwean general knowledge during the Zimbabwe Culture Day in Nairobi, Kenya, where participants were divided into different totem and clan groups to showcase the depth of their knowledge of Zimbabwe. Administered via the Kahoot platform to guarantee complete fairness and transparency, the quiz was ultimately won by the Elephants (Samanyangas).",
+		tag: "Instagram Event Updates",
+		image: "/images/news/news1.avif",
+	},
+	{
 		title: "Africa Forward",
 		date: "November 2025",
 		summary:
-			"We hosted our first ever Africa Forward - IT & Tech Innovation Masterclass and Hackathon. 60+ participants aand 7+ solutions were built demonstrating the creativity and resilience of Africa's growing tech ecosystem.We connected startups to business financiers accross Africa.",
+			"We hosted our first ever Africa Forward - IT & Tech Innovation Masterclass and Hackathon. 60+ participants and 7+ solutions were built demonstrating the creativity and resilience of Africa's growing tech ecosystem.We connected startups to business financiers accross Africa.",
 		tag: "Instagram Event Updates",
 		image: "/images/news/news3.avif",
 	},
@@ -291,14 +299,7 @@ export const NEWS = [
 		image: "/images/news/news2.avif",
 	},
 	
-	{
-		title: "Culture Day Celebration",
-		date: "July 2026",
-		summary:
-			"We sponsored a quiz on Zimbabwean general knowledge during the Zimbabwe Culture Day in Nairobi, Kenya, where participants were divided into different totem and clan groups to showcase the depth of their knowledge of Zimbabwe. Administered via the Kahoot platform to guarantee complete fairness and transparency, the quiz was ultimately won by the Elephants (Samanyangas).",
-		tag: "Instagram Event Updates",
-		image: "/images/news/news1.avif",
-	},
+	
 	{
 		title: "Independence Day Celebration",
 		date: "April 2025",
