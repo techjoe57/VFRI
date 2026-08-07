@@ -6,15 +6,13 @@ export default function Services() {
 	const headRef = useReveal();
 	const gridRef = useReveal();
 
-	const topRow = SERVICES.slice(0, 3);
-	const bottomRow = SERVICES.slice(3);
-
 	const ServiceCard = ({ num, title, desc, image }) => (
 		<div
 			className="
 				group
 				relative
 				flex
+				h-full
 				min-h-[360px]
 				flex-col
 				justify-end
@@ -58,6 +56,151 @@ export default function Services() {
 		</div>
 	);
 
+	const AUDIENCES = [
+		"Universities",
+		"Development Institutions",
+		"NGOs",
+		"Think Tanks",
+		"Policy Bodies",
+	];
+
+	const CTACard = ({ num }) => (
+		<div
+    className="
+        group
+        relative
+        flex
+        h-full
+        min-h-[360px]
+        flex-col
+        overflow-hidden
+        rounded-sm
+        border
+        border-gold/50
+        bg-white/[0.07]
+        backdrop-blur-sm
+        p-6
+        shadow-2xl
+        transition-colors
+        duration-300
+        xl:flex-row
+        xl:gap-10
+        xl:p-8
+		hover:border-gold
+hover:bg-white/[0.09]
+    "
+>
+			{/* Ambient glow that blooms in on hover */}
+			<div
+    className="
+        pointer-events-none
+        absolute
+        -right-16
+        -top-16
+        h-56
+        w-56
+        rounded-full
+        bg-gold/20
+        opacity-80
+        blur-3xl
+    "
+/>
+
+			{/* Accent bar, hidden until hover — mirrors the ServiceCard bar but arrives as a reveal */}
+			<div
+    className="
+        absolute
+        top-0
+        left-0
+        h-1
+        w-full
+        bg-gradient-to-r
+        from-gold
+        via-crimson-mid
+        to-gold
+    "
+/>
+
+			{/* Left: identity + primary action */}
+			<div className="relative z-10 flex flex-col xl:w-[38%] xl:shrink-0">
+				<p
+					className="
+						mb-4
+						text-5xl
+						font-extralight
+						text-gold/80
+						transition-colors
+						duration-300
+						group-hover:text-gold
+					"
+				>
+					{num}
+				</p>
+
+				<h3 className="card-title mb-4 text-white">
+					Let's Work Together
+				</h3>
+
+				<p className="text-sm leading-7 text-white/70">
+					We partner with institutions across
+					Africa and beyond on research,
+					training, strategic dialogue, and
+					long-term knowledge exchange.
+				</p>
+
+				<Link
+					to="/service-inquiry"
+					className="btn-primary relative z-10 mt-8 inline-flex w-fit items-center gap-2"
+				>
+					<span>Request Our Services</span>
+					<span
+						className="transition-transform duration-300 group-hover:translate-x-1"
+						aria-hidden="true"
+					>
+						→
+					</span>
+				</Link>
+			</div>
+
+			{/* Divider — visible only once the layout goes side-by-side */}
+			<div className="hidden xl:block xl:w-px xl:self-stretch xl:bg-gold/20" />
+
+			{/* Right: who we work with */}
+			<div className="relative z-10 mt-6 flex flex-1 flex-col justify-center xl:mt-0">
+				<span
+					className="section-label mb-4"
+					style={{ color: "#c8a84b" }}
+				>
+					Who We Work With
+				</span>
+
+				<ul className="flex flex-wrap gap-2.5">
+					{AUDIENCES.map((audience) => (
+						<li
+							key={audience}
+							className="
+								rounded-full
+								border
+								border-gold/30
+								px-4
+								py-1.5
+								text-xs
+								uppercase
+								tracking-wide
+								text-white/80
+								transition-colors
+								duration-300
+								group-hover:border-gold/50
+							"
+						>
+							{audience}
+						</li>
+					))}
+				</ul>
+			</div>
+		</div>
+	);
+
 	return (
 		<section
 			id="services"
@@ -96,141 +239,26 @@ export default function Services() {
 					</p>
 				</div>
 
-				<div ref={gridRef} className="reveal">
-					{/* Tablet and mobile grid */}
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:hidden">
+				{/*
+					Responsive layout in a single grid:
+					- mobile (< md):  1 / 1 / 1 / 1 / 1  (one column, everything stacks)
+					- md (< xl):      2 / 2 / 1          (CTA spans both columns, alone on its row)
+					- xl and up:      3-top / 1+wide-bottom
+					  A 6-col grid on xl: cards 1-3 each span 2 (2+2+2=6) for the top row,
+					  card 4 spans 2 and the CTA spans 4 (2+4=6) for the bottom row.
+				*/}
+				<div
+					ref={gridRef}
+					className="reveal grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-6"
+				>
 					{SERVICES.map((service) => (
-						<ServiceCard
-							key={service.num}
-							{...service}
-						/>
+						<div key={service.num} className="xl:col-span-2">
+							<ServiceCard {...service} />
+						</div>
 					))}
 
-					<div
-						className="
-							w-full
-							min-h-[360px]
-							flex
-							flex-col
-							justify-between
-							rounded-sm
-							border
-							border-gold/20
-							bg-white/5
-							backdrop-blur-sm
-							p-6
-							shadow-lg
-							transition-all
-							duration-300
-							hover:bg-white/10
-							hover:-translate-y-2
-							hover:shadow-2xl
-						"
-					>
-						<div>
-							<p className="mb-4 text-5xl font-extralight text-gold/60">
-								→
-							</p>
-
-							<h3 className="card-title mb-4 text-white">
-								Let's Work Together
-							</h3>
-
-							<p className="text-sm leading-7 text-white/70">
-								Whether you're a university,
-								development institution,
-								NGO, think tank, or policy
-								body, we welcome
-								opportunities for research,
-								training, strategic dialogue,
-								and knowledge exchange.
-							</p>
-						</div>
-
-						<Link
-							to="/service-inquiry"
-							className="btn-primary mt-8 w-fit"
-						>
-							Request Our Services
-						</Link>
-					</div>
-				</div>
-
-					<div className="hidden xl:block">
-					{/* Top Row */}
-					<div className="grid grid-cols-3 gap-6">
-						{topRow.map((service) => (
-							<ServiceCard
-								key={service.num}
-								{...service}
-							/>
-						))}
-					</div>
-
-					{/* Bottom Row */}
-					<div className="mt-6 flex flex-wrap justify-center gap-6">
-
-						{bottomRow.map((service) => (
-							<div
-								key={service.num}
-								className="w-full max-w-[420px]"
-							>
-								<ServiceCard {...service} />
-							</div>
-						))}
-
-						{/* CTA Card */}
-						<div
-							className="
-								w-full
-								max-w-[420px]
-								min-h-[360px]
-								flex
-								flex-col
-								justify-between
-								rounded-sm
-								border
-								border-gold/20
-								bg-white/5
-								backdrop-blur-sm
-								p-6
-								shadow-lg
-								transition-all
-								duration-300
-								hover:bg-white/10
-								hover:-translate-y-2
-								hover:shadow-2xl
-							"
-						>
-							<div>
-								<p className="mb-4 text-5xl font-extralight text-gold/60">
-									â†’
-								</p>
-
-								<h3 className="card-title mb-4 text-white">
-									Let's Work Together
-								</h3>
-
-								<p className="text-sm leading-7 text-white/70">
-									Whether you're a university,
-									development institution,
-									NGO, think tank, or policy
-									body, we welcome
-									opportunities for research,
-									training, strategic dialogue,
-									and knowledge exchange.
-								</p>
-							</div>
-
-							<Link
-								to="/service-inquiry"
-								className="btn-primary mt-8 w-fit"
-							>
-								Request Our Services
-							</Link>
-						</div>
-
-					</div>
+					<div className="md:col-span-2 xl:col-span-4">
+						<CTACard num="05" />
 					</div>
 				</div>
 

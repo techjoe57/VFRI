@@ -1,105 +1,114 @@
-//Newer version with a premium touch
 import { useReveal } from "../../hooks/useReveal";
 import { FOCUS_AREAS } from "../../data/content";
-
-function FocusCard({ num, title, desc, image }) {
-	return (
-		<div
-			className="
-				group
-				bg-green-deep
-				border border-gold/15
-				rounded-xl
-				overflow-hidden
-				shadow-lg
-				transition-all
-				duration-300
-				hover:-translate-y-1
-				hover:shadow-2xl
-				hover:border-gold/40
-			"
-		>
-			<div className="flex flex-col sm:flex-row h-full">
-
-				{/* Image */}
-				<div className="sm:w-44 md:w-48 flex-shrink-0 overflow-hidden">
-					<img
-						src={image}
-						alt={title}
-						className="
-							w-full
-							h-52
-							sm:h-full
-							object-cover
-							transition-transform
-							duration-500
-							group-hover:scale-105
-						"
-					/>
-				</div>
-
-				{/* Content */}
-				<div className="flex flex-col justify-center p-5 md:p-6">
-
-					<p className="text-4xl font-light text-gold/60 mb-2">
-						{num}
-					</p>
-
-					<h3 className="font-display text-2xl text-white mb-3 leading-tight">
-						{title}
-					</h3>
-					<div className="w-14 h-1 rounded-full bg-gold mb-4" />
-
-					<p className="text-base leading-7 text-white/75">
-						{desc}
-					</p>
-
-				</div>
-
-			</div>
-		</div>
-	);
-}
 
 export default function Focus() {
 	const headRef = useReveal();
 	const gridRef = useReveal();
 
+	const FocusCard = ({ num, title, desc, image }) => (
+		<div
+			className="
+				group
+				relative
+				flex
+				h-full
+				min-h-[360px]
+				flex-col
+				justify-end
+				overflow-hidden
+				rounded-sm
+				border
+				border-gold/20
+				shadow-lg
+				transition-all
+				duration-300
+				hover:-translate-y-2
+				hover:shadow-2xl
+			"
+		>
+			{/* Background Image */}
+			<div
+				className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+				style={{ backgroundImage: `url(${image})` }}
+			/>
+
+			{/* Overlay */}
+			<div className="absolute inset-0 bg-gradient-to-t from-black via-black/65 to-black/20 transition-colors duration-300 group-hover:from-black/90" />
+
+			{/* Accent Bar */}
+			<div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold via-crimson-mid to-gold" />
+
+			{/* Content */}
+			<div className="relative z-10 p-5">
+				<p className="mb-3 text-5xl font-extralight tracking-tight text-gold/70">
+					{num}
+				</p>
+
+				<h3 className="card-title mb-3 text-white">
+					{title}
+				</h3>
+
+				<p className="text-sm leading-7 text-white/75">
+					{desc}
+				</p>
+			</div>
+		</div>
+	);
+
 	return (
 		<section
 			id="focus"
-			className="py-14 px-6 md:px-10 lg:px-16 bg-cream/80 scroll-mt-28"
+			className="page-section pb-6 md:pb-8 bg-[#FFF6DD]/80 scroll-mt-28"
 		>
-			<div className="max-w-7xl mx-auto">
+			{/* Slightly wider than section-inner to reduce side whitespace — matches Services */}
+			<div className="mx-auto w-full max-w-[1500px]">
 
+				{/* Heading */}
 				<div
 					ref={headRef}
-					className="reveal text-center max-w-3xl mx-auto mb-10"
+					className="reveal max-w-4xl mx-auto text-center mb-8"
 				>
-					<span className="section-label mb-3 inline-block">
-						What We Do
-					</span>
+					<div className="flex justify-center mb-3">
+						<span className="section-label">
+							What We Do
+						</span>
+					</div>
 
-					<h2 className="font-display text-4xl md:text-5xl text-green-deep mb-4">
+					<h2 className="section-title text-green-deep mb-4">
 						Focus Areas
 					</h2>
 
-					<p className="text-lg leading-8 text-ink-light">
+					<p className="section-copy mx-auto">
 						VFRI's work is organised around five primary domains,
-						grounded in African realities while contributing to
-						global knowledge and policy.
+						each grounded in African realities while contributing
+						to global knowledge and policy.
 					</p>
 				</div>
 
+				{/*
+					Responsive layout in a single grid — mirrors Services.jsx:
+					- mobile (< md):  1 / 1 / 1 / 1 / 1  (one column, everything stacks)
+					- md (< xl):      2 / 2 / 1          (last card spans full width, alone on its row)
+					- xl and up:      3-top / 1+wide-bottom
+					  A 6-col grid on xl: the first three cards each span 2 (2+2+2 = 6)
+					  for the top row; the fourth card spans 2 and the fifth spans 4
+					  (2+4 = 6) for the bottom row.
+				*/}
 				<div
 					ref={gridRef}
-					className="grid grid-cols-1 xl:grid-cols-2 gap-6"
+					className="reveal grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-6"
 				>
-					{FOCUS_AREAS.map((area) => (
-						<FocusCard
+					{FOCUS_AREAS.map((area, index) => (
+						<div
 							key={area.num}
-							{...area}
-						/>
+							className={
+								index === FOCUS_AREAS.length - 1
+									? "md:col-span-2 xl:col-span-4"
+									: "xl:col-span-2"
+							}
+						>
+							<FocusCard {...area} />
+						</div>
 					))}
 				</div>
 
