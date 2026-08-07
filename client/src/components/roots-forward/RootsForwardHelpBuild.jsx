@@ -11,7 +11,12 @@ export default function RootsForwardHelpBuild() {
 			<div className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-gold/10 blur-3xl" />
 			<div className="pointer-events-none absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-gold/5 blur-3xl" />
 
-			<div className="relative mx-auto w-full max-w-3xl px-6 py-16 md:px-12 md:py-24 lg:py-28">
+			<div className="rf-section-py relative mx-auto w-full max-w-3xl px-6 md:px-12">
+				<span
+					aria-hidden="true"
+					className="mb-8 block h-px w-16 bg-gradient-to-r from-transparent via-gold/70 to-transparent md:mb-10"
+				/>
+
 				<h2
 					ref={headingRef}
 					className="rf-fade-up rf-delay-0 font-sans text-3xl font-bold leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">

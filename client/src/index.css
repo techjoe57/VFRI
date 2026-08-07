@@ -123,6 +123,45 @@
 		opacity: 1;
 		transform: scale(1);
 	}
+	/* Same fade-up language, slightly larger amplitude — for the one or two
+	   moments (e.g. a closing headline) that should read as the strongest
+	   beat in a section's reveal sequence. */
+	.rf-fade-up-lg {
+		opacity: 0;
+		transform: translateY(36px);
+		transition: opacity 0.85s ease-out, transform 0.85s ease-out;
+	}
+	.rf-fade-up-lg.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	/* Shared vertical rhythm for Roots Forward sections (excludes the
+	   full-height hero and the fixed header, which are special cases). */
+	.rf-section-py {
+		@apply py-14 md:py-20 lg:py-24;
+	}
+
+	/* Roots / Skills / Future — desktop-only journey line connecting 01/02/03.
+	   Each pillar has its own faint static track plus a gold "fill" bar and
+	   node dot that reveal via the same one-shot observer hook already used
+	   for every other Roots Forward animation (the ref target gets a
+	   `visible` class added once, which these descendant selectors key off). */
+	.rf-line-bar {
+		transform: scaleY(0);
+		transform-origin: top;
+		transition: transform 0.9s ease-out;
+	}
+	.rf-line-fill-wrap.visible .rf-line-bar {
+		transform: scaleY(1);
+	}
+	.rf-line-dot {
+		opacity: 0;
+		transition: opacity 0.5s ease-out 0.5s;
+	}
+	.rf-line-fill-wrap.visible .rf-line-dot {
+		opacity: 1;
+	}
 
 	/* Small, reusable stagger steps (~120ms apart) applied alongside the
 	   rf-* reveal classes above to sequence groups within a section. */
@@ -145,11 +184,20 @@
 
 @media (prefers-reduced-motion: reduce) {
 	.rf-fade-up,
+	.rf-fade-up-lg,
 	.rf-reveal-left,
 	.rf-reveal-right,
 	.rf-reveal-scale {
 		opacity: 1;
 		transform: none;
+		transition: none;
+	}
+	.rf-line-bar {
+		transform: scaleY(1);
+		transition: none;
+	}
+	.rf-line-dot {
+		opacity: 1;
 		transition: none;
 	}
 }
