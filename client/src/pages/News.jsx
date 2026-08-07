@@ -6,8 +6,10 @@ export default function News() {
 	const gridRef = useReveal();
 
 	return (
-		<section id="news" className="page-hero bg-white flex-1">
-			<div className="section-inner"> 
+		<section id="news" className="page-hero flex-1 relative overflow-hidden">
+			<div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/about/victoria_falls.jpg')" }} />
+			<div className="absolute inset-0 z-[1] bg-white/70" />
+			<div className="section-inner relative z-10"> 
 				<div
 					ref={headRef}
 					className="section-heading mx-auto max-w-4xl text-center">
@@ -29,9 +31,9 @@ export default function News() {
 
 				<div ref={gridRef} className="reveal grid grid-cols-1 lg:grid-cols-2 gap-5">
 					{NEWS.map(({ title, date, summary, tag, image, link, linkLabel }) => (
-						<div key={title} className="card p-5 group flex flex-col sm:flex-row gap-5 items-start">
+						<div key={title} className="card p-5 group flex flex-col md:flex-row gap-5">
 							{/* IMAGE */}
-							<div className="w-full sm:w-40 sm:h-40 h-48 flex-shrink-0 overflow-hidden rounded-sm">
+							<div className="w-full md:w-40 h-40 md:h-auto flex-shrink-0 overflow-hidden rounded-sm">
 								<img
 									src={image}
 									alt={title}
@@ -52,7 +54,7 @@ export default function News() {
 									{title}
 								</h3>
 
-								<p className="text-sm text-ink-light leading-relaxed">
+								<p className="text-sm text-ink-light leading-5 text-justify">
 									{summary}
 								</p>
 
