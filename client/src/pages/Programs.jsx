@@ -24,13 +24,13 @@ export default function Programs() {
 					ref={headRef}
 					className="reveal mx-auto mb-10 max-w-4xl text-center"
 				>
-					<div className="mb-4 flex justify-center">
+					<div className="mt-10 mb-4 flex justify-center">
 						<span className="section-label">
 							What We Do
 						</span>
 					</div>
 
-					<h2 className="section-title mt-10 mb-5">
+					<h2 className="section-title mt-3 mb-0.5">
 						Programs & Initiatives
 					</h2>
 
@@ -52,7 +52,6 @@ export default function Programs() {
 							category,
 							description,
 							image,
-							internalLink,
 						}) => (
 							<div
 								key={title}
@@ -96,7 +95,7 @@ export default function Programs() {
 									{title}
 								</h3>
 
-								<p className="flex-grow text-sm leading-7 text-ink-light">
+								<p className="flex-grow text-sm leading-5 text-ink-light text-justify">
 									{description}
 								</p>
 
@@ -104,7 +103,7 @@ export default function Programs() {
 									<button
 										type="button"
 										onClick={() => navigate(internalLink)}
-										className="group mt-auto inline-flex w-fit items-center gap-2 rounded-sm bg-gold px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-crimson-deep transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-crimson-deep hover:text-cream hover:shadow-lg hover:shadow-crimson-deep/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold cursor-pointer">
+										className="group mt-6 inline-flex w-fit items-center gap-2 rounded-sm bg-gold px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-crimson-deep transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-crimson-deep hover:text-cream hover:shadow-lg hover:shadow-crimson-deep/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold cursor-pointer">
 										Explore Roots Forward
 										<ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
 									</button>

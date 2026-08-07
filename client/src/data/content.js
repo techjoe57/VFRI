@@ -153,7 +153,7 @@ export const FOCUS_AREAS = [
 	{
 		num: "05",
 		title: "Development & Humanitarian Affairs",
-		desc: "Bridging academic research and humanitarian action — from fieldwork in conflict zones to development policy recommendations.",
+		desc: "Bridging academic research and humanitarian action from fieldwork in conflict zones to development policy recommendations.",
 		image: "/images/focus/development.jpg",
 	},
 ];
@@ -162,7 +162,7 @@ export const SERVICES = [
 	{
 		num: "01",
 		title: "Policy & Research Dialogues",
-		desc: "We offer platforms for diverse and robust engagement on Africa's contemporary and historical issues — convening scholars, practitioners, and policymakers.",
+		desc: "We offer platforms for diverse and robust engagement on Africa's contemporary and historical issues by convening scholars, practitioners, and policymakers.",
 		image: "/images/services/dialogue.avif",
 	},
 	{
@@ -174,7 +174,7 @@ export const SERVICES = [
 	{
 		num: "03",
 		title: "Systems Strengthening Courses",
-		desc: "We run capacity-building programmes for individuals, organisations and businesses to foster skills transfer and institutional resilience.",
+		desc: "We run capacity building programmes for individuals, organisations and businesses to foster skills transfer and institutional resilience.",
 		image: "/images/services/development.avif",
 	},
 	{
@@ -252,7 +252,7 @@ export const PROGRAMS = [
 		title: "Africa Forward",
 		category: "Capacity Building",
 		description:
-			"Africa Forward is a 4 month programme featuring a masterclass and hackathon with a focus on finance, technology, marketing, and data.",
+			"Africa Forward is a 4 month programme featuring a masterclass and hackathon with a focus on finance, technology, marketing, and data. We connect startups to business financiers accross Africa using sessions filled with practical insights, thoughtful discussions, and perspectives from leaders who are actively shaping their industries.",
 		image: "/images/programs/youth.avif",
 	},
 	{
@@ -270,7 +270,7 @@ export const NEWS = [
 		title: "Africa Forward",
 		date: "August 2026",
 		summary:
-			"We partnered with Momentum Labs to bring together professionals from across Africa to explore the future of finance, marketing, technology, and entrepreneurship.The session was filled with practical insights, thoughtful discussions, and perspectives from leaders who are actively shaping their industries.",
+			"We partnered with Momentum Labs to bring together professionals from across Africa to explore the future of finance, marketing, technology, and entrepreneurship. The session was filled with practical insights, thoughtful discussions, and perspectives from leaders who are actively shaping their industries.",
 		tag: "Event",
 		image: "/images/news/news3.avif",
 	},
@@ -278,7 +278,7 @@ export const NEWS = [
 		title: "Africa Forward",
 		date: "November 2025",
 		summary:
-			"We hosted our first ever Africa Forward - IT & Tech Innovation Masterclass and Hackathon. 60+ participants aand 7+ solutions were built demonstrating the creativity and resilience of Africa's growing tech ecosystem.",
+			"We hosted our first ever Africa Forward - IT & Tech Innovation Masterclass and Hackathon. 60+ participants aand 7+ solutions were built demonstrating the creativity and resilience of Africa's growing tech ecosystem.We connected startups to business financiers accross Africa.",
 		tag: "Instagram Event Updates",
 		image: "/images/news/news3.avif",
 	},
@@ -286,17 +286,25 @@ export const NEWS = [
 		title: "ZIMAZA Day Competition",
 		date: "September 2025",
 		summary:
-			"The ZIMAZA quiz and essay competition brought learners together to explore African history, geography, culture, and sustainable development.",
+			"The ZIMAZA quiz and essay competition held in Nairobi, Kenya, brought learners together from Malawi, Zambia and Zimbabwe to explore African history, geography, culture, and sustainable development. Our essay themes on sustainable development and Africa's future encouraged critical thinking and innovation by empowering the youth with a platform for intellectual engagement and leadership development.",
 		tag: "Event",
 		image: "/images/news/news2.avif",
 	},
-
+	
 	{
 		title: "Culture Day Celebration",
 		date: "July 2026",
 		summary:
 			"We sponsored a quiz on Zimbabwean general knowledge during the Zimbabwe Culture Day in Nairobi, Kenya, where participants were divided into different totem and clan groups to showcase the depth of their knowledge of Zimbabwe. Administered via the Kahoot platform to guarantee complete fairness and transparency, the quiz was ultimately won by the Elephants (Samanyangas).",
 		tag: "Instagram Event Updates",
+		image: "/images/news/news1.avif",
+	},
+	{
+		title: "Independence Day Celebration",
+		date: "April 2025",
+		summary:
+			"We sponsored a Diplomatic event to commemorate Zimbabwe's Independence Day in Nairobi, Kenya, where we delighted in traditional dances and music not to mention amazing insightful presentations. The presentations and discussions resulted in momentum labs developing an application",
+		tag: "Event",
 		image: "/images/news/news1.avif",
 	},
 	
