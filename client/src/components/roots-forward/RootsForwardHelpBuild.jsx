@@ -1,4 +1,5 @@
 import { useRootsForwardReveal } from "../../hooks/useRootsForwardReveal";
+import { ROOTS_FORWARD_INTEREST_FORM_URL } from "./rootsForwardConstants";
 
 export default function RootsForwardHelpBuild() {
 	const headingRef = useRootsForwardReveal();
@@ -55,12 +56,13 @@ export default function RootsForwardHelpBuild() {
 				<div
 					ref={ctaRef}
 					className="rf-fade-up rf-delay-3 mt-10 flex flex-col items-start gap-3 md:mt-12">
-					<button
-						type="button"
-						// TODO: wire up the registration form link once it is provided
+					<a
+						href={ROOTS_FORWARD_INTEREST_FORM_URL}
+						target="_blank"
+						rel="noopener noreferrer"
 						className="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-base font-semibold text-ink transition-all duration-200 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/30">
 						Register your interest
-					</button>
+					</a>
 					<span className="text-sm text-white/60">
 						Takes two minutes. No commitment.
 					</span>

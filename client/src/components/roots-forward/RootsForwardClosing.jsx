@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { useRootsForwardReveal } from "../../hooks/useRootsForwardReveal";
+import { ROOTS_FORWARD_INTEREST_FORM_URL } from "./rootsForwardConstants";
 
 export default function RootsForwardClosing() {
 	const bgRef = useRootsForwardReveal();
@@ -60,14 +61,15 @@ export default function RootsForwardClosing() {
 					Tell us you're interested. That's all this takes today.
 				</p>
 
-				<button
+				<a
 					ref={ctaRef}
-					type="button"
-					// TODO: wire up the registration form link once it is provided
+					href={ROOTS_FORWARD_INTEREST_FORM_URL}
+					target="_blank"
+					rel="noopener noreferrer"
 					className="rf-fade-up rf-delay-3 group mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-base font-semibold text-ink transition-all duration-200 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/30 md:mt-10">
 					Register your interest
 					<ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-				</button>
+				</a>
 
 				<span
 					ref={attributionRef}
