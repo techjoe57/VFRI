@@ -290,13 +290,21 @@ export const NEWS = [
 		tag: "Event",
 		image: "/images/news/news2.avif",
 	},
-
+	
 	{
 		title: "Culture Day Celebration",
 		date: "July 2026",
 		summary:
 			"We sponsored a quiz on Zimbabwean general knowledge during the Zimbabwe Culture Day in Nairobi, Kenya, where participants were divided into different totem and clan groups to showcase the depth of their knowledge of Zimbabwe. Administered via the Kahoot platform to guarantee complete fairness and transparency, the quiz was ultimately won by the Elephants (Samanyangas).",
 		tag: "Instagram Event Updates",
+		image: "/images/news/news1.avif",
+	},
+	{
+		title: "Independence Day Celebration",
+		date: "April 2025",
+		summary:
+			"We sponsored a Diplomatic event to commemorate Zimbabwe's Independence Day in Nairobi, Kenya, where we delighted in traditional dances and music not to mention amazing insightful presentations. The presentations and discussions resulted in momentum labs developing an application",
+		tag: "Event",
 		image: "/images/news/news1.avif",
 	},
 	
