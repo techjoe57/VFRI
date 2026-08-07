@@ -286,7 +286,7 @@ export const NEWS = [
 		title: "Africa Forward",
 		date: "November 2025",
 		summary:
-			"We hosted our first ever Africa Forward - IT & Tech Innovation Masterclass and Hackathon. 60+ participants aand 7+ solutions were built demonstrating the creativity and resilience of Africa's growing tech ecosystem.We connected startups to business financiers accross Africa.",
+			"We hosted our first ever Africa Forward - IT & Tech Innovation Masterclass and Hackathon. 60+ participants and 7+ solutions were built demonstrating the creativity and resilience of Africa's growing tech ecosystem.We connected startups to business financiers accross Africa.",
 		tag: "Instagram Event Updates",
 		image: "/images/news/news3.avif",
 	},
