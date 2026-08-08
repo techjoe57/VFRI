@@ -5,9 +5,9 @@ export default function RootsForwardLocation() {
 	const imageRef = useRootsForwardReveal();
 
 	return (
-		<section id="victoria-falls" className="bg-cream">
+		<section id="victoria-falls" className="scroll-mt-28 bg-cream md:scroll-mt-32">
 			<div className="rf-section-py mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-20">
-				<div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+				<div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
 					{/* TEXT */}
 					<div ref={textRef} className="rf-fade-up rf-delay-0 max-w-xl">
 						<h2 className="font-sans text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl">
@@ -39,7 +39,7 @@ export default function RootsForwardLocation() {
 					{/* IMAGE TREATMENT */}
 					<div
 						ref={imageRef}
-						className="rf-reveal-scale rf-delay-1 relative h-[270px] w-full overflow-hidden rounded-2xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:aspect-[4/3]">
+						className="rf-reveal-scale rf-delay-1 relative h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:aspect-[4/5] lg:max-h-[480px]">
 						<img
 							src="/images/roots-forward/victoria-falls-location.png"
 							alt="Young Roots Forward participants standing together overlooking Victoria Falls"

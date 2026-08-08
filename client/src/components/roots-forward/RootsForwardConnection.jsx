@@ -7,7 +7,7 @@ export default function RootsForwardConnection() {
 	return (
 		<section
 			id="growing-up-between"
-			className="relative overflow-hidden bg-cream-dark">
+			className="relative scroll-mt-28 overflow-hidden bg-cream-dark md:scroll-mt-32">
 			{/* Decorative motif — faint contour lines (place/landscape) joined
 			    by a dashed route between two waypoints (journey/connection).
 			    Abstract only, not a reproduction of any specific cultural

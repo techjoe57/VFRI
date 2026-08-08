@@ -10,10 +10,10 @@ export default function RootsForwardHero() {
 
 	return (
 		<section className="relative overflow-hidden bg-cream">
-			<div className="mx-auto w-full max-w-7xl px-6 pt-28 pb-16 md:px-12 md:pt-32 md:pb-20 lg:px-20 lg:py-0 lg:min-h-screen">
-				<div className="grid gap-10 lg:h-screen lg:grid-cols-2 lg:items-center lg:gap-16">
+			<div className="mx-auto flex w-full max-w-7xl justify-center px-6 pt-28 pb-5 md:px-12 md:pt-32 lg:px-20">
+				<div className="grid w-full max-w-4xl gap-8 lg:grid-cols-2 lg:items-end lg:gap-8">
 					{/* TEXT */}
-					<div className="relative z-10 order-1 flex flex-col items-start gap-5 lg:order-1">
+					<div className="relative z-10 order-1 flex flex-col items-start gap-4 lg:order-1">
 						<span
 							ref={eyebrowRef}
 							className="rf-fade-up rf-delay-0 text-xs font-semibold uppercase tracking-[0.14em] text-gold">
@@ -22,14 +22,14 @@ export default function RootsForwardHero() {
 
 						<h1
 							ref={headingRef}
-							className="rf-fade-up rf-delay-1 font-sans text-4xl font-semibold leading-[1.05] tracking-tight text-ink md:text-5xl lg:text-6xl">
+							className="rf-fade-up rf-delay-1 font-sans text-4xl font-semibold leading-[1.05] tracking-tight text-ink md:text-5xl">
 							Roots Forward
 						</h1>
 
 						<div
 							ref={bodyRef}
-							className="rf-fade-up rf-delay-2 flex flex-col items-start gap-5">
-							<p className="max-w-md font-sans text-2xl font-medium leading-snug text-ink md:text-3xl">
+							className="rf-fade-up rf-delay-2 flex flex-col items-start gap-4">
+							<p className="max-w-md font-sans text-xl font-medium leading-snug text-ink md:text-2xl">
 								You carry a heritage you may have never stood
 								inside.
 							</p>
@@ -57,7 +57,7 @@ export default function RootsForwardHero() {
 
 						<div
 							ref={ctaRef}
-							className="rf-fade-up rf-delay-3 mt-5 flex flex-col items-start gap-4">
+							className="rf-fade-up rf-delay-3 mt-3 flex flex-col items-start gap-3">
 							<a
 								href={ROOTS_FORWARD_INTEREST_FORM_URL}
 								target="_blank"
@@ -74,7 +74,7 @@ export default function RootsForwardHero() {
 					{/* IMAGE TREATMENT */}
 					<div
 						ref={imageRef}
-						className="rf-reveal-scale rf-delay-0 relative order-2 h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:order-2 lg:aspect-[4/5]">
+						className="rf-reveal-scale rf-delay-0 relative order-2 h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:order-2 lg:aspect-[4/5] lg:max-h-[480px]">
 						<img
 							src="/images/roots-forward/roots-forward-hero.jpg"
 							alt="Young people from the diaspora collaborating together during a Roots Forward session"

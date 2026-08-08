@@ -66,62 +66,59 @@ export default function Services() {
 
 	const CTACard = ({ num }) => (
 		<div
-    className="
-        group
-        relative
-        flex
-        h-full
-        min-h-[360px]
-        flex-col
-        overflow-hidden
-        rounded-sm
-        border
-        border-gold/50
-        bg-white/[0.07]
-        backdrop-blur-sm
-        p-6
-        shadow-2xl
-        transition-colors
-        duration-300
-        xl:flex-row
-        xl:gap-10
-        xl:p-8
-		hover:border-gold
-hover:bg-white/[0.09]
-    "
->
+    		className="
+			group
+			relative
+			flex
+			h-full
+			min-h-[360px]
+			flex-col
+			overflow-hidden
+			rounded-sm
+			border
+			border-gold/50
+			bg-white/[0.07]
+			backdrop-blur-sm
+			p-6
+			shadow-2xl
+			transition-colors
+			duration-300
+			xl:flex-row
+			xl:gap-10
+			xl:p-8
+			hover:border-gold
+			hover:bg-white/[0.09]"
+			>
+
 			{/* Ambient glow that blooms in on hover */}
 			<div
-    className="
-        pointer-events-none
-        absolute
-        -right-16
-        -top-16
-        h-56
-        w-56
-        rounded-full
-        bg-gold/20
-        opacity-80
-        blur-3xl
-    "
-/>
+				className="
+				pointer-events-none
+				absolute
+				-right-16
+				-top-16
+				h-56
+				w-56
+				rounded-full
+				bg-gold/20
+				opacity-80
+				blur-3xl"
+			/>
 
 			{/* Accent bar, hidden until hover — mirrors the ServiceCard bar but arrives as a reveal */}
 			<div
-    className="
-        absolute
-        top-0
-        left-0
-        h-1
-        w-full
-        bg-gradient-to-r
-        from-gold
-        via-crimson-mid
-        to-gold
-    "
-/>
+    			className="
+				absolute
+				top-0
+				left-0
+				h-1
+				w-full
+				bg-gradient-to-r
+				from-gold
+				via-crimson-mid
+				to-gold "
+			/>
 
-			{/* Left: identity + primary action */}
 			<div className="relative z-10 flex flex-col xl:w-[38%] xl:shrink-0">
 				<p
 					className="
@@ -131,9 +128,8 @@ hover:bg-white/[0.09]
 						text-gold/80
 						transition-colors
 						duration-300
-						group-hover:text-gold
-					"
-				>
+						group-hover:text-gold"
+					>
 					{num}
 				</p>
 
@@ -161,8 +157,6 @@ hover:bg-white/[0.09]
 					</span>
 				</Link>
 			</div>
-
-			{/* Divider — visible only once the layout goes side-by-side */}
 			<div className="hidden xl:block xl:w-px xl:self-stretch xl:bg-gold/20" />
 
 			{/* Right: who we work with */}
@@ -204,7 +198,7 @@ hover:bg-white/[0.09]
 	return (
 		<section
 			id="services"
-			className="page-section bg-green-deep/90 scroll-mt-28 relative overflow-hidden"
+			className="page-section bg-[#244F46] scroll-mt-28 relative overflow-hidden"
 		>
 			{/* Background Glow */}
 			<div className="absolute inset-0 pointer-events-none">
@@ -263,6 +257,16 @@ hover:bg-white/[0.09]
 				</div>
 
 			</div>
+
+			{/* Smooth transition into Contact section */}
+			<div
+				aria-hidden="true"
+				className="absolute bottom-0 left-0 right-0 h-72 md:h-96 pointer-events-none"
+				style={{
+					background: "linear-gradient(to bottom, transparent 0%, #5E0A11 100%)",
+				}}
+			/>
+
 		</section>
 	);
 }

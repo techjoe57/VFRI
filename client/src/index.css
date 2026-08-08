@@ -205,8 +205,10 @@
 
 	/* Shared vertical rhythm for Roots Forward sections (excludes the
 	   full-height hero and the fixed header, which are special cases). */
+	/* Shared vertical rhythm — ~20px each side so adjacent sections
+	   leave ~40px between the last content of one and the first of the next. */
 	.rf-section-py {
-		@apply py-14 md:py-20 lg:py-24;
+		@apply py-5;
 	}
 
 	/* Roots / Skills / Future — desktop-only journey line connecting 01/02/03.

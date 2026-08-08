@@ -15,7 +15,7 @@ export default function RootsForwardHelpBuild() {
 			<div className="rf-section-py relative mx-auto w-full max-w-3xl px-6 md:px-12">
 				<span
 					aria-hidden="true"
-					className="mb-8 block h-px w-16 bg-gradient-to-r from-transparent via-gold/70 to-transparent md:mb-10"
+					className="mb-5 block h-px w-16 bg-gradient-to-r from-transparent via-gold/70 to-transparent"
 				/>
 
 				<h2

@@ -13,10 +13,10 @@ export default function RootsForwardPillars() {
 	const futureLineRef = useRootsForwardReveal();
 
 	return (
-		<section id="whats-included" className="scroll-mt-24 bg-cream md:scroll-mt-28">
-			<div className="mx-auto w-full max-w-7xl px-6 pt-20 pb-14 md:px-12 md:pt-24 md:pb-20 lg:px-20 lg:pb-24">
+		<section id="whats-included" className="scroll-mt-28 bg-cream md:scroll-mt-32">
+			<div className="rf-section-py mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-20">
 				{/* INTRO */}
-				<div ref={introRef} className="rf-fade-up max-w-2xl">
+				<div ref={introRef} className="rf-fade-up mx-auto w-full max-w-2xl text-left">
 					<h2 className="font-sans text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl">
 						Three weeks. Three things.
 					</h2>
@@ -27,9 +27,9 @@ export default function RootsForwardPillars() {
 				</div>
 
 				{/* PILLARS */}
-				<div className="mt-16 flex flex-col gap-16 md:mt-20 md:gap-20">
+				<div className="mt-10 flex flex-col gap-10 md:mt-12 md:gap-12">
 					{/* ROOTS */}
-					<div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
+					<div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-12">
 						{/* Journey line — desktop only. Roots is the first
 						    node, so its track/fill only extend downward,
 						    toward Skills. */}
@@ -53,10 +53,10 @@ export default function RootsForwardPillars() {
 
 						<div
 							ref={rootsTextRef}
-							className="rf-fade-up rf-delay-1 relative order-1 lg:order-2">
+							className="rf-fade-up rf-delay-1 relative order-1 pt-2 lg:order-2">
 							<span
 								aria-hidden="true"
-								className="pointer-events-none absolute -top-10 -left-1 select-none text-[110px] font-bold leading-none text-gold/10 md:-top-14 md:text-[140px]">
+								className="pointer-events-none absolute -top-6 -left-1 select-none text-[80px] font-bold leading-none text-gold/10 md:-top-8 md:text-[100px]">
 								01
 							</span>
 							<div className="relative">
@@ -81,7 +81,7 @@ export default function RootsForwardPillars() {
 					</div>
 
 					{/* SKILLS */}
-					<div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
+					<div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-12">
 						{/* Journey line — the middle node, so its track/fill
 						    extend both up (toward Roots) and down (toward
 						    Future) to keep the line visually continuous. */}
@@ -105,10 +105,10 @@ export default function RootsForwardPillars() {
 
 						<div
 							ref={skillsTextRef}
-							className="rf-fade-up rf-delay-1 relative order-1 lg:order-1">
+							className="rf-fade-up rf-delay-1 relative order-1 pt-2 lg:order-1">
 							<span
 								aria-hidden="true"
-								className="pointer-events-none absolute -top-10 -left-1 select-none text-[110px] font-bold leading-none text-green-mid/10 md:-top-14 md:text-[140px]">
+								className="pointer-events-none absolute -top-6 -left-1 select-none text-[80px] font-bold leading-none text-green-mid/10 md:-top-8 md:text-[100px]">
 								02
 							</span>
 							<div className="relative">
@@ -132,7 +132,7 @@ export default function RootsForwardPillars() {
 					</div>
 
 					{/* FUTURE */}
-					<div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-20">
+					<div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12 lg:gap-12">
 						{/* Journey line — the final node, so its track/fill
 						    only extend upward, toward Skills. */}
 						<div className="pointer-events-none absolute -top-10 bottom-0 left-1/2 hidden w-px -translate-x-1/2 bg-ink/10 lg:block" />
@@ -155,10 +155,10 @@ export default function RootsForwardPillars() {
 
 						<div
 							ref={futureTextRef}
-							className="rf-fade-up rf-delay-1 relative order-1 lg:order-2">
+							className="rf-fade-up rf-delay-1 relative order-1 pt-2 lg:order-2">
 							<span
 								aria-hidden="true"
-								className="pointer-events-none absolute -top-10 -left-1 select-none text-[110px] font-bold leading-none text-crimson-mid/10 md:-top-14 md:text-[140px]">
+								className="pointer-events-none absolute -top-6 -left-1 select-none text-[80px] font-bold leading-none text-crimson-mid/10 md:-top-8 md:text-[100px]">
 								03
 							</span>
 							<div className="relative">
