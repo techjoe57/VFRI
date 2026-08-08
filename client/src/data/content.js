@@ -240,6 +240,14 @@ export const CONTACT = {
 
 export const PROGRAMS = [
 	{
+		title: "Roots Forward",
+		category: "Capacity Building & Innovation",
+		description:
+			"Roots is a three week residential program in Victoria Falls, Zimbabwe, for young adults of Zimbabwean, Zambian or African descent who have grown up in the Diaspora. It provides heritage, digital and leadership skill training to successful participants.",
+		image: "/images/programs/climate.avif",
+		internalLink: "/roots-forward",
+	},
+	{
 		title: "World Vision: Sudan's Children Carry the Deepest Scars",
 		category: "Research Program",
 		description:
@@ -255,22 +263,23 @@ export const PROGRAMS = [
 			"Africa Forward is a 4 month programme featuring a masterclass and hackathon with a focus on finance, technology, marketing, and data. We connect startups to business financiers accross Africa using sessions filled with practical insights, thoughtful discussions, and perspectives from leaders who are actively shaping their industries.",
 		image: "/images/programs/youth.avif",
 	},
-	{
-		title: "Roots Forward",
-		category: "Capacity Building & Innovation",
-		description:
-			"Roots is a three week residential program in Victoria Falls, Zimbabwe, for young adults of Zimbabwean, Zambian or African descent who have grown up in the Diaspora. It provides heritage, digital and leadership skill training to successful participants.",
-		image: "/images/programs/climate.avif",
-		internalLink: "/roots-forward",
-	},
+	
 ];
 
 export const NEWS = [
 	{
-		title: "Africa Forward",
+		title: "Africa Forward (Finance and Marketing Masterclass)",
 		date: "August 2026",
 		summary:
 			"We partnered with Momentum Labs to bring together professionals from across Africa to explore the future of finance, marketing, technology, and entrepreneurship. The session was filled with practical insights, thoughtful discussions, and perspectives from leaders who are actively shaping their industries.",
+		tag: "Event",
+		image: "/images/news/news3.avif",
+	},
+	{
+		title: "Africa Forward (MasterClass)",
+		date: "July 2026",
+		summary:
+			"We hosted a virtual masterclass connecting founders with product managers and financial institutions to answer questions such as how technology is evolving in finance, what institutions look for, the role marketing plays in growth, and what makes some founders secure opportunities while others struggle.",
 		tag: "Event",
 		image: "/images/news/news3.avif",
 	},
