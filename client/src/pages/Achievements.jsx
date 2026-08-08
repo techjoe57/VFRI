@@ -8,8 +8,13 @@ export default function Achievements() {
 	return (
 		<section
 			id="achievements"
-			className="page-hero bg-cream flex-1">
-			<div className="section-inner"> 
+			className="page-hero flex-1 relative overflow-hidden">
+			<div
+				className="absolute inset-0 z-0 bg-cover bg-center"
+				style={{ backgroundImage: "url('/images/about/victoria_falls.jpg')" }}
+			/>
+			<div className="absolute inset-0 z-[1] bg-white/70" />
+			<div className="section-inner relative z-10">
 				<div
 					ref={headRef}
 					className="section-heading mx-auto max-w-4xl text-center">

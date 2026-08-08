@@ -38,27 +38,27 @@ function RootsForwardCard({ program }) {
 
 
 export default function Programs() {
-	const navigate = useNavigate();
 	const headRef = useReveal();
 	const gridRef = useReveal();
 
 	return (
-		<section id="programs" className="scroll-mt-28 relative overflow-hidden bg-cream pt-36 pb-6 sm:pt-28 lg:pt-16">
-			{/* Background Glow */}
-			<div className="absolute inset-0 pointer-events-none">
-				<div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-gold/5 blur-3xl" />
-			</div>
+		<section id="programs" className="page-hero flex-1 relative overflow-hidden">
+			<div
+				className="absolute inset-0 z-0 bg-cover bg-center"
+				style={{ backgroundImage: "url('/images/about/victoria_falls.jpg')" }}
+			/>
+			<div className="absolute inset-0 z-[1] bg-white/70" />
 
-			<div className="relative z-10 mx-auto max-w-7xl px-6 lg:py-2">
+			<div className="section-inner relative z-10">
 				{/* Heading */}
-				<div ref={headRef} className="reveal mx-auto mb-10 max-w-4xl text-center">
-					<div className="mt-10 mb-4 flex justify-center">
+				<div ref={headRef} className="reveal section-heading mx-auto max-w-4xl text-center">
+					<div className="mb-4 flex justify-center">
 						<span className="section-label">
 							What We Do
 						</span>
 					</div>
 
-					<h2 className="section-title mt-3 mb-0.5">
+					<h2 className="section-title">
 						Programs & Initiatives
 					</h2>
 
