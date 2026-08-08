@@ -244,7 +244,7 @@ export const PROGRAMS = [
 		category: "Capacity Building & Innovation",
 		description:
 			"Roots is a three week residential program in Victoria Falls, Zimbabwe, for young adults of Zimbabwean, Zambian or African descent who have grown up in the Diaspora. It provides heritage, digital and leadership skill training to successful participants.",
-		image: "/images/programs/climate.avif",
+		image: "/images/roots-forward/roots-heritage.png",
 		internalLink: "/roots-forward",
 	},
 	{
@@ -252,7 +252,7 @@ export const PROGRAMS = [
 		category: "Research Program",
 		description:
 			"In this program, we integrate the World Vision's Fragile Context Programme Approach built around the Survive-Adapt-Thrive continuum and a six step implementation cycle to operationalise anticipatory action within the Humanitarian-Development-Peace Nexus in Protracted Emergencies in Sudan.",
-		image: "/images/focus/development.jpg",
+		image: "/images/achievements/empowerment.avif",
 		link: "https://www.wvi.org/newsroom/sudan/three-years-agony-sudans-children-trapped-and-carry-deepest-scars",
 		linkLabel: "Read the World Vision story",
 	},
