@@ -264,23 +264,14 @@ hover:bg-white/[0.09]
 
 			</div>
 
-			{/* Angled Divider overlapping the next section 
-			<div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none pointer-events-none">
-				<svg
-					className="relative block w-full h-12 md:h-20 text-[#5E0A11]"
-					viewBox="0 0 1200 120"
-					preserveAspectRatio="none"
-					>
-					<path
-						d="M1200 0L0 120V120H1200V0Z"
-						fill="currentColor"
-					/>
-				</svg> 
-			</div> */}
-			{/* Smooth transition into Contact section */}
-<div className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none">
-  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#244F46] to-[#5E0A11]" />
-</div>
+			{/* Smooth transition into Contact section — simple two-color blend */}
+			<div
+				aria-hidden="true"
+				className="absolute bottom-0 left-0 right-0 h-72 md:h-96 pointer-events-none"
+				style={{
+					background: "linear-gradient(to bottom, transparent 0%, #5E0A11 100%)",
+				}}
+			/>
 
 		</section>
 	);
