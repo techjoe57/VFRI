@@ -36,7 +36,7 @@ export default function RootsForwardOutcomes() {
 	return (
 		<section
 			id="what-you-leave-with"
-			className="relative overflow-hidden bg-[#F2E8D3]">
+			className="relative scroll-mt-28 overflow-hidden bg-[#F2E8D3] md:scroll-mt-32">
 			{/* Right-side motif — an oversized, very low-opacity vertical
 			    word fills the wide-desktop side gutter (the numbered list
 			    keeps its comfortable reading width) and reinforces the
@@ -44,14 +44,14 @@ export default function RootsForwardOutcomes() {
 			    tablet/mobile keep full width for content. */}
 			<span
 				aria-hidden="true"
-				className="pointer-events-none absolute -right-4 top-1/2 hidden -translate-y-1/2 rotate-90 select-none whitespace-nowrap font-sans text-[6.5rem] font-bold uppercase leading-none tracking-[0.22em] text-ink/[0.05] lg:block xl:-right-8 xl:text-[8rem] 2xl:-right-12 2xl:text-[9rem]">
+				className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 rotate-90 select-none whitespace-nowrap font-sans text-[6.5rem] font-bold uppercase leading-none tracking-[0.22em] text-ink/[0.05] lg:block xl:text-[8rem] 2xl:text-[9rem]">
 				Forward
 			</span>
 
 			<div className="rf-section-py relative mx-auto w-full max-w-3xl px-6 md:px-12">
 				<span
 					aria-hidden="true"
-					className="mb-8 block h-px w-16 bg-gradient-to-r from-transparent via-gold to-transparent md:mb-10"
+					className="mb-5 block h-px w-16 bg-gradient-to-r from-transparent via-gold to-transparent"
 				/>
 
 				<div ref={introRef} className="rf-fade-up rf-delay-0">
@@ -65,12 +65,12 @@ export default function RootsForwardOutcomes() {
 					</p>
 				</div>
 
-				<div className="mt-12 border-y border-ink/10 divide-y divide-ink/10 md:mt-16">
+				<div className="mt-8 border-t border-ink/10 divide-y divide-ink/10">
 					{OUTCOMES.map((item, index) => (
 						<div
 							key={item.text}
 							ref={outcomeRefs[index]}
-							className={`rf-fade-up rf-delay-${Math.min(index, 4)} flex items-start gap-4 py-6 md:gap-6 md:py-7`}>
+							className={`rf-fade-up rf-delay-${Math.min(index, 4)} flex items-start gap-4 py-4`}>
 							<span
 								className={`mt-0.5 flex-shrink-0 font-sans text-sm font-semibold tracking-[0.1em] ${item.accent} md:text-base`}>
 								0{index + 1}

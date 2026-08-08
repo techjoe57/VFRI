@@ -20,7 +20,7 @@ export default function RootsForwardHeader() {
 
 	return (
 		<header className="fixed top-0 left-0 right-0 z-50 border-b border-gold/20 bg-cream/95 backdrop-blur-md">
-			<div className="flex items-center justify-between gap-4 px-5 py-2.5 md:px-10">
+			<div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-2.5 md:px-12 lg:px-20">
 				{/* Brand */}
 				<div className="flex min-w-0 items-center gap-3">
 					<div className="h-12 w-12 flex-shrink-0 md:h-14 md:w-14">
@@ -34,7 +34,7 @@ export default function RootsForwardHeader() {
 						<strong className="block truncate font-sans text-base font-semibold tracking-[0.06em] text-crimson-deep sm:hidden">
 							VFRI
 						</strong>
-						<strong className="hidden truncate font-sans text-base font-semibold tracking-[0.06em] text-crimson-deep sm:block md:text-xl">
+						<strong className="hidden font-sans text-base font-semibold tracking-[0.06em] text-crimson-deep sm:block md:text-xl">
 							Victoria Falls Regional Institute
 						</strong>
 						<span className="hidden font-medium text-[0.78em] tracking-[0.06em] text-crimson-dark normal-case sm:block">
@@ -115,7 +115,7 @@ export default function RootsForwardHeader() {
 				className={`overflow-hidden bg-cream/98 backdrop-blur-md transition-all duration-300 ease-out lg:hidden ${
 					menuOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
 				}`}>
-				<nav className="flex flex-col px-5 py-2 md:px-10">
+				<nav className="mx-auto flex w-full max-w-7xl flex-col px-6 py-2 md:px-12 lg:px-20">
 					<button
 						type="button"
 						onClick={() => goTo("/")}
