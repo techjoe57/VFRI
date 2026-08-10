@@ -11,7 +11,7 @@ export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [aboutOpen, setAboutOpen] = useState(false);
 	const navTextClass =
-		"font-sans text-[1.05em] font-semibold tracking-[0.06em] normal-case";
+		"font-sans text-[1.15em] font-semibold tracking-[0.06em] normal-case";
 
 	useEffect(() => {
 		const handler = () => setScrolled(window.scrollY > 60);
@@ -97,18 +97,18 @@ export default function Navbar() {
       ${scrolled ? "py-1.5 px-5 md:px-10" : "py-2.5 px-5 md:px-10"}
       bg-gold backdrop-blur-md border-b border-gold/20`}>
 			<div className="flex items-center gap-3 no-underline">
-				<div className="w-14 h-14 relative flex-shrink-0">
+				<div className="w-[72px] h-[72px] relative flex-shrink-0 transition-all duration-300">
 					<img
 						src="/logo2.png"
 						alt="Logo"
 						className="w-full h-full"
 					/>
 				</div>
-				<div className="leading-tight font-sans">
-					<strong className={`block font-sans text-xl font-semibold tracking-[0.06em] ${titleTextColor}`}>
+				<div className="leading-normal font-sans">
+					<strong className={`block font-sans sm:text-xl lg:text-[1.3em] font-semibold tracking-[0.06em] ${titleTextColor}`}>
 						Victoria Falls Regional Institute
 					</strong>
-					<span className={`font-medium text-[0.78em] ${navTextColor} tracking-[0.06em] normal-case`}>
+					<span className={`font-medium text-[0.95em] ${navTextColor} tracking-[0.06em] normal-case`}>
 						Reimagining Africa Through Dialogue
 					</span>
 				</div>
