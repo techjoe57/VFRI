@@ -62,7 +62,7 @@ export default function News() {
 										{title}
 									</h3>
 
-									<p className="text-justify text-sm leading-relaxed text-ink-light">
+									<p className="text-left text-sm leading-relaxed text-ink-light">
 										{summary}
 									</p>
 

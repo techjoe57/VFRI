@@ -14,7 +14,7 @@ function RootsForwardCard({ program }) {
 				<h3 className="card-title mb-3 text-crimson-deep">
 					{program.title}
 				</h3>
-				<p className="flex-grow text-justify text-sm text-ink-light">
+				<p className="flex-grow text-left text-sm text-ink-light">
 					{program.description}
 				</p>
 
@@ -101,7 +101,7 @@ export default function Programs() {
 									{p.title}
 								</h3>
 
-								<p className="flex-grow text-justify text-sm text-ink-light">
+								<p className="flex-grow text-left text-sm text-ink-light">
 									{p.description}
 								</p>
 							</div>
