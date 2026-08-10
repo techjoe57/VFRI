@@ -168,7 +168,7 @@ export const SERVICES = [
 	{
 		num: "02",
 		title: "Training Workshops & Short Courses",
-		desc: "We organise and run targeted programmes that enhance the understanding of African affairs in International Law, Governance, Humanitarian Response and Regional Integration.",
+		desc: "We organise and run targeted programmes to understand African affairs in International Law, Governance, Humanitarian Response and Regional Integration.",
 		image: "/images/services/training.avif",
 	},
 	{

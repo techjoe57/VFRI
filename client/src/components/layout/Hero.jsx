@@ -133,13 +133,14 @@ export default function Hero() {
 							key={title}
 							className="rounded-sm border border-gold/30 bg-white/10 p-4 backdrop-blur-sm transition-colors duration-300 hover:border-gold/50 hover:bg-gold/10"
 						>
-							<Icon className="mb-3 text-xl text-gold lg:text-2xl" />
+							<div className="mb-2 flex items-center gap-3">
+								<Icon className="shrink-0 text-xl text-gold lg:text-2xl" />
+								<h4 className="card-title text-[22px] text-white">
+									{title}
+								</h4>
+							</div>
 
-							<h4 className="card-title mb-2 text-white">
-								{title}
-							</h4>
-
-							<p className="text-sm leading-7 text-white/65">
+							<p className="text-base leading-7 text-white/65">
 								{desc}
 							</p>
 						</div>
