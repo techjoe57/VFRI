@@ -189,7 +189,7 @@ export const TEAM = [
 	{
 		name: "Dr. James Nyawo",
 		role: "Founding Executive Director",
-		bio: "Ph.D. in International Law from Middlesex University, UK. A Zimbabwean scholar-practitioner with 20+ years in humanitarian field management — Angola, Uganda, Sudan, and South Sudan. Consultant for UNICEF, IOM, and UNESCO. Lecturer at Strathmore University, Nairobi. Deeply committed to the Pax Africana philosophy.",
+		bio: "Ph.D. in International Law from Middlesex University, UK. A Zimbabwean scholar-practitioner with 20+ years in humanitarian field management — Angola, Uganda, Sudan, and South Sudan. Consultant for UNICEF, IOM, and UNESCO. Lecturer at Strathmore University, Nairobi.",
 		image: "/founder.jpg",
 	},
 	{
@@ -234,8 +234,7 @@ export const CONTACT = {
 		address: "P.O. Box 644-00620, Nairobi, Kenya",
 		phone: "+254 79 7119 199",
 	},
-	email: "info@vfri.africa",
-	website: "www.vfri.africa",
+	email: "info@vfri.africa"
 };
 
 export const PROGRAMS = [

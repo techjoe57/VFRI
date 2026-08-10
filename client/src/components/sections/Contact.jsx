@@ -146,18 +146,7 @@ export default function Contact() {
 							{CONTACT.email}
 						</a>
 					</ContactItem>
-					<ContactItem label="Website">
-						<p className="meta-label text-gold mb-2">
-							Website
-						</p>
-						<a
-							href={`https://${CONTACT.website}`}
-							target="_blank"
-							rel="noreferrer"
-							className="text-white/75 text-sm hover:text-gold transition-colors">
-							{CONTACT.website}
-						</a>
-					</ContactItem>
+					
 				</div>
 			</div>
 
