@@ -51,14 +51,15 @@ export default function News() {
 								</div>
 								<div className="absolute bottom-0 left-0 top-0 w-0.5 bg-gradient-to-b from-gold to-crimson-mid" />
 								<div className="flex flex-1 flex-col">
-									<div className="mb-3 flex items-center justify-between">
+									<div className="mb-3 flex items-start justify-between gap-3">
 										<span className="meta-label text-gold">{tag}</span>
-										<span className="text-[0.6rem] text-ink-light">
+										<span className="flex-shrink-0 text-[0.6rem] text-ink-light">
 											{date}
 										</span>
 									</div>
 
-									<h3 className="card-title mb-3 text-lg font-semibold text-crimson-deep transition-colors group-hover:text-crimson-dark">
+									{/* Reserve 2 lines so summaries align across cards */}
+									<h3 className="card-title mb-3 min-h-[3.25rem] text-lg font-semibold text-crimson-deep transition-colors group-hover:text-crimson-dark">
 										{title}
 									</h3>
 
