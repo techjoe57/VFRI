@@ -1,65 +1,131 @@
 import { Route, Routes } from "react-router-dom";
+
 import Layout from "./components/layout/layout";
+
 import Home from "./pages/Home";
 import OurStory from "./pages/OurStory";
 import Programs from "./pages/Programs";
 import News from "./pages/News";
 import Team from "./pages/Team";
 import Achievements from "./pages/Achievements";
-//import Login from "./admin/Login";
-//import ProtectedRoute from "./admin/ProtectedRoute";
-//import AdminLayout from "./admin/AdminLayout";
-//import Dashboard from "./admin/Dashboard";
-//import ProgramsManager from "./admin/managers/ProgramManager";
-//import NewsManager from "./admin/managers/NewsManager";
-//import TeamManager from "./admin/managers/TeamManager";
-//import AchievementsManager from "./admin/managers/AchievementsManager";
-//import ServicesManager from "./admin/managers/ServicesManager";
-//import FocusManager from "./admin/managers/FocusManager";
+
+// import Login from "./admin/Login";
+// import ProtectedRoute from "./admin/ProtectedRoute";
+// import AdminLayout from "./admin/AdminLayout";
+// import Dashboard from "./admin/Dashboard";
+// import ProgramsManager from "./admin/managers/ProgramManager";
+// import NewsManager from "./admin/managers/NewsManager";
+// import TeamManager from "./admin/managers/TeamManager";
+// import AchievementsManager from "./admin/managers/AchievementsManager";
+// import ServicesManager from "./admin/managers/ServicesManager";
+// import FocusManager from "./admin/managers/FocusManager";
+
 import ServiceInquiry from "./pages/ServiceInquiry";
+
 import RootsForward from "./pages/RootsForward";
 import RootsForwardLayout from "./components/roots-forward/RootsForwardLayout";
+
 import ScrollToTop from "./components/ScrollToTop";
+import FloatingPoster from "./components/FloaterPoster";
 
 export default function App() {
+	const poster = "/images/pop-up/VFRI_Poster.jpeg";
+
 	return (
 		<>
 			<ScrollToTop />
+
 			<Routes>
+				{/* Main Website */}
 				<Route element={<Layout />}>
 					<Route path="/" element={<Home />} />
-					<Route path="/our-story" element={<OurStory />} />
-					<Route path="/programs" element={<Programs />} />
+
+					<Route
+						path="/our-story"
+						element={<OurStory />}
+					/>
+
+					<Route
+						path="/programs"
+						element={<Programs />}
+					/>
+
 					<Route
 						path="/service-inquiry"
 						element={<ServiceInquiry />}
 					/>
-					<Route path="news" element={<News />} />
-					<Route path="/team" element={<Team />} />
-					<Route path="/achievements" element={<Achievements />} />
+
+					<Route
+						path="/news"
+						element={<News />}
+					/>
+
+					<Route
+						path="/team"
+						element={<Team />}
+					/>
+
+					<Route
+						path="/achievements"
+						element={<Achievements />}
+					/>
 				</Route>
 
+				{/* Roots Forward */}
 				<Route element={<RootsForwardLayout />}>
-					<Route path="/roots-forward" element={<RootsForward />} />
+					<Route
+						path="/roots-forward"
+						element={<RootsForward />}
+					/>
 				</Route>
 
 				{/* Admin */}
-{/*
-<Route path="/admin/login" element={<Login />} />
+				{/*
+				<Route path="/admin/login" element={<Login />} />
 
-<Route element={<ProtectedRoute />}>
-  <Route element={<AdminLayout />}>
-    <Route path="/admin/dashboard" element={<Dashboard />} />
-    <Route path="/admin/programs" element={<ProgramsManager />} />
-    <Route path="/admin/news" element={<NewsManager />} />
-    <Route path="/admin/team" element={<TeamManager />} />
-    <Route path="/admin/achievements" element={<AchievementsManager />} />
-    <Route path="/admin/services" element={<ServicesManager />} />
-    <Route path="/admin/focus" element={<FocusManager />} />
-  </Route>
-</Route>
-*/}
+				<Route element={<ProtectedRoute />}>
+					<Route element={<AdminLayout />}>
+						<Route
+							path="/admin/dashboard"
+							element={<Dashboard />}
+						/>
+
+						<Route
+							path="/admin/programs"
+							element={<ProgramsManager />}
+						/>
+
+						<Route
+							path="/admin/news"
+							element={<NewsManager />}
+						/>
+
+						<Route
+							path="/admin/team"
+							element={<TeamManager />}
+						/>
+
+						<Route
+							path="/admin/achievements"
+							element={<AchievementsManager />}
+						/>
+
+						<Route
+							path="/admin/services"
+							element={<ServicesManager />}
+						/>
+
+						<Route
+							path="/admin/focus"
+							element={<FocusManager />}
+						/>
+					</Route>
+				</Route>
+				*/}
 			</Routes>
+
+			{/* Floating Poster */}
+			<FloatingPoster />
 		</>
 	);
 }
