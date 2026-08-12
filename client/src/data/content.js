@@ -73,7 +73,7 @@ export const vms = [
 	{
 		label: "Our Vision",
 		title: "Inspire the African Renaissance",
-		body: "A continent reclaiming its intellectual heritage and positioning its wisdom at the heart of global discourse — driving its own narrative, on its own terms.",
+		body: "A continent reclaiming its intellectual heritage and positioning its wisdom at the heart of global discourse driving its own narrative, on its own terms.",
 	},
 	{
 		label: "Our Mission",
@@ -83,7 +83,7 @@ export const vms = [
 	{
 		label: "Our Presence",
 		title: "Zimbabwe & Kenya",
-		body: "Head office in Harare, Zimbabwe, with an active operations base in Nairobi, Kenya — a platform for regional and continental engagement.",
+		body: "Head office in Harare, Zimbabwe, with an active operations base in Nairobi, Kenya where we extend our regional and continental engagements.",
 	},
 ];
 
@@ -106,7 +106,7 @@ export const VALUES = [
 	{
 		icon: Lightbulb,
 		title: "Phronesis",
-		desc: "Practical wisdom — applying knowledge with discernment and contextual judgment.",
+		desc: "Practical wisdom applying knowledge with discernment and contextual judgment.",
 	},
 	{
 		icon: Heart,
@@ -189,7 +189,7 @@ export const TEAM = [
 	{
 		name: "Dr. James Nyawo",
 		role: "Founding Executive Director",
-		bio: "Ph.D. in International Law from Middlesex University, UK. A Zimbabwean scholar-practitioner with 20+ years in humanitarian field management — Angola, Uganda, Sudan, and South Sudan. Consultant for UNICEF, IOM, and UNESCO. Lecturer at Strathmore University, Nairobi.",
+		bio: "A Zimbabwean scholar-practitioner with a Ph.D. in International Law from Middlesex University, UK and 20+ years in humanitarian field management in Angola, Uganda, Sudan, and South Sudan. He has consulted for UNICEF, IOM, and UNESCO and is a  Lecturer at Strathmore University, Nairobi.",
 		image: "/founder.jpg",
 	},
 	{
@@ -268,17 +268,17 @@ export const PROGRAMS = [
 export const NEWS = [
 	{
 		title: "Africa Forward (Finance and Marketing Masterclass)",
-		date: "August 2026",
+		date: "July 2026",
 		summary:
 			"We partnered with Momentum Labs to bring together professionals from across Africa to explore the future of finance, marketing, technology, and entrepreneurship. The session was filled with practical insights, thoughtful discussions, and perspectives from leaders who are actively shaping their industries.",
 		tag: "Event",
 		image: "/images/news/news3.avif",
 	},
 	{
-		title: "Africa Forward (MasterClass)",
-		date: "July 2026",
+		title: "Africa Forward (Humanitarian Tech)",
+		date: "March 2026",
 		summary:
-			"We hosted a virtual masterclass connecting founders with product managers and financial institutions to answer questions such as how technology is evolving in finance, what institutions look for, the role marketing plays in growth, and what makes some founders secure opportunities while others struggle.",
+			"We hosted a virtual masterclass bringing together together innovators, founders, students, and change-makers to explore how tech can solve real humanitarian challenges across Africa by providing a mentorship and expert sessions space for building, studying, leading, or dreaming about impact-driven technology.",
 		tag: "Event",
 		image: "/images/news/news3.avif",
 	},
@@ -291,7 +291,7 @@ export const NEWS = [
 		image: "/images/news/news1.avif",
 	},
 	{
-		title: "Africa Forward",
+		title: "Africa Forward (IT & Tech Innovation Masterclass and Hackathon)",
 		date: "November 2025",
 		summary:
 			"We hosted our first ever Africa Forward - IT & Tech Innovation Masterclass and Hackathon. 60+ participants and 7+ solutions were built demonstrating the creativity and resilience of Africa's growing tech ecosystem.We connected startups to business financiers accross Africa.",

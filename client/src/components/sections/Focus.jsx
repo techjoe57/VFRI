@@ -14,7 +14,6 @@ export default function Focus() {
 				h-full
 				min-h-[360px]
 				flex-col
-				justify-end
 				overflow-hidden
 				rounded-sm
 				border
@@ -39,16 +38,18 @@ export default function Focus() {
 			<div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold via-crimson-mid to-gold" />
 
 			{/* Content */}
-			<div className="relative z-10 p-5">
+			<div className="relative z-10 mt-auto flex w-full flex-col p-5">
 				<p className="mb-3 text-5xl font-extralight tracking-tight text-gold/70">
 					{num}
 				</p>
 
-				<h3 className="card-title mb-3 text-white">
+				{/* Reserve ~2 lines so titles align across the row */}
+				<h3 className="card-title mb-3 min-h-[2.75rem] text-white">
 					{title}
 				</h3>
 
-				<p className="text-sm leading-7 text-white/75">
+				{/* Reserve desc height so paragraphs start on the same line */}
+				<p className="min-h-[7rem] text-sm leading-7 text-white/75">
 					{desc}
 				</p>
 			</div>
