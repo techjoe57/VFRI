@@ -35,7 +35,7 @@ export default {
 			},
 			fontFamily: {
 				display: ['"Cormorant Garamond"', "Georgia", "serif"],
-				sans: ["Outfit", "system-ui", "sans-serif"],
+				sans: ["Roboto", "system-ui", "sans-serif"],
 			},
 			animation: {
 				"fade-up": "fadeUp 0.7s ease forwards",
