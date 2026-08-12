@@ -40,7 +40,7 @@ export default function Hero() {
 	return (
 		<section
 			id="home"
-			className="relative grid min-h-[calc(100vh-5rem)] overflow-hidden bg-green-deep pt-24 md:grid-cols-2 md:pt-28 lg:pt-32"
+			className="relative grid min-h-[calc(100vh-5rem)] overflow-hidden bg-green-deep pt-20 md:grid-cols-2"
 		>
 			{/* VIDEO BACKGROUND */}
 			<div className="absolute inset-0 z-0 overflow-hidden">
