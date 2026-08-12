@@ -96,19 +96,19 @@ export default function Navbar() {
 			className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300
       ${scrolled ? "py-1.5 px-5 md:px-10" : "py-2.5 px-5 md:px-10"}
       bg-gold backdrop-blur-md border-b border-gold/20`}>
-			<div className="flex items-center gap-3 no-underline">
-				<div className="w-[72px] h-[72px] relative flex-shrink-0 transition-all duration-300">
+			<div className="flex min-w-0 flex-1 items-center gap-2 no-underline pr-3 sm:gap-3">
+				<div className="relative h-14 w-14 flex-shrink-0 transition-all duration-300 sm:h-[72px] sm:w-[72px]">
 					<img
 						src="/logo2.png"
 						alt="Logo"
-						className="w-full h-full"
+						className="h-full w-full"
 					/>
 				</div>
-				<div className="leading-normal font-sans">
-					<strong className={`block font-sans sm:text-xl lg:text-[1.3em] font-semibold tracking-[0.06em] ${titleTextColor}`}>
+				<div className="min-w-0 leading-tight font-sans">
+					<strong className={`block font-sans text-base font-semibold tracking-[0.06em] sm:text-xl lg:text-[1.3em] ${titleTextColor}`}>
 						Victoria Falls Regional Institute
 					</strong>
-					<span className={`font-medium text-[0.95em] ${navTextColor} tracking-[0.06em] normal-case`}>
+					<span className={`block font-medium tracking-[0.06em] normal-case text-[calc(0.95em-4px)] sm:text-[0.95em] ${navTextColor}`}>
 						Reimagining Africa Through Dialogue
 					</span>
 				</div>
@@ -158,7 +158,7 @@ export default function Navbar() {
 
 			{/* Hamburger */}
 			<button
-				className="xl:hidden flex flex-col gap-1.5 bg-transparent border-0 cursor-pointer p-1"
+				className="xl:hidden flex flex-shrink-0 flex-col gap-1.5 border-0 bg-transparent p-1 cursor-pointer"
 				onClick={() => setMenuOpen(!menuOpen)}
 				aria-label="Toggle menu">
 				<span

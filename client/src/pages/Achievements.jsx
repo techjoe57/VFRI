@@ -51,12 +51,13 @@ export default function Achievements() {
 									alt={title}
 								/>
 							</div>
-							<div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold to-crimson-mid" />
-							<div className="flex-1">
-								<h3 className="card-title text-crimson-deep mb-3 text-lg font-semibold">
+							<div className="absolute bottom-0 left-0 top-0 w-0.5 bg-gradient-to-b from-gold to-crimson-mid" />
+							<div className="flex flex-1 flex-col">
+								{/* Reserve 2 lines so descriptions align across cards */}
+								<h3 className="card-title mb-3 min-h-[3.25rem] text-lg font-semibold text-crimson-deep">
 									{title}
 								</h3>
-								<p className="text-ink-light text-sm leading-relaxed">
+								<p className="text-left text-sm leading-relaxed text-ink-light">
 									{desc}
 								</p>
 							</div>

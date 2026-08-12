@@ -9,12 +9,13 @@ function RootsForwardCard({ program }) {
 		<div className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-black/5 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl md:col-span-2 md:flex-row">
 			<div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-gold via-crimson-mid to-gold" />
 
-			<div className="relative flex-1 p-6 md:p-10">
+			<div className="relative flex flex-1 flex-col p-6 md:p-10">
 				<p className="meta-label mb-2 text-gold">{program.category}</p>
-				<h3 className="card-title mb-3 text-crimson-deep">
+				{/* Reserve 2 lines so body copy aligns with sibling cards */}
+				<h3 className="card-title mb-3 min-h-[2.75rem] text-crimson-deep">
 					{program.title}
 				</h3>
-				<p className="flex-grow text-left text-sm text-ink-light">
+				<p className="flex-grow text-left text-sm leading-relaxed text-ink-light">
 					{program.description}
 				</p>
 
@@ -97,11 +98,12 @@ export default function Programs() {
 									{p.category}
 								</p>
 
-								<h3 className="card-title mb-3 text-crimson-deep">
+								{/* Reserve 2 lines so descriptions align across cards */}
+								<h3 className="card-title mb-3 min-h-[2.75rem] text-crimson-deep">
 									{p.title}
 								</h3>
 
-								<p className="flex-grow text-left text-sm text-ink-light">
+								<p className="flex-grow text-left text-sm leading-relaxed text-ink-light">
 									{p.description}
 								</p>
 							</div>
