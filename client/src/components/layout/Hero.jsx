@@ -88,7 +88,7 @@ export default function Hero() {
 				className="reveal relative z-[5] flex flex-col justify-center px-6 py-10 sm:px-8 md:px-12 md:py-16 lg:px-20 lg:py-20"
 			>
 				<span className="section-label mb-5">
-					Pan-African Research Institute
+					African Research Institute
 				</span>
 
 				<h1 className="mb-6 font-sans text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
