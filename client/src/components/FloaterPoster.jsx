@@ -219,13 +219,13 @@ export default function FloatingPoster() {
 
 						{/* Poster */}
 						<img
-							src="/images/pop-up/VFRI_Poster.jpeg"
+							src="/images/pop-up/VFRI_Poster_V2.jpeg"
 							alt="VFRI event announcement"
 							className="
 								relative
 								z-10
-								max-h-[90vh]
-								max-w-full
+								w-[80vw]
+								h-auto
 								rounded-sm
 								object-contain
 							"
