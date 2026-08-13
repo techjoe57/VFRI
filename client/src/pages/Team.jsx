@@ -8,7 +8,7 @@ export default function Team({ compact = false }) {
 	return (
 		<section
 			id="team"
-			className={`relative overflow-hidden bg-green-deep/90 backdrop-blur-sm ${compact ? "pb-5 pt-3" : "pt-36 pb-6 sm:pt-28"}`}
+			className={`relative overflow-hidden bg-green-deep/90 backdrop-blur-sm ${compact ? "pb-16 pt-3" : "pt-36 pb-16 sm:pt-28"}`}
 		>
 			{/* Kente bottom */}
 			<div className="absolute bottom-0 left-0 right-0 h-1.5 kente-bar" />
