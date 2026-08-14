@@ -6,33 +6,32 @@ import { PROGRAMS } from "../data/content";
 function RootsForwardCard({ program }) {
 	const navigate = useNavigate();
 	return (
-		<div className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-black/5 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl md:col-span-2 md:flex-row">
-			<div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-gold via-crimson-mid to-gold" />
+		<div className="group relative flex flex-col overflow-hidden rounded-sm border border-black/5 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl md:col-span-2 md:flex-row md:items-stretch">
+			<div className="absolute left-0 right-0 top-0 z-10 h-1 bg-gradient-to-r from-gold via-crimson-mid to-gold" />
 
-			<div className="relative flex flex-1 flex-col p-6 md:p-10">
-				<p className="meta-label mb-2 text-gold">{program.category}</p>
-				{/* Reserve 2 lines so body copy aligns with sibling cards */}
-				<h3 className="card-title mb-3 min-h-[2.75rem] text-crimson-deep">
+			<div className="relative flex flex-col p-6 md:w-1/2 md:p-8">
+				<p className="meta-label mb-1 text-gold">{program.category}</p>
+				<h3 className="card-title mb-1 text-crimson-deep">
 					{program.title}
 				</h3>
-				<p className="flex-grow text-left text-sm leading-relaxed text-ink-light">
+				<p className="text-left text-sm leading-relaxed text-ink-light">
 					{program.description}
 				</p>
 
 				<button
 					type="button"
 					onClick={() => navigate(program.internalLink)}
-					className="group mt-6 inline-flex w-fit cursor-pointer items-center gap-2 rounded-sm bg-gold px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-crimson-deep transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-crimson-deep hover:text-cream hover:shadow-lg hover:shadow-crimson-deep/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crimson-deep">
+					className="group mt-4 inline-flex w-fit cursor-pointer items-center gap-2 rounded-sm bg-gold px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-crimson-deep transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-crimson-deep hover:text-cream hover:shadow-lg hover:shadow-crimson-deep/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crimson-deep">
 					Explore Roots Forward
 					<ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
 				</button>
 			</div>
 
-			<div className="relative min-h-[260px] md:flex-1">
+			<div className="relative h-56 md:h-auto md:w-1/2">
 				<img
 					src={program.image}
 					alt={program.title}
-					className="absolute inset-0 h-full w-full object-cover"
+					className="h-full w-full object-cover md:absolute md:inset-0"
 				/>
 			</div>
 		</div>
@@ -86,7 +85,7 @@ export default function Programs() {
 								className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-black/5 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
 								<div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-gold via-crimson-mid to-gold" />
 
-								<div className="mb-5 overflow-hidden rounded-sm">
+								<div className="mb-4 overflow-hidden rounded-sm">
 									<img
 										src={p.image}
 										alt={p.title}
@@ -94,16 +93,15 @@ export default function Programs() {
 									/>
 								</div>
 
-								<p className="meta-label mb-2 text-gold">
+								<p className="meta-label mb-1 text-gold">
 									{p.category}
 								</p>
 
-								{/* Reserve 2 lines so descriptions align across cards */}
-								<h3 className="card-title mb-3 min-h-[2.75rem] text-crimson-deep">
+								<h3 className="card-title mb-1 text-crimson-deep">
 									{p.title}
 								</h3>
 
-								<p className="flex-grow text-left text-sm leading-relaxed text-ink-light">
+								<p className="text-left text-sm leading-relaxed text-ink-light">
 									{p.description}
 								</p>
 							</div>

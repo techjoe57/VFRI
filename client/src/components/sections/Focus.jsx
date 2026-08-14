@@ -42,13 +42,9 @@ export default function Focus() {
 				<p className="mb-3 text-5xl font-extralight tracking-tight text-gold/70">
 					{num}
 				</p>
-
-				{/* Reserve ~2 lines so titles align across the row */}
-				<h3 className="card-title mb-3 min-h-[2.75rem] text-white">
+				<h3 className="card-title mb-1 min-h-[2.75rem] text-white">
 					{title}
 				</h3>
-
-				{/* Reserve desc height so paragraphs start on the same line */}
 				<p className="min-h-[7rem] text-sm leading-7 text-white/75">
 					{desc}
 				</p>

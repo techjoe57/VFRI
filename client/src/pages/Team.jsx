@@ -88,7 +88,7 @@ export default function Team({ compact = false }) {
 							<div className="flex flex-col justify-center">
 								<p className="meta-label text-gold mb-1">{role}</p>
 
-								<h3 className="card-title text-white mb-2">{name}</h3>
+								<h3 className="card-title mb-1 text-white">{name}</h3>
 
 								<p className="text-sm leading-relaxed text-white/65">{bio}</p>
 							</div>
