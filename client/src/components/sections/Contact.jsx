@@ -120,7 +120,7 @@ export default function Contact() {
 								{CONTACT.harare.label}
 							</p>
 							<p className="text-sm leading-relaxed text-white/75">
-								{CONTACT.harare.address}
+								119 Josiah Chinamano Avenue <br /> Cnr. J. Chinamano Avenue & 4th Street<br/> Harare, Zimbabwe
 							</p>
 							<p className="mt-1 text-xs text-white/55">
 								{CONTACT.harare.phone}
@@ -151,7 +151,7 @@ export default function Contact() {
 				{/* Form */}
 				<div
 					ref={rightRef}
-					className="reveal min-w-0 flex-1 rounded-sm border border-white/15 bg-white/8 p-4 shadow-2xl backdrop-blur-md md:p-8">
+					className="reveal md:ml-24 min-w-48 flex-1 rounded-sm border border-white/15 bg-white/8 p-4 shadow-2xl backdrop-blur-md md:p-8">
 					<h3 className="card-title mb-4 font-light text-white">
 						General Enquiries
 					</h3>
