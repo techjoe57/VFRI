@@ -44,11 +44,9 @@ export default function Services() {
 				<p className="mb-3 text-5xl font-extralight tracking-tight text-gold/70">
 					{num}
 				</p>
-				{/* Always reserve ~2 lines so 01/02/03 titles share the same top */}
-				<h3 className="card-title mb-3 min-h-[2.75rem] text-white">
+				<h3 className="card-title mb-1 min-h-[2.75rem] text-white">
 					{title}
 				</h3>
-				{/* Optional: keep desc height consistent too */}
 				<p className="min-h-[7rem] text-sm leading-7 text-white/75">
 					{desc}
 				</p>
@@ -133,7 +131,7 @@ export default function Services() {
 					{num}
 				</p>
 
-				<h3 className="card-title mb-4 text-white">
+				<h3 className="card-title mb-1 flex min-h-[2.75rem] items-end text-white">
 					Let's Work Together
 				</h3>
 

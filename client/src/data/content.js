@@ -73,7 +73,7 @@ export const vms = [
 	{
 		label: "Our Vision",
 		title: "Inspire the African Renaissance",
-		body: "A continent reclaiming its intellectual heritage and positioning its wisdom at the heart of global discourse driving its own narrative, on its own terms.",
+		body: "A continent reclaiming its intellectual heritage and positioning its wisdom at the heart of global discourse — driving its own narrative, on its own terms, so African knowledge shapes research, policy, and public conversation at home and internationally.",
 	},
 	{
 		label: "Our Mission",
@@ -83,7 +83,7 @@ export const vms = [
 	{
 		label: "Our Presence",
 		title: "Zimbabwe & Kenya",
-		body: "Head office in Harare, Zimbabwe, with an active operations base in Nairobi, Kenya where we extend our regional and continental engagements.",
+		body: "Head office in Harare, Zimbabwe, with an active operations base in Nairobi, Kenya — a platform for regional and continental engagement with programmes across Sudan, Malawi, Zambia, Uganda, Angola, and South Sudan.",
 	},
 ];
 
@@ -218,7 +218,7 @@ export const ACHIEVEMENTS = [
 	},
 	{
 		title: "Regional Research Networks",
-		desc: "Built a growing network of researchers, practitioners, and institutions united by the goal of producing knowledge that centres African experience in global conversations.",
+		desc: "Built a growing network of researchers, practitioners, and institutions united by the goal of producing knowledge that centres African experience in global conversations on policy, research, and development.",
 		image: "/images/achievements/academic.avif",
 	},
 ];
@@ -226,7 +226,7 @@ export const ACHIEVEMENTS = [
 export const CONTACT = {
 	harare: {
 		label: "Head Office — Zimbabwe",
-		address: "119 Josiah Chinamano Avenue, Cnr. J. Chinamano Avenue & 4th Street, Harare, Zimbabwe",
+		address: "c/o 119 Josiah Chinamano Avenue, Cnr. J. Chinamano Avenue & 4th Street, Harare, Zimbabwe",
 		phone: "+263 77 807 3475",
 	},
 	nairobi: {
@@ -259,7 +259,7 @@ export const PROGRAMS = [
 		title: "Africa Forward",
 		category: "Capacity Building",
 		description:
-			"Africa Forward is a 4 month programme featuring a masterclass and hackathon with a focus on finance, technology, marketing, and data. We connect startups to business financiers accross Africa using sessions filled with practical insights, thoughtful discussions, and perspectives from leaders who are actively shaping their industries.",
+			"Africa Forward is a 4 month programme featuring a masterclass and hackathon focused on finance, technology, marketing, and data. We connect startups to business financiers across Africa through practical sessions, dialogue, and perspectives from leaders who are actively shaping their industries.",
 		image: "/images/programs/youth.avif",
 	},
 	
@@ -272,7 +272,7 @@ export const NEWS = [
 		summary:
 			"We partnered with Momentum Labs to bring together professionals from across Africa to explore the future of finance, marketing, technology, and entrepreneurship. The session was filled with practical insights, thoughtful discussions, and perspectives from leaders who are actively shaping their industries.",
 		tag: "Event",
-		image: "/images/news/news3.avif",
+		image: "/images/news/africa-forward-finance-marketing.png",
 	},
 	{
 		title: "Africa Forward (Humanitarian Tech)",
@@ -280,7 +280,7 @@ export const NEWS = [
 		summary:
 			"We hosted a virtual masterclass bringing together together innovators, founders, students, and change-makers to explore how tech can solve real humanitarian challenges across Africa by providing a mentorship and expert sessions space for building, studying, leading, or dreaming about impact-driven technology.",
 		tag: "Event",
-		image: "/images/news/news3.avif",
+		image: "/images/news/africa-forward-humanitarian-tech.png",
 	},
 	{
 		title: "Culture Day Celebration",
@@ -296,7 +296,7 @@ export const NEWS = [
 		summary:
 			"We hosted our first ever Africa Forward - IT & Tech Innovation Masterclass and Hackathon. 60+ participants and 7+ solutions were built demonstrating the creativity and resilience of Africa's growing tech ecosystem.We connected startups to business financiers accross Africa.",
 		tag: "Instagram Event Updates",
-		image: "/images/news/news3.avif",
+		image: "/images/news/africa-forward-it-tech.png",
 	},
 	{
 		title: "ZIMAZA Day Competition",
