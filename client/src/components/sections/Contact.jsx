@@ -116,14 +116,11 @@ export default function Contact() {
 
 					<div className="flex flex-col gap-5">
 						<ContactItem label="Harare">
-							<p className="meta-label mb-1.5 text-gold">
+							<p className="meta-label mb-2 text-gold">
 								{CONTACT.harare.label}
 							</p>
-							<p className="text-sm font-medium tracking-wide text-gold/80">
-								{CONTACT.harare.careOf}
-							</p>
 							<p className="text-sm leading-relaxed text-white/75">
-								{CONTACT.harare.address}
+								119 Josiah Chinamano Avenue <br /> Cnr. J. Chinamano Avenue & 4th Street<br/> Harare, Zimbabwe
 							</p>
 							<p className="mt-1 text-xs text-white/55">
 								{CONTACT.harare.phone}
