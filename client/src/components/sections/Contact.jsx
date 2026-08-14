@@ -119,7 +119,7 @@ export default function Contact() {
 							<p className="meta-label mb-1.5 text-gold">
 								{CONTACT.harare.label}
 							</p>
-							<p className="text-xs text-white/50">
+							<p className="text-sm font-medium tracking-wide text-gold/80">
 								{CONTACT.harare.careOf}
 							</p>
 							<p className="text-sm leading-relaxed text-white/75">

@@ -227,7 +227,7 @@ export const CONTACT = {
 	harare: {
 		label: "Head Office — Zimbabwe",
 		careOf: "c/o 119 Josiah Chinamano Avenue",
-		address: "Cnr. J. Chinamano Avenue & 4th Street, Harare",
+		address: "Cnr. J. Chinamano Avenue & 4th Street, Harare, Zimbabwe",
 		phone: "+263 77 807 3475",
 	},
 	nairobi: {
