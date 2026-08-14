@@ -28,7 +28,7 @@ export default function Values() {
 		>
 			<Icon className="mb-3 text-3xl text-gold-light transition-transform duration-300 group-hover:scale-110" />
 
-			<h4 className="card-title mb-2 text-white">
+			<h4 className="card-title mb-1 text-white">
 				{title}
 			</h4>
 

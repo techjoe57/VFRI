@@ -41,12 +41,12 @@ export default function News() {
 						({ title, date, summary, tag, image, link, linkLabel }) => (
 							<div
 								key={title}
-								className="group relative flex flex-col gap-5 overflow-hidden rounded-sm border border-black/[0.06] bg-white p-6 transition-all duration-200 hover:shadow-xl md:flex-row">
-								<div className="h-40 w-full flex-shrink-0 overflow-hidden rounded-sm md:h-auto md:w-48">
+								className="group relative flex flex-col gap-5 overflow-hidden rounded-sm border border-black/[0.06] bg-white p-6 transition-all duration-200 hover:shadow-xl md:flex-row md:items-stretch">
+								<div className="relative h-40 w-full shrink-0 overflow-hidden rounded-sm md:h-auto md:w-48">
 									<img
 										src={image}
 										alt={title}
-										className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+										className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 md:absolute md:inset-0"
 									/>
 								</div>
 								<div className="absolute bottom-0 left-0 top-0 w-0.5 bg-gradient-to-b from-gold to-crimson-mid" />
@@ -58,8 +58,7 @@ export default function News() {
 										</span>
 									</div>
 
-									{/* Reserve 2 lines so summaries align across cards */}
-									<h3 className="card-title mb-3 min-h-[3.25rem] text-lg font-semibold text-crimson-deep transition-colors group-hover:text-crimson-dark">
+									<h3 className="card-title mb-1 text-lg font-semibold text-crimson-deep transition-colors group-hover:text-crimson-dark">
 										{title}
 									</h3>
 

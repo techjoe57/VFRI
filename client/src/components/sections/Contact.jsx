@@ -116,8 +116,11 @@ export default function Contact() {
 
 					<div className="flex flex-col gap-5">
 						<ContactItem label="Harare">
-							<p className="meta-label mb-2 text-gold">
+							<p className="meta-label mb-1.5 text-gold">
 								{CONTACT.harare.label}
+							</p>
+							<p className="text-xs text-white/50">
+								{CONTACT.harare.careOf}
 							</p>
 							<p className="text-sm leading-relaxed text-white/75">
 								{CONTACT.harare.address}

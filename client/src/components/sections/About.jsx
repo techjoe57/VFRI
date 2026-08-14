@@ -62,7 +62,7 @@ export default function About() {
 
 				{/* Cards */}
 				<div className="relative -mt-2">
-					<div className="grid gap-6 md:grid-cols-3">
+					<div className="grid gap-6 md:grid-cols-3 md:items-stretch">
 						{vms.map(({ label, title, body }) => (
 							<div
 								key={label}
@@ -74,12 +74,11 @@ export default function About() {
 									{label}
 								</p>
 
-								{/* Reserve 2 lines so body copy aligns across cards */}
-								<h3 className="card-title mb-4 min-h-[2.75rem] text-crimson-deep">
+								<h3 className="card-title mb-1 flex min-h-[2.75rem] items-end text-crimson-deep">
 									{title}
 								</h3>
 
-								<p className="text-sm leading-7 text-ink-light">
+								<p className="flex-1 text-sm leading-7 text-ink-light">
 									{body}
 								</p>
 							</div>
