@@ -120,7 +120,7 @@ export default function Contact() {
 								{CONTACT.harare.label}
 							</p>
 							<p className="text-sm leading-relaxed text-white/75">
-								<span className="font-medium text-gold/80">c/o</span>{" "}
+								<span className="font-medium text-gold/80">C/o</span>{" "}
 								119 Josiah Chinamano Avenue <br /> Cnr. J. Chinamano Avenue & 4th Street<br/> Harare, Zimbabwe
 							</p>
 							<p className="mt-1 text-xs text-white/55">

@@ -29,7 +29,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import FloatingPoster from "./components/FloaterPoster";
 
 export default function App() {
-	const poster = "/images/pop-up/VFRI_Poster.jpeg";
+	const poster = "/images/pop-up/student-essay-competition.png";
 
 	return (
 		<>
