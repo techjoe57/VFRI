@@ -219,8 +219,8 @@ export default function FloatingPoster() {
 
 						{/* Poster */}
 						<img
-							src="/images/pop-up/VFRI_Poster_V2.jpeg"
-							alt="VFRI event announcement"
+							src="/images/pop-up/student-essay-competition.png"
+							alt="Student Essay Competition: Re-imagining Southern Africa"
 							className="
 								relative
 								z-10
