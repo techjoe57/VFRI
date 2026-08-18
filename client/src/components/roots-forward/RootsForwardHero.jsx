@@ -8,22 +8,24 @@ export default function RootsForwardHero() {
 	const imageRef = useRootsForwardReveal();
 
 	return (
-		<section className="relative overflow-hidden bg-cream lg:min-h-screen">
-			<div className="flex w-full px-6 pt-28 pb-5 md:px-12 md:pt-32 lg:pt-24 lg:items-center">
-				<div className="grid w-full gap-8 lg:grid-cols-2 lg:items-center lg:gap-8">
+		<section className="relative overflow-hidden bg-cream">
+			<div className="flex w-full px-6 pt-28 pb-[25px] md:px-12 md:pt-32 lg:min-h-dvh lg:pt-24 lg:pb-[60px]">
+				<div className="grid w-full gap-8 lg:grid-cols-[1fr_2fr] lg:gap-8">
 					{/* TEXT */}
-					<div className="relative z-10 order-1 flex flex-col items-start gap-4 lg:order-1 lg:pt-10">
-						<span
-							ref={eyebrowRef}
-							className="rf-fade-up rf-delay-0 text-xs font-semibold uppercase tracking-[0.14em] text-gold">
-							A Victoria Falls Regional Institute Programme
-						</span>
+					<div className="relative z-10 order-1 flex flex-col items-start gap-4 lg:order-1 lg:justify-center lg:gap-[clamp(16px,min(9vw,calc(32dvh_-_168px),calc(55px_+_(100vw_-_1024px)_*_0.16)),120px)]">
+						<div className="flex flex-col items-start gap-4">
+							<span
+								ref={eyebrowRef}
+								className="rf-fade-up rf-delay-0 text-xs font-semibold uppercase tracking-[0.14em] text-gold">
+								A Victoria Falls Regional Institute Programme
+							</span>
 
-						<h1
-							ref={headingRef}
-							className="rf-fade-up rf-delay-1 font-sans text-4xl font-semibold leading-[1.05] tracking-tight text-ink md:text-5xl">
-							Roots Forward
-						</h1>
+							<h1
+								ref={headingRef}
+								className="rf-fade-up rf-delay-1 font-sans text-4xl font-semibold leading-[1.05] tracking-tight text-ink md:text-5xl">
+								Roots Forward
+							</h1>
+						</div>
 
 						<div
 							ref={bodyRef}
@@ -64,7 +66,7 @@ export default function RootsForwardHero() {
 					{/* IMAGE TREATMENT */}
 					<div
 						ref={imageRef}
-						className="rf-reveal-scale rf-delay-0 relative order-2 h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:order-2 lg:aspect-[16/10] lg:max-h-64">
+						className="rf-reveal-scale rf-delay-0 relative order-2 h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:order-2 lg:h-full">
 						<img
 							src="/images/roots-forward/roots-forward-hero.jpg"
 							alt="Young people from the diaspora collaborating together during a Roots Forward session"

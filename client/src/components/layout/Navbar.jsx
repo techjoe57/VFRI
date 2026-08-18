@@ -105,10 +105,10 @@ export default function Navbar() {
 					/>
 				</div>
 				<div className="min-w-0 leading-tight font-sans">
-					<strong className={`block font-sans text-base font-semibold tracking-[0.06em] sm:text-xl lg:text-[1.3em] ${titleTextColor}`}>
+					<strong className={`block font-sans text-base font-semibold tracking-[0.06em] sm:whitespace-nowrap sm:text-xl lg:text-[min(1.3em,2.2vw)] ${titleTextColor}`}>
 						Victoria Falls Regional Institute
 					</strong>
-					<span className={`block font-medium tracking-[0.06em] normal-case text-[calc(0.95em-4px)] sm:text-[0.95em] ${navTextColor}`}>
+					<span className={`block font-medium tracking-[0.06em] normal-case sm:whitespace-nowrap text-[calc(0.95em-4px)] sm:text-[0.95em] lg:text-[min(0.95em,1.65vw)] ${navTextColor}`}>
 						Reimagining Africa Through Dialogue
 					</span>
 				</div>

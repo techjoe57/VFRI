@@ -35,10 +35,15 @@ export function useRootsForwardReveal() {
 		};
 
 		// Above-fold / already-visible: reveal on mount so first paint is not blank.
+		// The 48px cushion below the fold accounts for the translateY() in the
+		// reveal classes — an element whose resting spot is the bottom edge of
+		// the first screen is shifted below the fold pre-reveal, so without the
+		// cushion it would stay invisible until the user scrolls.
 		const rect = el.getBoundingClientRect();
 		const inView =
 			rect.bottom > 0 &&
-			rect.top < (window.innerHeight || document.documentElement.clientHeight);
+			rect.top <
+				(window.innerHeight || document.documentElement.clientHeight) + 48;
 		if (inView) {
 			reveal();
 			return;
