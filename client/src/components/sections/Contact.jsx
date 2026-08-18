@@ -96,8 +96,8 @@ export default function Contact() {
 	return (
 		<section
 			id="contact"
-			className="relative page-section bg-[#5E0A11]">
-			<div className="mx-auto flex w-full max-w-4xl flex-col gap-6 md:flex-row md:items-start md:gap-8">
+			className="relative w-full page-section bg-[#5E0A11]">
+			<div className="flex w-full flex-col gap-6 md:flex-row md:items-start md:gap-8">
 				{/* Info */}
 				<div ref={leftRef} className="reveal w-full md:w-[38%] md:shrink-0">
 					<span
@@ -119,11 +119,11 @@ export default function Contact() {
 							<p className="meta-label mb-2 text-gold">
 								{CONTACT.harare.label}
 							</p>
-							<p className="text-sm leading-relaxed text-white/75">
+							<p className="text-base leading-relaxed text-white/75">
 								<span className="font-medium text-gold/80">C/o</span>{" "}
 								119 Josiah Chinamano Avenue <br /> Cnr. J. Chinamano Avenue & 4th Street<br/> Harare, Zimbabwe
 							</p>
-							<p className="mt-1 text-xs text-white/55">
+							<p className="mt-1 text-sm text-white/60">
 								{CONTACT.harare.phone}
 							</p>
 						</ContactItem>
@@ -131,10 +131,10 @@ export default function Contact() {
 							<p className="meta-label mb-2 text-gold">
 								{CONTACT.nairobi.label}
 							</p>
-							<p className="text-sm leading-relaxed text-white/75">
+							<p className="text-base leading-relaxed text-white/75">
 								{CONTACT.nairobi.address}
 							</p>
-							<p className="mt-1 text-xs text-white/55">
+							<p className="mt-1 text-sm text-white/60">
 								{CONTACT.nairobi.phone}
 							</p>
 						</ContactItem>
@@ -142,7 +142,7 @@ export default function Contact() {
 							<p className="meta-label mb-2 text-gold">Email</p>
 							<a
 								href={`mailto:${CONTACT.email}`}
-								className="text-sm text-white/75 transition-colors hover:text-gold">
+								className="text-base text-white/75 transition-colors hover:text-gold">
 								{CONTACT.email}
 							</a>
 						</ContactItem>

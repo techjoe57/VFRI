@@ -12,7 +12,7 @@ export default function RootsForwardHelpBuild() {
 			<div className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-gold/10 blur-3xl" />
 			<div className="pointer-events-none absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-gold/5 blur-3xl" />
 
-			<div className="rf-section-py relative mx-auto w-full max-w-3xl px-6 md:px-12">
+			<div className="rf-section-py relative w-full px-6 md:px-12">
 				<span
 					aria-hidden="true"
 					className="mb-5 block h-px w-16 bg-gradient-to-r from-transparent via-gold/70 to-transparent"
@@ -26,7 +26,7 @@ export default function RootsForwardHelpBuild() {
 
 				<p
 					ref={openingRef}
-					className="rf-fade-up rf-delay-1 mt-6 max-w-2xl font-sans text-xl font-medium leading-snug text-white md:text-2xl">
+					className="rf-fade-up rf-delay-1 mt-6 font-sans text-xl font-medium leading-snug text-white md:text-2xl">
 					We are designing Roots Forward around the people who
 					actually want to be part of it.
 				</p>
@@ -34,20 +34,20 @@ export default function RootsForwardHelpBuild() {
 				<div
 					ref={supportingRef}
 					className="rf-fade-up rf-delay-2 mt-6 flex flex-col gap-4">
-					<p className="max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
+					<p className="text-base leading-relaxed text-white/80 md:text-lg">
 						That's why we're not asking you to apply yet. We want
 						to hear what you would want from these three weeks —
 						what you'd like to learn, what would make it possible
 						for you to come, and what might get in the way.
 					</p>
 
-					<p className="max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
+					<p className="text-base leading-relaxed text-white/80 md:text-lg">
 						Registering your interest helps us shape the
 						programme around real people, rather than guessing
 						what you need.
 					</p>
 
-					<p className="max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
+					<p className="text-base leading-relaxed text-white/80 md:text-lg">
 						You'll also be the first to hear when dates, costs
 						and places are confirmed.
 					</p>

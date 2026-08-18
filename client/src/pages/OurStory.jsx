@@ -5,16 +5,16 @@ import Values from "../components/sections/Values";
 export default function OurStory() {
 	return (
 		<div
-			className="min-h-screen bg-fixed bg-cover bg-center bg-no-repeat"
+			className="flex min-h-[100dvh] w-full max-w-full flex-col bg-cover bg-center bg-no-repeat"
 			style={{
 				backgroundImage:
 					"url('/images/about/victoria_falls.jpg')",
 			}}
 		>
 			{/* Global overlay */}
-			<div className="bg-black/35 min-h-screen">
+			<div className="flex min-h-[100dvh] w-full max-w-full flex-1 flex-col bg-black/35">
 				{/* Hero */}
-				<section className="relative px-6 pb-3 pt-32 sm:pt-[110px]">
+				<section className="relative px-6 pb-3 pt-32 sm:pt-28">
 					<div className="mx-auto max-w-4xl text-center text-white">
 						<h1 className="mb-3 font-display text-5xl md:text-6xl">
 							Our Story

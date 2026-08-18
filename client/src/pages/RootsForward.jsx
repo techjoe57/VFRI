@@ -8,7 +8,7 @@ import RootsForwardClosing from "../components/roots-forward/RootsForwardClosing
 
 export default function RootsForward() {
 	return (
-		<div className="flex-1">
+		<div className="flex min-h-[100dvh] w-full max-w-full flex-1 flex-col bg-cream">
 			<RootsForwardHero />
 			<RootsForwardConnection />
 			<RootsForwardPillars />

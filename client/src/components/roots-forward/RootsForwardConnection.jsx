@@ -71,7 +71,7 @@ export default function RootsForwardConnection() {
 				<circle cx="10" cy="80" r="4" fill="currentColor" stroke="none" />
 			</svg>
 
-			<div className="rf-section-py relative mx-auto w-full max-w-2xl px-6 md:px-12">
+			<div className="rf-section-py relative w-full px-6 md:px-12">
 				<div ref={bodyRef} className="rf-fade-up rf-delay-0">
 					<h2 className="font-sans text-2xl font-semibold leading-snug text-ink md:text-3xl">
 						Growing up between two places

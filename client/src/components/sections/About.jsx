@@ -7,7 +7,7 @@ export default function About() {
 	return (
 		<section
 			id="about"
-			className="scroll-mt-28 relative overflow-hidden bg-cream/70 pb-5 pt-4 backdrop-blur-sm"
+			className="scroll-mt-28 relative w-full overflow-hidden bg-cream/70 pb-5 pt-4 backdrop-blur-sm"
 		>
 			{/* Background Accent */}
 			<div className="absolute inset-0 pointer-events-none">
@@ -17,7 +17,7 @@ export default function About() {
 
 			<div
 				ref={revealRef}
-				className="relative z-10 max-w-7xl mx-auto px-6"
+				className="relative z-10 w-full px-6 md:px-12"
 			>
 				{/* Heading */}
 				<div className="max-w-5xl mx-auto text-center mb-4">
@@ -37,12 +37,12 @@ export default function About() {
 				</div>
 
 				{/* Image + Floating Quote */}
-				<div className="relative mx-auto mb-16 mt-8 max-w-6xl">
+				<div className="relative mx-auto mb-16 mt-8">
 					<div className="overflow-hidden rounded-sm shadow-2xl group">
 						<img
 							src="/images/about/about.avif"
 							alt="VFRI team discussion"
-							className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+							className="w-full h-[25rem] object-cover transition-transform duration-700 group-hover:scale-105"
 						/>
 
 						<div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
@@ -78,7 +78,7 @@ export default function About() {
 									{title}
 								</h3>
 
-								<p className="flex-1 text-sm leading-7 text-ink-light">
+								<p className="flex-1 text-base leading-7 text-ink-mid">
 									{body}
 								</p>
 							</div>

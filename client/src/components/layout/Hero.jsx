@@ -40,7 +40,7 @@ export default function Hero() {
 	return (
 		<section
 			id="home"
-			className="relative grid min-h-[calc(100vh-5rem)] overflow-hidden bg-green-deep pt-20 md:grid-cols-2"
+			className="relative w-full grid min-h-dvh overflow-hidden bg-green-deep pt-28 md:grid-cols-[3fr_2fr]"
 		>
 			{/* VIDEO BACKGROUND */}
 			<div className="absolute inset-0 z-0 overflow-hidden">
@@ -85,21 +85,21 @@ export default function Hero() {
 			{/* LEFT */}
 			<div
 				ref={leftRef}
-				className="reveal relative z-[5] flex flex-col justify-center px-6 py-10 sm:px-8 md:px-12 md:py-16 lg:px-20 lg:py-20"
+				className="reveal relative z-[5] flex flex-col justify-center px-6 py-6 sm:px-8 md:px-12 md:py-8 lg:px-16 lg:py-9"
 			>
 				<span className="section-label mb-5">
 					African Research Institute
 				</span>
 
-				<h1 className="mb-6 font-sans text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+				<h1 className="mb-6 font-sans text-3xl leading-tight text-white sm:text-4xl lg:text-5xl">
 					Victoria Falls Regional Institute
 					<br />
-					<em className="not-italic font-light text-gold-light text-3xl sm:text-4xl lg:text-5xl">
+					<em className="not-italic font-light text-gold-light text-2xl sm:text-3xl lg:text-4xl">
 						for Strategic Studies
 					</em>
 				</h1>
 
-				<p className="mb-8 max-w-xl text-sm leading-8 text-white/80 md:text-lg">
+				<p className="mb-8 max-w-xl text-base leading-7 text-white/80 md:text-lg">
 					Advancing African-led institutions through capacity
 					building, research, and dialogue that connects global
 					policy making with strategic transformation.
@@ -125,22 +125,22 @@ export default function Hero() {
 			{/* RIGHT */}
 			<div
 				ref={rightRef}
-				className="reveal relative z-10 flex items-center justify-center px-6 pb-12 pt-4 sm:px-8 md:justify-end md:px-10 md:py-16 lg:px-16"
+				className="reveal relative z-10 flex items-center justify-center px-6 pb-12 pt-4 sm:px-8 md:justify-end md:px-10 md:py-0 lg:px-16"
 			>
-				<div className="grid w-full max-w-[380px] gap-4 lg:max-w-[430px] xl:max-w-[500px]">
+				<div className="flex w-full flex-col gap-1">
 					{cards.map(({ icon: Icon, title, desc }) => (
 						<div
 							key={title}
-							className="rounded-sm border border-gold/30 bg-white/10 p-4 backdrop-blur-sm transition-colors duration-300 hover:border-gold/50 hover:bg-gold/10"
+							className="flex flex-col justify-center rounded-sm border border-gold/30 bg-white/10 p-3 backdrop-blur-sm transition-colors duration-300 hover:border-gold/50 hover:bg-gold/10"
 						>
-							<div className="mb-2 flex items-center gap-3">
-								<Icon className="shrink-0 text-xl text-gold lg:text-2xl" />
-								<h4 className="card-title text-[22px] text-white">
+							<div className="mb-1 flex items-center gap-3">
+								<Icon className="shrink-0 text-base text-gold" />
+								<h4 className="font-sans text-[1.125rem] leading-snug text-white">
 									{title}
 								</h4>
 							</div>
 
-							<p className="text-sm leading-7 text-white/65">
+							<p className="text-[0.8rem] leading-snug text-white/70">
 								{desc}
 							</p>
 						</div>

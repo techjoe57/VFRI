@@ -19,8 +19,8 @@ export default function RootsForwardHeader() {
 	};
 
 	return (
-		<header className="fixed top-0 left-0 right-0 z-50 border-b border-gold/20 bg-cream/95 backdrop-blur-md">
-			<div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-2.5 md:px-12 lg:px-20">
+		<header className="fixed inset-x-0 top-0 z-50 w-full max-w-none border-b border-gold/20 bg-cream/95 backdrop-blur-md">
+			<div className="flex w-full items-center justify-between gap-4 px-6 py-2.5 md:px-12">
 				{/* Brand */}
 				<div className="flex min-w-0 items-center gap-3">
 					<div className="h-12 w-12 flex-shrink-0 md:h-14 md:w-14">
@@ -115,7 +115,7 @@ export default function RootsForwardHeader() {
 				className={`overflow-hidden bg-cream/98 backdrop-blur-md transition-all duration-300 ease-out lg:hidden ${
 					menuOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
 				}`}>
-				<nav className="mx-auto flex w-full max-w-7xl flex-col px-6 py-2 md:px-12 lg:px-20">
+				<nav className="flex w-full flex-col px-6 py-2 md:px-12">
 					<button
 						type="button"
 						onClick={() => goTo("/")}

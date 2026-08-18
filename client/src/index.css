@@ -6,10 +6,23 @@
 @tailwind utilities;
 
 @layer base {
+	:root {
+		color-scheme: light;
+	}
+
 	html {
 		scroll-behavior: smooth;
 		scroll-padding-top: 8rem;
 		font-size: 18px;
+		color-scheme: light;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+		min-height: 100%;
+		min-height: 100dvh;
+		overflow-x: clip;
+		background-color: #f8f7f2;
 	}
 
 	@media (min-width: 768px) {
@@ -18,8 +31,25 @@
 		}
 	}
 
+	/* Fluid desktop scale — from lg up, root grows with the viewport so
+	   every rem value (type, card padding, gaps, images) scales together.
+	   Desktop never drops below the mobile 18px base: ~20px at 1280px,
+	   ~23px at 1440px, ~31px at 1920px, ~41px at 2560px.
+	   The vh term keeps the composition responsive when a desktop is tied
+	   mainly by height, so the site reads the same on any desktop shape. */
+	@media (min-width: 1024px) {
+		html {
+			font-size: clamp(19px, max(1.6vw, 2vh), 84px);
+		}
+	}
+
 	body {
-		@apply bg-cream font-sans text-base leading-relaxed text-ink antialiased;
+		@apply m-0 max-w-full min-h-[100dvh] w-full bg-cream p-0 font-sans text-base leading-relaxed text-ink antialiased;
+		overflow-x: clip;
+	}
+
+	#root {
+		@apply m-0 max-w-full min-h-[100dvh] w-full bg-cream p-0;
 	}
 
 	section[id] {
@@ -48,7 +78,7 @@
 	/* ---------- Layout ---------- */
 
 	.page-section {
-		@apply px-6 py-10 md:px-8 md:py-12 lg:px-12;
+		@apply px-6 py-10 md:px-12 md:py-12;
 	}
 
 	.page-hero {
@@ -56,7 +86,7 @@
 	}
 
 	.section-inner {
-		@apply mx-auto w-full max-w-7xl;
+		@apply w-full;
 	}
 
 	.section-heading {
@@ -94,11 +124,11 @@
 	}
 
 	.section-copy {
-		@apply mx-auto max-w-4xl text-sm leading-7 text-ink-light md:text-base;
+		@apply mx-auto max-w-4xl text-base leading-7 text-ink-mid md:text-lg;
 	}
 
 	.dark-section-copy {
-		@apply mx-auto max-w-4xl text-sm leading-7 text-white/70 md:text-base;
+		@apply mx-auto max-w-4xl text-base leading-7 text-white/75 md:text-lg;
 	}
 
 	.card-title {
@@ -106,7 +136,7 @@
 	}
 
 	.meta-label {
-		@apply text-[0.68rem] font-semibold uppercase tracking-[0.14em];
+		@apply text-[0.8rem] font-semibold uppercase tracking-[0.14em];
 	}
 
 	/* ---------- Buttons ---------- */

@@ -9,14 +9,14 @@ export default function Services() {
 	const ServiceCard = ({ num, title, desc, image }) => (
 		<div
 			className="
-				group
-				relative
-				flex
-				h-full
-				min-h-[360px]
-				flex-col
-				
-				overflow-hidden
+			group
+			relative
+			flex
+			h-full
+			min-h-[22.5rem]
+			flex-col
+			
+			overflow-hidden
 				rounded-sm
 				border
 				border-gold/20
@@ -47,7 +47,7 @@ export default function Services() {
 				<h3 className="card-title mb-1 min-h-[2.75rem] text-white">
 					{title}
 				</h3>
-				<p className="min-h-[7rem] text-sm leading-7 text-white/75">
+				<p className="min-h-[6rem] text-base leading-7 text-white/75">
 					{desc}
 				</p>
 			</div>
@@ -69,7 +69,7 @@ export default function Services() {
 			relative
 			flex
 			h-full
-			min-h-[360px]
+			min-h-[22.5rem]
 			flex-col
 			overflow-hidden
 			rounded-sm
@@ -135,7 +135,7 @@ export default function Services() {
 					Let's Work Together
 				</h3>
 
-				<p className="text-sm leading-7 text-white/70">
+				<p className="text-base leading-7 text-white/75">
 					We partner with institutions across
 					Africa and beyond on research,
 					training, strategic dialogue, and
@@ -196,7 +196,7 @@ export default function Services() {
 	return (
 		<section
 			id="services"
-			className="page-section bg-[#244F46] scroll-mt-28 relative overflow-hidden"
+			className="relative w-full overflow-hidden scroll-mt-28 page-section bg-[#244F46]"
 		>
 			{/* Background Glow */}
 			<div className="absolute inset-0 pointer-events-none">
@@ -204,7 +204,7 @@ export default function Services() {
 				<div className="absolute bottom-0 left-1/4 w-[350px] h-[350px] bg-green-mid/10 rounded-full blur-3xl" />
 			</div>
 
-			<div className="relative z-10 mx-auto w-full max-w-[1500px]">
+			<div className="relative z-10 w-full">
 
 				{/* Heading */}
 				<div

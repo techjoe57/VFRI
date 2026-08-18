@@ -53,7 +53,7 @@ export default function ServiceInquiry() {
 	const labelClass = "meta-label mb-1.5 block text-ink-light";
 
 	return (
-		<div className="bg-cream min-h-screen">
+		<div className="w-full min-h-screen bg-cream">
 			{/* Hero */}
 			<section className="page-hero bg-green-deep text-white">
 				<div className="max-w-5xl mx-auto">
@@ -71,7 +71,7 @@ export default function ServiceInquiry() {
 
 			{/* Form */}
 			<section className="page-section">
-				<div className="max-w-4xl mx-auto bg-white shadow-xl rounded-sm p-6 md:p-8">
+				<div className="w-full bg-white shadow-xl rounded-sm p-6 md:p-8">
 
 					<form
 						onSubmit={handleSubmit}

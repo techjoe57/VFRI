@@ -8,13 +8,13 @@ export default function Focus() {
 	const FocusCard = ({ num, title, desc, image }) => (
 		<div
 			className="
-				group
-				relative
-				flex
-				h-full
-				min-h-[360px]
-				flex-col
-				overflow-hidden
+			group
+			relative
+			flex
+			h-full
+			min-h-[22.5rem]
+			flex-col
+			overflow-hidden
 				rounded-sm
 				border
 				border-gold/20
@@ -45,7 +45,7 @@ export default function Focus() {
 				<h3 className="card-title mb-1 min-h-[2.75rem] text-white">
 					{title}
 				</h3>
-				<p className="min-h-[7rem] text-sm leading-7 text-white/75">
+				<p className="min-h-[6rem] text-base leading-7 text-white/75">
 					{desc}
 				</p>
 			</div>
@@ -55,10 +55,9 @@ export default function Focus() {
 	return (
 		<section
 			id="focus"
-			className="page-section pb-6 md:pb-8 bg-[#FFF6DD]/80 scroll-mt-28"
+			className="relative w-full scroll-mt-28 page-section pb-6 md:pb-8 bg-[#FFF6DD]/80"
 		>
-			{/* Slightly wider than section-inner to reduce side whitespace — matches Services */}
-			<div className="mx-auto w-full max-w-[1500px]">
+			<div className="w-full">
 
 				{/* Heading */}
 				<div

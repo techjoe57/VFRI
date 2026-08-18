@@ -8,11 +8,11 @@ export default function Achievements() {
 	return (
 		<section
 			id="achievements"
-			className="w-full bg-cream min-h-screen pb-16"
+			className="flex w-full min-h-[100dvh] flex-col bg-cream pb-16"
 		>
 			<div
 				ref={headRef}
-				className="relative w-full overflow-hidden bg-cover bg-center bg-no-repeat sm:pt-[110px] pt-32  pb-8 px-6 text-white"
+				className="relative w-full flex-shrink-0 overflow-hidden bg-cover bg-center bg-no-repeat sm:pt-28 pt-32  pb-8 px-6 text-white"
 				style={{ backgroundImage: `url('/images/services/training.avif')` }}
 			>
 				<div className="absolute inset-0 bg-black/50" />
@@ -28,7 +28,7 @@ export default function Achievements() {
 						Achievements
 					</h2>
 
-					<p className="mx-auto max-w-2xl text-xs sm:text-sm font-light leading-relaxed text-white/90">
+					<p className="mx-auto max-w-2xl text-sm sm:text-base md:text-lg font-light leading-relaxed text-white/90">
 						From university keynotes in Zimbabwe to cross-border student
 						competitions in Nairobi — VFRI turns its mission into
 						measurable impact on the ground.
@@ -36,27 +36,27 @@ export default function Achievements() {
 				</div>
 			</div>
 
-			<div className="w-full px-6 md:px-12 pt-8"> 
-				<div ref={gridRef} className="reveal grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
+			<div className="flex w-full flex-1 flex-col px-6 pt-8 md:px-12"> 
+				<div ref={gridRef} className="reveal grid flex-1 grid-cols-1 items-stretch gap-6 auto-rows-fr lg:grid-cols-2">
 					{ACHIEVEMENTS.map(({ title, desc, image }) => (
 						<div
 							key={title}
 							className="group relative flex flex-col gap-5 overflow-hidden rounded-sm border border-black/[0.06] bg-white p-6 transition-all duration-200 hover:shadow-xl md:flex-row md:items-stretch"
 						>
-							<div className="relative h-40 w-full shrink-0 overflow-hidden rounded-sm md:h-auto md:w-48">
+							<div className="relative h-40 w-full shrink-0 overflow-hidden rounded-sm md:h-auto md:w-1/3">
 								<img
 									src={image}
-									className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105 md:absolute md:inset-0"
+									className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 md:absolute md:inset-0"
 									loading="lazy"
 									alt={title}
 								/>
 							</div>
 							<div className="absolute bottom-0 left-0 top-0 w-0.5 bg-gradient-to-b from-gold to-crimson-mid" />
-							<div className="flex flex-1 flex-col">
-								<h3 className="card-title mb-1 flex min-h-[2.75rem] items-end text-lg font-semibold text-crimson-deep">
+							<div className="flex flex-1 flex-col justify-between pt-2 pb-2">
+								<h3 className="card-title mb-1 text-xl font-semibold text-crimson-deep transition-colors group-hover:text-crimson-dark">
 									{title}
 								</h3>
-								<p className="text-left text-sm leading-relaxed text-ink-light">
+								<p className="text-left text-base leading-relaxed text-ink-mid">
 									{desc}
 								</p>
 							</div>
