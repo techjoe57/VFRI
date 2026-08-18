@@ -80,7 +80,7 @@ export default function RootsForwardConnection() {
 					<div className="mt-8 flex flex-col gap-6 text-lg leading-relaxed text-ink-mid md:text-xl">
 						<p>
 							Maybe you know home through your family, the food,
-							the music and the stories — but you haven't really
+							the music and the stories, but you haven't really
 							had the chance to know it for yourself.
 						</p>
 						<p>
@@ -93,8 +93,11 @@ export default function RootsForwardConnection() {
 
 				<div
 					ref={finalLineRef}
-					className="rf-fade-up rf-delay-2 mt-10 md:mt-12">
-					<span className="mb-5 block h-px w-12 bg-gold" />
+					className="rf-fade-up rf-delay-2 mt-12 md:mt-16">
+					<span
+						aria-hidden="true"
+						className="kente-bar mb-6 block h-1.5 w-16 rounded-sm"
+					/>
 					<p className="font-sans text-2xl font-medium leading-snug text-ink md:text-3xl">
 						That doesn't make you any less connected. There's
 						simply more to discover.
