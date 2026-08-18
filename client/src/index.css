@@ -31,19 +31,25 @@
 		}
 	}
 
-	/* Fluid desktop scale — from lg up, root grows linearly with the
+	/* Fluid desktop scale — from 1440px up, root grows linearly with the
 	   viewport so every rem value (type, card padding, gaps, images)
-	   scales together. 1rem (the browser default, 16px) at 1024px,
-	   ~1.14rem at 1440px, ~1.30rem at 1920px, ~1.52rem at 2560px.
-	   Because the ramp is anchored on 1rem instead of an absolute px,
-	   it also respects the browser's own font size setting — a user
-	   who increases their default sees the whole site grow with it.
-	   Linear ramp keeps the 1024–1440 range (the gap-heavy midsize
-	   desks) moving instead of flat-lining at the base the way a pure
-	   vw/vh clamp did. */
+	   scales together. Because the ramp is anchored on 1rem instead of an
+	   absolute px, it respects the browser's own font size setting — a
+	   user who increases their default sees the whole site grow with it.
+	   Linear ramp keeps the 1440–1920 range moving instead of flat-lining
+	   the way a pure vw/vh clamp did. */
 	@media (min-width: 1024px) {
 		html {
 			font-size: clamp(1rem, calc(1rem + (100vw - 1024px) * 0.0054), 84px);
+		}
+	}
+
+	/* 1024–1439: midsize desks render every text one step smaller
+	   (text-base ≈ text-sm, i.e. ×0.875 on the ramp above) so the type
+	   stops feeling oversized at 1024 and 1280. 1440+ keeps the full ramp. */
+	@media (min-width: 1024px) and (max-width: 1439px) {
+		html {
+			font-size: calc(0.875rem + (100vw - 1024px) * 0.004725);
 		}
 	}
 

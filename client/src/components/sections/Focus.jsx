@@ -39,7 +39,7 @@ export default function Focus() {
 
 			{/* Content */}
 			<div className="relative z-10 mt-auto flex w-full flex-col p-5">
-				<p className="mb-3 text-5xl font-extralight tracking-tight text-gold/70">
+				<p className="mb-3 text-5xl font-extralight tracking-tight text-gold/70 xl:text-6xl min-[1440px]:text-7xl">
 					{num}
 				</p>
 				<h3 className="card-title mb-1 min-h-[2.75rem] text-white">
