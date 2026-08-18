@@ -91,15 +91,15 @@ export default function Hero() {
 					African Research Institute
 				</span>
 
-				<h1 className="mb-6 font-sans text-3xl leading-tight text-white sm:text-4xl lg:mb-4 lg:text-5xl">
+				<h1 className="mb-6 font-sans text-3xl leading-tight text-white sm:text-4xl lg:mb-4 xl:text-5xl min-[1440px]:text-6xl">
 					Victoria Falls Regional Institute
 					<br />
-					<em className="not-italic font-light text-gold-light text-2xl sm:text-3xl lg:text-4xl">
+					<em className="not-italic font-light text-gold-light text-2xl sm:text-3xl xl:text-4xl min-[1440px]:text-5xl">
 						for Strategic Studies
 					</em>
 				</h1>
 
-				<p className="mb-8 max-w-xl text-lg leading-7 text-white/80 md:text-xl lg:mb-5">
+				<p className="mb-8 max-w-xl text-xl leading-8 text-white/80 xl:text-2xl min-[1440px]:text-3xl lg:mb-5">
 					Advancing African-led institutions through capacity
 					building, research, and dialogue that connects global
 					policy making with strategic transformation.
@@ -135,14 +135,14 @@ export default function Hero() {
 						>
 							<div className="mb-1 flex items-center gap-3 lg:mb-0.5">
 								<Icon className="shrink-0 text-base text-gold" />
-								<h4 className="font-sans text-xl leading-snug text-white">
-									{title}
-								</h4>
+<h4 className="font-sans text-base leading-snug text-white xl:text-2xl min-[1440px]:text-3xl">
+								{title}
+							</h4>
 							</div>
 
-							<p className="text-base leading-snug text-white/70">
-								{desc}
-							</p>
+<p className="text-sm leading-snug text-white/70 xl:text-lg min-[1440px]:text-xl">
+							{desc}
+						</p>
 						</div>
 					))}
 				</div>
