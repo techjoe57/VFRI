@@ -49,7 +49,7 @@ export default function ServiceInquiry() {
 	};
 
 	const inputClass =
-		"w-full rounded-sm border border-black/10 px-4 py-3 text-sm text-ink focus:border-gold focus:outline-none";
+		"w-full rounded-sm border border-black/10 px-4 py-3 text-base text-ink focus:border-gold focus:outline-none";
 	const labelClass = "meta-label mb-1.5 block text-ink-light";
 
 	return (

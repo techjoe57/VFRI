@@ -11,7 +11,7 @@ export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [aboutOpen, setAboutOpen] = useState(false);
 	const navTextClass =
-		"font-sans text-sm font-medium tracking-wide normal-case";
+		"font-sans text-base font-medium tracking-wide normal-case";
 
 	useEffect(() => {
 		const handler = () => setScrolled(window.scrollY > 60);

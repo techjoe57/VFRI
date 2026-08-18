@@ -84,7 +84,7 @@ export default function Contact() {
 	px-4 
 	py-3
     text-white 
-	text-sm 
+	text-base 
 	placeholder:text-white/40
     focus:outline-none 
 	focus:border-gold 
@@ -123,7 +123,7 @@ export default function Contact() {
 								<span className="font-medium text-gold/80">C/o</span>{" "}
 								119 Josiah Chinamano Avenue <br /> Cnr. J. Chinamano Avenue & 4th Street<br/> Harare, Zimbabwe
 							</p>
-							<p className="mt-1 text-sm text-white/60">
+							<p className="mt-1 text-base text-white/60">
 								{CONTACT.harare.phone}
 							</p>
 						</ContactItem>
@@ -134,7 +134,7 @@ export default function Contact() {
 							<p className="text-base leading-relaxed text-white/75">
 								{CONTACT.nairobi.address}
 							</p>
-							<p className="mt-1 text-sm text-white/60">
+							<p className="mt-1 text-base text-white/60">
 								{CONTACT.nairobi.phone}
 							</p>
 						</ContactItem>

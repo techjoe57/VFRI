@@ -122,8 +122,8 @@ export default function InquiryForm() {
 		);
 	}
 	const inputClass =
-		"w-full rounded-sm border border-black/10 px-4 py-3 text-sm text-ink focus:outline-none focus:border-gold transition";
-	const labelClass = "mb-1.5 flex items-center gap-2 text-sm text-ink";
+		"w-full rounded-sm border border-black/10 px-4 py-3 text-base text-ink focus:outline-none focus:border-gold transition";
+	const labelClass = "mb-1.5 flex items-center gap-2 text-base text-ink";
 
 	return (
 		<section
@@ -275,7 +275,7 @@ export default function InquiryForm() {
 						</div>
 						<div className="pt-2">
 							{error && (
-								<div className="rounded-sm border border-red-300 bg-red-50 p-4 text-sm text-red-700">
+								<div className="rounded-sm border border-red-300 bg-red-50 p-4 text-base text-red-700">
 									{error}
 								</div>
 							)}

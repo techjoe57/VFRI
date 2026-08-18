@@ -72,7 +72,7 @@ export default function RootsForwardOutcomes() {
 							ref={outcomeRefs[index]}
 							className={`rf-fade-up rf-delay-${Math.min(index, 4)} flex items-start gap-4 py-4`}>
 							<span
-								className={`mt-0.5 flex-shrink-0 font-sans text-sm font-semibold tracking-[0.1em] ${item.accent} md:text-base`}>
+								className={`mt-0.5 flex-shrink-0 font-sans text-base font-semibold tracking-[0.1em] ${item.accent} md:text-lg`}>
 								0{index + 1}
 							</span>
 							<p className="text-lg leading-relaxed text-ink md:text-xl">

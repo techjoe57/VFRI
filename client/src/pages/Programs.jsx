@@ -21,7 +21,7 @@ function RootsForwardCard({ program }) {
 				<button
 					type="button"
 					onClick={() => navigate(program.internalLink)}
-					className="group mt-4 inline-flex w-fit cursor-pointer items-center gap-2 rounded-sm bg-gold px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.14em] text-crimson-deep transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-crimson-deep hover:text-cream hover:shadow-lg hover:shadow-crimson-deep/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crimson-deep">
+					className="group mt-4 inline-flex w-fit cursor-pointer items-center gap-2 rounded-sm bg-gold px-5 py-2.5 text-base font-semibold uppercase tracking-[0.14em] text-crimson-deep transition-all duration-300 ease-out hover:-translate-y-[3px] hover:bg-crimson-deep hover:text-cream hover:shadow-lg hover:shadow-crimson-deep/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crimson-deep">
 					Explore Roots Forward
 					<ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
 				</button>
