@@ -61,11 +61,11 @@ export default function Programs() {
 						</span>
 					</div>
 
-					<h2 className="mb-2 font-serif text-2xl font-normal tracking-wide text-white sm:text-3xl md:text-4xl">
+					<h2 className="mb-2 font-serif text-3xl font-normal tracking-wide text-white sm:text-4xl md:text-5xl">
 						Programs & Initiatives
 					</h2>
 
-					<p className="mx-auto max-w-2xl text-sm font-light leading-relaxed text-white/90 sm:text-base md:text-lg">
+					<p className="mx-auto max-w-2xl text-lg font-light leading-relaxed text-white/90 sm:text-xl md:text-2xl">
 						Structured initiatives driving research, capacity building,
 						and policy innovation across Africa.
 					</p>
