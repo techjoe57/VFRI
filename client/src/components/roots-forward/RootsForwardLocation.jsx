@@ -6,6 +6,8 @@ export default function RootsForwardLocation() {
 
 	return (
 		<section id="victoria-falls" className="scroll-mt-28 bg-cream md:scroll-mt-32">
+			<div aria-hidden="true" className="kente-bar h-1.5 w-full" />
+
 			<div className="rf-section-py w-full px-6 md:px-12">
 				<div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
 					{/* TEXT */}
@@ -21,16 +23,14 @@ export default function RootsForwardLocation() {
 
 						<p className="mt-6 text-base leading-relaxed text-ink-mid md:text-lg">
 							Roots Forward takes place in Victoria Falls,
-							Zimbabwe. For many people growing up in the
-							diaspora, Zimbabwe or the region may be somewhere
-							they've heard about their whole lives without
-							having had the chance to really know for
-							themselves.
+							Zimbabwe. It is a place many in the diaspora have
+							heard about, but may never have had the chance
+							to know for themselves.
 						</p>
 
 						<p className="mt-4 text-base leading-relaxed text-ink-mid md:text-lg">
 							This isn't about coming as a tourist. It's about
-							spending time in a place connected to your story,
+							spending time somewhere connected to your story:
 							meeting people, listening, learning and
 							experiencing it for yourself.
 						</p>
@@ -39,7 +39,7 @@ export default function RootsForwardLocation() {
 					{/* IMAGE TREATMENT */}
 					<div
 						ref={imageRef}
-						className="rf-reveal-scale rf-delay-1 relative h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:aspect-[4/5] lg:max-h-[26.75rem]">
+						className="rf-reveal-scale rf-delay-1 relative h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:aspect-[3/2] lg:max-h-96 lg:w-auto lg:justify-self-start">
 						<img
 							src="/images/roots-forward/victoria-falls-location.png"
 							alt="Young Roots Forward participants standing together overlooking Victoria Falls"

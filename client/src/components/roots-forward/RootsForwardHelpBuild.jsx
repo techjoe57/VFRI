@@ -1,11 +1,10 @@
 import { useRootsForwardReveal } from "../../hooks/useRootsForwardReveal";
-import { ROOTS_FORWARD_INTEREST_FORM_URL } from "./rootsForwardConstants";
 
 export default function RootsForwardHelpBuild() {
 	const headingRef = useRootsForwardReveal();
 	const openingRef = useRootsForwardReveal();
-	const supportingRef = useRootsForwardReveal();
-	const ctaRef = useRootsForwardReveal();
+	const bodyRef = useRootsForwardReveal();
+	const closingRef = useRootsForwardReveal();
 
 	return (
 		<section id="help-us-build-this" className="relative overflow-hidden bg-crimson-deep">
@@ -26,46 +25,32 @@ export default function RootsForwardHelpBuild() {
 
 				<p
 					ref={openingRef}
-					className="rf-fade-up rf-delay-1 mt-6 font-sans text-xl font-medium leading-snug text-white md:text-2xl">
+					className="rf-fade-up rf-delay-1 mt-6 max-w-2xl font-sans text-xl font-medium leading-snug text-white md:text-2xl">
 					We are designing Roots Forward around the people who
 					actually want to be part of it.
 				</p>
 
-				<div
-					ref={supportingRef}
-					className="rf-fade-up rf-delay-2 mt-6 flex flex-col gap-4">
-					<p className="text-base leading-relaxed text-white/80 md:text-lg">
-						That's why we're not asking you to apply yet. We want
-						to hear what you would want from these three weeks —
-						what you'd like to learn, what would make it possible
-						for you to come, and what might get in the way.
-					</p>
-
-					<p className="text-base leading-relaxed text-white/80 md:text-lg">
-						Registering your interest helps us shape the
-						programme around real people, rather than guessing
-						what you need.
-					</p>
-
-					<p className="text-base leading-relaxed text-white/80 md:text-lg">
-						You'll also be the first to hear when dates, costs
-						and places are confirmed.
-					</p>
-				</div>
+				<p
+					ref={bodyRef}
+					className="rf-fade-up rf-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
+					That's why we're not asking you to apply yet. We want to
+					hear what you'd want from these three weeks: what you'd
+					like to learn, what would make it possible for you to
+					come, and what might get in the way.
+				</p>
 
 				<div
-					ref={ctaRef}
-					className="rf-fade-up rf-delay-3 mt-10 flex flex-col items-start gap-3 md:mt-12">
-					<a
-						href={ROOTS_FORWARD_INTEREST_FORM_URL}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-base font-semibold text-ink transition-all duration-200 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/30">
-						Register your interest
-					</a>
-					<span className="text-sm text-white/60">
-						Takes two minutes. No commitment.
-					</span>
+					ref={closingRef}
+					className="rf-fade-up rf-delay-3 mt-8 max-w-2xl md:mt-10">
+					<span
+						aria-hidden="true"
+						className="mb-4 block h-px w-12 bg-gold"
+					/>
+					<p className="text-lg font-medium leading-relaxed text-white md:text-xl">
+						Your input will help shape the programme. You'll also
+						be the first to hear when dates, costs and places are
+						confirmed.
+					</p>
 				</div>
 			</div>
 		</section>

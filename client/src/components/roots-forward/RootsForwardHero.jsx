@@ -1,19 +1,18 @@
 import { useRootsForwardReveal } from "../../hooks/useRootsForwardReveal";
-import { ROOTS_FORWARD_INTEREST_FORM_URL } from "./rootsForwardConstants";
 
 export default function RootsForwardHero() {
 	const eyebrowRef = useRootsForwardReveal();
 	const headingRef = useRootsForwardReveal();
 	const bodyRef = useRootsForwardReveal();
-	const ctaRef = useRootsForwardReveal();
+	const accentRef = useRootsForwardReveal();
 	const imageRef = useRootsForwardReveal();
 
 	return (
-		<section className="relative overflow-hidden bg-cream">
-			<div className="flex w-full px-6 pt-28 pb-5 md:px-12 md:pt-32">
-				<div className="grid w-full gap-8 lg:grid-cols-2 lg:items-end lg:gap-8">
+		<section className="relative overflow-hidden bg-cream lg:min-h-screen">
+			<div className="flex w-full px-6 pt-28 pb-5 md:px-12 md:pt-32 lg:pt-24 lg:items-center">
+				<div className="grid w-full gap-8 lg:grid-cols-2 lg:items-center lg:gap-8">
 					{/* TEXT */}
-					<div className="relative z-10 order-1 flex flex-col items-start gap-4 lg:order-1">
+					<div className="relative z-10 order-1 flex flex-col items-start gap-4 lg:order-1 lg:pt-10">
 						<span
 							ref={eyebrowRef}
 							className="rf-fade-up rf-delay-0 text-xs font-semibold uppercase tracking-[0.14em] text-gold">
@@ -55,26 +54,17 @@ export default function RootsForwardHero() {
 							</div>
 						</div>
 
-						<div
-							ref={ctaRef}
-							className="rf-fade-up rf-delay-3 mt-3 flex flex-col items-start gap-3">
-							<a
-								href={ROOTS_FORWARD_INTEREST_FORM_URL}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-base font-semibold text-ink transition-all duration-200 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/30">
-								Register your interest
-							</a>
-							<span className="text-xs text-ink-light">
-								Takes two minutes. No commitment.
-							</span>
-						</div>
+						<span
+							ref={accentRef}
+							aria-hidden="true"
+							className="rf-fade-up rf-delay-3 hidden h-1 w-full bg-gold lg:block"
+						/>
 					</div>
 
 					{/* IMAGE TREATMENT */}
 					<div
 						ref={imageRef}
-						className="rf-reveal-scale rf-delay-0 relative order-2 h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:order-2 lg:aspect-[4/5] lg:max-h-[26.75rem]">
+						className="rf-reveal-scale rf-delay-0 relative order-2 h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:order-2 lg:aspect-[16/10] lg:max-h-64">
 						<img
 							src="/images/roots-forward/roots-forward-hero.jpg"
 							alt="Young people from the diaspora collaborating together during a Roots Forward session"

@@ -125,7 +125,7 @@ export default function RootsForwardPillars() {
 								</p>
 								<p className="mt-3 max-w-md text-base font-medium leading-relaxed text-green-mid md:text-lg">
 									See what people across Africa are already
-									building — from M-Pesa to Flutterwave.
+									building, from M-Pesa to Flutterwave.
 								</p>
 							</div>
 						</div>
