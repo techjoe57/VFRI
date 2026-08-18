@@ -14,7 +14,7 @@ function RootsForwardCard({ program }) {
 				<h3 className="card-title mb-1 text-crimson-deep">
 					{program.title}
 				</h3>
-				<p className="text-left text-lg leading-relaxed text-ink-mid xl:text-xl min-[1440px]:text-2xl">
+				<p className="text-left text-lg leading-relaxed text-ink-mid xl:text-xl min-[2560px]:text-2xl">
 					{program.description}
 				</p>
 
@@ -61,11 +61,11 @@ export default function Programs() {
 						</span>
 					</div>
 
-					<h2 className="mb-2 font-serif text-3xl font-normal tracking-wide text-white sm:text-4xl xl:text-5xl min-[1440px]:text-6xl">
+					<h2 className="mb-2 font-serif text-3xl font-normal tracking-wide text-white sm:text-4xl xl:text-5xl min-[2560px]:text-6xl">
 						Programs & Initiatives
 					</h2>
 
-					<p className="mx-auto max-w-2xl text-lg font-light leading-relaxed text-white/90 sm:text-xl xl:text-2xl min-[1440px]:text-3xl">
+					<p className="mx-auto max-w-2xl text-lg font-light leading-relaxed text-white/90 sm:text-xl xl:text-2xl min-[2560px]:text-3xl">
 						Structured initiatives driving research, capacity building,
 						and policy innovation across Africa.
 					</p>
@@ -102,7 +102,7 @@ export default function Programs() {
 										{p.title}
 									</h3>
 
-<p className="text-left text-lg leading-relaxed text-ink-mid xl:text-xl min-[1440px]:text-2xl">
+<p className="text-left text-lg leading-relaxed text-ink-mid xl:text-xl min-[2560px]:text-2xl">
 										{p.description}
 									</p>
 								</div>

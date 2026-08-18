@@ -34,7 +34,7 @@ export default function RootsForwardHeader() {
 						<strong className="block truncate font-sans text-base font-semibold tracking-[0.06em] text-green-deep sm:hidden">
 							VFRI
 						</strong>
-						<strong className="hidden font-sans text-base font-semibold tracking-[0.06em] text-green-deep sm:block xl:text-xl min-[1440px]:text-2xl">
+						<strong className="hidden font-sans text-base font-semibold tracking-[0.06em] text-green-deep sm:block xl:text-xl min-[2560px]:text-2xl">
 							Victoria Falls Regional Institute
 						</strong>
 <span className="hidden font-medium text-[0.88em] tracking-[0.06em] text-green-deep normal-case sm:block">
@@ -86,7 +86,7 @@ export default function RootsForwardHeader() {
 						href={ROOTS_FORWARD_INTEREST_FORM_URL}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-green-deep px-4 py-2.5 text-xs font-semibold text-cream transition-all duration-200 hover:-translate-y-0.5 hover:bg-green-mid hover:shadow-lg hover:shadow-green-deep/30 md:px-6 md:py-3 xl:text-base min-[1440px]:text-lg">
+						className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-green-deep px-4 py-2.5 text-xs font-semibold text-cream transition-all duration-200 hover:-translate-y-0.5 hover:bg-green-mid hover:shadow-lg hover:shadow-green-deep/30 md:px-6 md:py-3 xl:text-base min-[2560px]:text-lg">
 						Register your interest
 					</a>
 

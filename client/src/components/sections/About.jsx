@@ -50,7 +50,7 @@ export default function About() {
 
 					{/* Floating Quote */}
 					<div className="absolute left-1/2 -bottom-8 -translate-x-1/2 w-[92%] max-w-4xl bg-green-deep border-l-4 border-gold rounded-sm px-6 py-4 shadow-2xl backdrop-blur-md">
-						<p className="font-display text-lg xl:text-xl min-[1440px]:text-2xl italic leading-relaxed text-white/85 text-center">
+						<p className="font-display text-lg xl:text-xl min-[2560px]:text-2xl italic leading-relaxed text-white/85 text-center">
 							"Discussions, policy formulations, and conferences about Africa
 							tend to be held without Africa. Those who possess African wisdom,
 							knowledge and experiences are often denied access to such
@@ -78,7 +78,7 @@ export default function About() {
 									{title}
 								</h3>
 
-<p className="flex-1 text-lg leading-7 text-ink-mid xl:text-xl min-[1440px]:text-2xl">
+<p className="flex-1 text-lg leading-7 text-ink-mid xl:text-xl min-[2560px]:text-2xl">
 								{body}
 							</p>
 							</div>
