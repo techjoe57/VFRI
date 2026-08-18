@@ -13,7 +13,7 @@
 	html {
 		scroll-behavior: smooth;
 		scroll-padding-top: 8rem;
-		font-size: 13px;
+		font-size: 15px;
 		color-scheme: light;
 		margin: 0;
 		padding: 0;
@@ -33,13 +33,13 @@
 
 	/* Fluid desktop scale — from lg up, root grows with the viewport so
 	   every rem value (type, card padding, gaps, images) scales together.
-	   Desktop never drops below the mobile 13px base: ~13px at 1024px,
-	   ~13px at 1280px, ~14px at 1440px, ~18px at 1920px, ~24px at 2560px.
+	   Desktop never drops below the mobile 15px base: ~15px at 1024px,
+	   ~15px at 1280px, ~16px at 1440px, ~20px at 1920px, ~27px at 2560px.
 	   The vh term keeps the composition responsive when a desktop is tied
 	   mainly by height, so the site reads the same on any desktop shape. */
 	@media (min-width: 1024px) {
 		html {
-			font-size: clamp(13px, max(0.95vw, 1.35vh), 84px);
+			font-size: clamp(15px, max(0.95vw, 1.35vh), 84px);
 		}
 	}
 

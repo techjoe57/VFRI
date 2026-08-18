@@ -9,11 +9,11 @@ export default function RootsForwardHero() {
 
 	return (
 		<section className="relative overflow-hidden bg-cream">
-			<div className="flex w-full px-6 pt-28 pb-[25px] md:px-12 md:pt-32 lg:min-h-dvh lg:pt-24 lg:pb-[60px]">
+			<div className="flex w-full px-6 pt-28 pb-[25px] md:px-12 md:pt-32 lg:min-h-dvh lg:pt-24 lg:pb-24">
 				<div className="grid w-full gap-8 lg:grid-cols-[1fr_2fr] lg:gap-8">
 					{/* TEXT */}
-					<div className="relative z-10 order-1 flex flex-col items-start gap-4 lg:order-1 lg:justify-center lg:gap-[clamp(16px,min(9vw,calc(32dvh_-_168px),calc(55px_+_(100vw_-_1024px)_*_0.16)),120px)]">
-						<div className="flex flex-col items-start gap-4">
+					<div className="relative z-10 order-1 flex flex-col items-center gap-4 text-center lg:order-1 lg:items-start lg:justify-center lg:text-left lg:gap-[clamp(16px,min(9vw,calc(32dvh_-_168px),calc(55px_+_(100vw_-_1024px)_*_0.16)),120px)]">
+						<div className="flex flex-col items-center gap-4 lg:items-start">
 							<span
 								ref={eyebrowRef}
 								className="rf-fade-up rf-delay-0 text-xs font-semibold uppercase tracking-[0.14em] text-gold">
@@ -29,7 +29,7 @@ export default function RootsForwardHero() {
 
 						<div
 							ref={bodyRef}
-							className="rf-fade-up rf-delay-2 flex flex-col items-start gap-4">
+							className="rf-fade-up rf-delay-2 flex flex-col items-center gap-4 lg:items-start">
 							<p className="max-w-md font-sans text-xl font-medium leading-snug text-ink md:text-2xl">
 								You carry a heritage you may have never stood
 								inside.
@@ -42,7 +42,7 @@ export default function RootsForwardHero() {
 								about where they're going.
 							</p>
 
-							<div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+							<div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 lg:justify-start">
 								<span className="text-sm font-medium uppercase tracking-[0.1em] text-ink-light">
 									Victoria Falls, Zimbabwe
 								</span>
