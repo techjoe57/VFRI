@@ -99,7 +99,7 @@ export default function Hero() {
 					</em>
 				</h1>
 
-				<p className="mb-8 max-w-xl text-base leading-7 text-white/80 md:text-lg lg:mb-5">
+				<p className="mb-8 max-w-xl text-lg leading-7 text-white/80 md:text-xl lg:mb-5">
 					Advancing African-led institutions through capacity
 					building, research, and dialogue that connects global
 					policy making with strategic transformation.
@@ -135,12 +135,12 @@ export default function Hero() {
 						>
 							<div className="mb-1 flex items-center gap-3 lg:mb-0.5">
 								<Icon className="shrink-0 text-base text-gold" />
-								<h4 className="font-sans text-[1.125rem] leading-snug text-white">
+								<h4 className="font-sans text-xl leading-snug text-white">
 									{title}
 								</h4>
 							</div>
 
-							<p className="text-[0.8rem] leading-snug text-white/70">
+							<p className="text-base leading-snug text-white/70">
 								{desc}
 							</p>
 						</div>

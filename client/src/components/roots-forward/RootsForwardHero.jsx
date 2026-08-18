@@ -43,14 +43,14 @@ export default function RootsForwardHero() {
 							</p>
 
 							<div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 lg:justify-start">
-								<span className="text-sm font-medium uppercase tracking-[0.1em] text-ink-light">
+								<span className="text-base font-medium uppercase tracking-[0.1em] text-ink-light">
 									Victoria Falls, Zimbabwe
 								</span>
 								<span
 									aria-hidden="true"
 									className="hidden h-3 w-px bg-ink-light/40 sm:block"
 								/>
-								<span className="text-sm font-medium uppercase tracking-[0.1em] text-ink-light">
+								<span className="text-base font-medium uppercase tracking-[0.1em] text-ink-light">
 									Ages 18–25
 								</span>
 							</div>

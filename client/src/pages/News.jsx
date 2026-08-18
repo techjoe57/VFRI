@@ -71,7 +71,7 @@ export default function News() {
 											href={link}
 											target="_blank"
 											rel="noopener noreferrer"
-											className="mt-4 inline-flex self-start text-sm font-semibold uppercase tracking-[0.14em] text-gold transition-colors hover:text-crimson-deep">
+											className="mt-4 inline-flex self-start text-base font-semibold uppercase tracking-[0.14em] text-gold transition-colors hover:text-crimson-deep">
 											{linkLabel || "Read more"}
 										</a>
 									)}

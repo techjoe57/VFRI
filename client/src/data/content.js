@@ -73,7 +73,7 @@ export const vms = [
 	{
 		label: "Our Vision",
 		title: "Inspire the African Renaissance",
-		body: "A continent reclaiming its intellectual heritage and positioning its wisdom at the heart of global discourse — driving its own narrative, on its own terms, so African knowledge shapes research, policy, and public conversation at home and internationally.",
+		body: "A continent reclaiming it's intellectual heritage and positioning its wisdom at the heart of global discourse — driving its own narrative, on its own terms, so African knowledge shapes research, policy, and public conversation at home and internationally.",
 	},
 	{
 		label: "Our Mission",
