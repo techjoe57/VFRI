@@ -34,20 +34,20 @@ export default function RootsForwardHelpBuild() {
 
 						<h2
 							ref={headingRef}
-							className="rf-fade-up rf-delay-0 font-sans text-3xl font-bold leading-tight tracking-tight text-white xl:text-5xl min-[1440px]:text-6xl">
+							className="rf-fade-up rf-delay-0 font-sans text-3xl font-bold leading-tight tracking-tight text-white xl:text-5xl min-[2560px]:text-6xl">
 							Help us build this
 						</h2>
 
 						<p
 							ref={openingRef}
-							className="rf-fade-up rf-delay-1 mt-6 font-sans text-xl font-medium leading-snug text-white xl:text-2xl min-[1440px]:text-3xl">
+							className="rf-fade-up rf-delay-1 mt-6 font-sans text-xl font-medium leading-snug text-white xl:text-2xl min-[2560px]:text-3xl">
 							We are designing Roots Forward around the people who
 							actually want to be part of it.
 						</p>
 
 						<p
 							ref={bodyRef}
-							className="rf-fade-up rf-delay-2 mt-6 text-lg leading-relaxed text-white/80 xl:text-xl min-[1440px]:text-2xl">
+							className="rf-fade-up rf-delay-2 mt-6 text-lg leading-relaxed text-white/80 xl:text-xl min-[2560px]:text-2xl">
 							That's why we're not asking you to apply yet. We want to
 							hear what you'd want from these three weeks: what you'd
 							like to learn, what would make it possible for you to
@@ -61,7 +61,7 @@ export default function RootsForwardHelpBuild() {
 								aria-hidden="true"
 								className="mb-4 block h-px w-12 bg-gold lg:ml-auto"
 							/>
-							<p className="text-lg font-medium leading-relaxed text-white xl:text-xl min-[1440px]:text-2xl">
+							<p className="text-lg font-medium leading-relaxed text-white xl:text-xl min-[2560px]:text-2xl">
 								Your input will help shape the programme. You'll also
 								be the first to hear when dates, costs and places are
 								confirmed.

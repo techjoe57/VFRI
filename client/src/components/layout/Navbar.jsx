@@ -105,10 +105,10 @@ export default function Navbar() {
 					/>
 				</div>
 				<div className="min-w-0 leading-tight font-sans">
-					<strong className={`block font-sans text-base font-semibold tracking-[0.06em] sm:whitespace-nowrap sm:text-xl xl:text-[min(1.3em,2.2vw)] min-[1440px]:text-[min(1.4em,2.4vw)] ${titleTextColor}`}>
+					<strong className={`block font-sans text-base font-semibold tracking-[0.06em] sm:whitespace-nowrap sm:text-xl xl:text-[min(1.3em,2.2vw)] min-[2560px]:text-[min(1.4em,2.4vw)] ${titleTextColor}`}>
 						Victoria Falls Regional Institute
 					</strong>
-<span className={`block font-medium tracking-[0.06em] normal-case sm:whitespace-nowrap text-[calc(1em-3px)] sm:text-[1em] xl:text-[min(1em,1.7vw)] min-[1440px]:text-[min(1.1em,1.9vw)] ${navTextColor}`}>
+<span className={`block font-medium tracking-[0.06em] normal-case sm:whitespace-nowrap text-[calc(1em-3px)] sm:text-[1em] xl:text-[min(1em,1.7vw)] min-[2560px]:text-[min(1.1em,1.9vw)] ${navTextColor}`}>
 					Reimagining Africa Through Dialogue
 				</span>
 				</div>

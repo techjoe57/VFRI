@@ -119,11 +119,11 @@ export default function Contact() {
 							<p className="meta-label mb-2 text-gold">
 								{CONTACT.harare.label}
 							</p>
-							<p className="text-lg leading-relaxed text-white/75 xl:text-xl min-[1440px]:text-2xl">
+							<p className="text-lg leading-relaxed text-white/75 xl:text-xl min-[2560px]:text-2xl">
 								<span className="font-medium text-gold/80">C/o</span>{" "}
 								119 Josiah Chinamano Avenue <br /> Cnr. J. Chinamano Avenue & 4th Street<br/> Harare, Zimbabwe
 							</p>
-							<p className="mt-1 text-lg text-white/60 xl:text-xl min-[1440px]:text-2xl">
+							<p className="mt-1 text-lg text-white/60 xl:text-xl min-[2560px]:text-2xl">
 								{CONTACT.harare.phone}
 							</p>
 						</ContactItem>
@@ -131,10 +131,10 @@ export default function Contact() {
 							<p className="meta-label mb-2 text-gold">
 								{CONTACT.nairobi.label}
 							</p>
-							<p className="text-lg leading-relaxed text-white/75 xl:text-xl min-[1440px]:text-2xl">
+							<p className="text-lg leading-relaxed text-white/75 xl:text-xl min-[2560px]:text-2xl">
 								{CONTACT.nairobi.address}
 							</p>
-							<p className="mt-1 text-lg text-white/60 xl:text-xl min-[1440px]:text-2xl">
+							<p className="mt-1 text-lg text-white/60 xl:text-xl min-[2560px]:text-2xl">
 								{CONTACT.nairobi.phone}
 							</p>
 						</ContactItem>
@@ -142,7 +142,7 @@ export default function Contact() {
 							<p className="meta-label mb-2 text-gold">Email</p>
 							<a
 								href={`mailto:${CONTACT.email}`}
-								className="text-lg text-white/75 transition-colors hover:text-gold xl:text-xl min-[1440px]:text-2xl">
+								className="text-lg text-white/75 transition-colors hover:text-gold xl:text-xl min-[2560px]:text-2xl">
 								{CONTACT.email}
 							</a>
 						</ContactItem>
