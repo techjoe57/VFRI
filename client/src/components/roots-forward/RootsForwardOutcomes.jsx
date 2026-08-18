@@ -55,11 +55,11 @@ export default function RootsForwardOutcomes() {
 				/>
 
 				<div ref={introRef} className="rf-fade-up rf-delay-0">
-					<h2 className="font-sans text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl">
+					<h2 className="font-sans text-3xl font-bold leading-tight tracking-tight text-ink xl:text-4xl min-[1440px]:text-5xl">
 						What you leave with
 					</h2>
 
-					<p className="mt-6 font-sans text-2xl font-semibold leading-snug text-ink md:mt-8 md:text-3xl">
+					<p className="mt-6 font-sans text-2xl font-semibold leading-snug text-ink md:mt-8 xl:text-3xl min-[1440px]:text-4xl">
 						Not a certificate you file away. Something you made,
 						presented, and can point to.
 					</p>
@@ -72,10 +72,10 @@ export default function RootsForwardOutcomes() {
 							ref={outcomeRefs[index]}
 							className={`rf-fade-up rf-delay-${Math.min(index, 4)} flex items-start gap-4 py-4`}>
 							<span
-								className={`mt-0.5 flex-shrink-0 font-sans text-base font-semibold tracking-[0.1em] ${item.accent} md:text-lg`}>
+								className={`mt-0.5 flex-shrink-0 font-sans text-base font-semibold tracking-[0.1em] ${item.accent} xl:text-lg min-[1440px]:text-xl`}>
 								0{index + 1}
 							</span>
-							<p className="text-lg leading-relaxed text-ink md:text-xl">
+							<p className="text-lg leading-relaxed text-ink xl:text-xl min-[1440px]:text-2xl">
 								{item.text}
 							</p>
 						</div>

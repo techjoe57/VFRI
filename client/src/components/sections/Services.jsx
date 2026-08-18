@@ -47,9 +47,9 @@ export default function Services() {
 				<h3 className="card-title mb-1 min-h-[2.75rem] text-white">
 					{title}
 				</h3>
-				<p className="min-h-[6rem] text-base leading-7 text-white/75">
-					{desc}
-				</p>
+<p className="min-h-[6rem] text-lg leading-7 text-white/75 xl:text-xl min-[1440px]:text-2xl">
+				{desc}
+			</p>
 			</div>
 		</div>
 	);
@@ -135,12 +135,12 @@ export default function Services() {
 					Let's Work Together
 				</h3>
 
-				<p className="text-base leading-7 text-white/75">
-					We partner with institutions across
-					Africa and beyond on research,
-					training, strategic dialogue, and
-					long-term knowledge exchange.
-				</p>
+<p className="text-lg leading-7 text-white/75 xl:text-xl min-[1440px]:text-2xl">
+				We partner with institutions across
+				Africa and beyond on research,
+				training, strategic dialogue, and
+				long-term knowledge exchange.
+			</p>
 
 				<Link
 					to="/service-inquiry"

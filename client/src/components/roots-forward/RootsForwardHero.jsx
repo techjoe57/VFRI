@@ -16,13 +16,13 @@ export default function RootsForwardHero() {
 						<div className="flex flex-col items-center gap-4 lg:items-start">
 							<span
 								ref={eyebrowRef}
-								className="rf-fade-up rf-delay-0 text-xs font-semibold uppercase tracking-[0.14em] text-gold">
+								className="rf-fade-up rf-delay-0 text-sm font-semibold uppercase tracking-[0.14em] text-gold min-[1440px]:text-base">
 								A Victoria Falls Regional Institute Programme
 							</span>
 
 							<h1
 								ref={headingRef}
-								className="rf-fade-up rf-delay-1 font-sans text-4xl font-semibold leading-[1.05] tracking-tight text-ink md:text-5xl">
+								className="rf-fade-up rf-delay-1 font-sans text-5xl font-semibold leading-[1.05] tracking-tight text-ink xl:text-6xl min-[1440px]:text-7xl">
 								Roots Forward
 							</h1>
 						</div>
@@ -30,12 +30,12 @@ export default function RootsForwardHero() {
 						<div
 							ref={bodyRef}
 							className="rf-fade-up rf-delay-2 flex flex-col items-center gap-4 lg:items-start">
-							<p className="max-w-md font-sans text-xl font-medium leading-snug text-ink md:text-2xl">
-								You carry a heritage you may have never stood
-								inside.
-							</p>
+<p className="max-w-md font-sans text-2xl font-medium leading-snug text-ink xl:text-3xl min-[1440px]:text-4xl">
+							You carry a heritage you may have never stood
+							inside.
+						</p>
 
-							<p className="max-w-md text-base leading-relaxed text-ink-mid">
+							<p className="max-w-md text-xl leading-relaxed text-ink-mid xl:text-2xl min-[1440px]:text-3xl">
 								Three weeks in Victoria Falls for young people
 								in the diaspora to reconnect with where they
 								come from, learn practical skills and think
@@ -43,14 +43,14 @@ export default function RootsForwardHero() {
 							</p>
 
 							<div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 lg:justify-start">
-								<span className="text-base font-medium uppercase tracking-[0.1em] text-ink-light">
+								<span className="text-lg font-medium uppercase tracking-[0.1em] text-ink-light min-[1440px]:text-xl">
 									Victoria Falls, Zimbabwe
 								</span>
 								<span
 									aria-hidden="true"
 									className="hidden h-3 w-px bg-ink-light/40 sm:block"
 								/>
-								<span className="text-base font-medium uppercase tracking-[0.1em] text-ink-light">
+								<span className="text-lg font-medium uppercase tracking-[0.1em] text-ink-light min-[1440px]:text-xl">
 									Ages 18–25
 								</span>
 							</div>

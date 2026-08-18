@@ -16,11 +16,11 @@ export default function OurStory() {
 				{/* Hero */}
 				<section className="relative px-6 pb-3 pt-32 sm:pt-28">
 					<div className="mx-auto max-w-4xl text-center text-white">
-						<h1 className="mb-3 font-display text-5xl md:text-6xl">
+						<h1 className="mb-3 font-display text-5xl xl:text-6xl min-[1440px]:text-7xl">
 							Our Story
 						</h1>
 
-						<p className="text-lg leading-relaxed text-white/90 md:text-xl">
+						<p className="text-lg leading-relaxed text-white/90 xl:text-xl min-[1440px]:text-2xl">
 							Learn about the vision behind the Victoria Falls Regional Institute, 
 							our journey, and the people driving our mission to reimagine Africa through dialogue.
 						</p>

@@ -51,13 +51,13 @@ export default function RootsForwardClosing() {
 
 				<h2
 					ref={headingRef}
-					className="rf-fade-up-lg rf-delay-1 font-sans text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl lg:text-5xl">
+					className="rf-fade-up-lg rf-delay-1 font-sans text-3xl font-bold leading-tight tracking-tight text-ink xl:text-5xl min-[1440px]:text-6xl">
 					Your roots have not gone anywhere.
 				</h2>
 
 				<p
 					ref={supportingRef}
-					className="rf-fade-up rf-delay-2 mt-5 text-base leading-relaxed text-ink-mid md:text-lg">
+					className="rf-fade-up rf-delay-2 mt-5 text-lg leading-relaxed text-ink-mid xl:text-xl min-[1440px]:text-2xl">
 					Tell us you're interested. That's all this takes today.
 				</p>
 

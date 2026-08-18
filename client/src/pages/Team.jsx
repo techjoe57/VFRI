@@ -90,7 +90,7 @@ export default function Team({ compact = false }) {
 
 								<h3 className="card-title mb-1 text-white">{name}</h3>
 
-								<p className="text-base leading-relaxed text-white/70">{bio}</p>
+								<p className="text-lg leading-relaxed text-white/70 xl:text-xl min-[1440px]:text-2xl">{bio}</p>
 							</div>
 						</div>
 					))}

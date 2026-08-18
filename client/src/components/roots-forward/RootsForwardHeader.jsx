@@ -5,7 +5,7 @@ import { ABOUT_DROPDOWN } from "../../data/content";
 import { ROOTS_FORWARD_INTEREST_FORM_URL } from "./rootsForwardConstants";
 
 const navLinkClass =
-	"relative inline-flex items-center gap-1 py-2 font-sans text-base font-medium tracking-wide text-green-deep transition-colors duration-200 hover:text-green-mid after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-gradient-to-r after:from-crimson-mid after:to-gold after:transition-all after:duration-300 after:content-[''] hover:after:w-full";
+	"relative inline-flex items-center gap-1 py-2 font-sans text-lg font-medium tracking-wide text-green-deep transition-colors duration-200 hover:text-green-mid after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-gradient-to-r after:from-crimson-mid after:to-gold after:transition-all after:duration-300 after:content-[''] hover:after:w-full";
 
 export default function RootsForwardHeader() {
 	const navigate = useNavigate();
@@ -34,12 +34,12 @@ export default function RootsForwardHeader() {
 						<strong className="block truncate font-sans text-base font-semibold tracking-[0.06em] text-green-deep sm:hidden">
 							VFRI
 						</strong>
-						<strong className="hidden font-sans text-base font-semibold tracking-[0.06em] text-green-deep sm:block md:text-xl">
+						<strong className="hidden font-sans text-base font-semibold tracking-[0.06em] text-green-deep sm:block xl:text-xl min-[1440px]:text-2xl">
 							Victoria Falls Regional Institute
 						</strong>
-						<span className="hidden font-medium text-[0.78em] tracking-[0.06em] text-green-deep normal-case sm:block">
-							Reimagining Africa Through Dialogue
-						</span>
+<span className="hidden font-medium text-[0.88em] tracking-[0.06em] text-green-deep normal-case sm:block">
+						Reimagining Africa Through Dialogue
+					</span>
 					</div>
 				</div>
 
@@ -74,7 +74,7 @@ export default function RootsForwardHeader() {
 										key={item.label}
 										type="button"
 										onClick={() => goTo(item.href)}
-										className="w-full px-4 py-3 text-left font-sans text-base font-medium text-green-deep transition-colors hover:bg-gold/10">
+										className="w-full px-4 py-3 text-left font-sans text-lg font-medium text-green-deep transition-colors hover:bg-gold/10">
 										{item.label}
 									</button>
 								))}
@@ -86,7 +86,7 @@ export default function RootsForwardHeader() {
 						href={ROOTS_FORWARD_INTEREST_FORM_URL}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-green-deep px-4 py-2.5 text-xs font-semibold text-cream transition-all duration-200 hover:-translate-y-0.5 hover:bg-green-mid hover:shadow-lg hover:shadow-green-deep/30 md:px-6 md:py-3 md:text-base">
+						className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-green-deep px-4 py-2.5 text-xs font-semibold text-cream transition-all duration-200 hover:-translate-y-0.5 hover:bg-green-mid hover:shadow-lg hover:shadow-green-deep/30 md:px-6 md:py-3 xl:text-base min-[1440px]:text-lg">
 						Register your interest
 					</a>
 
@@ -119,20 +119,20 @@ export default function RootsForwardHeader() {
 					<button
 						type="button"
 						onClick={() => goTo("/")}
-						className="border-b border-ink/5 py-3 text-left font-sans text-base font-medium text-green-deep transition-colors hover:text-green-mid">
+						className="border-b border-ink/5 py-3 text-left font-sans text-lg font-medium text-green-deep transition-colors hover:text-green-mid">
 						Home
 					</button>
 					<button
 						type="button"
 						onClick={() => goTo("/programs")}
-						className="border-b border-ink/5 py-3 text-left font-sans text-base font-medium text-green-deep transition-colors hover:text-green-mid">
+						className="border-b border-ink/5 py-3 text-left font-sans text-lg font-medium text-green-deep transition-colors hover:text-green-mid">
 						Programs
 					</button>
 
 					<button
 						type="button"
 						onClick={() => setAboutOpen((open) => !open)}
-						className="flex items-center justify-between py-3 text-left font-sans text-base font-medium text-green-deep transition-colors hover:text-green-mid">
+						className="flex items-center justify-between py-3 text-left font-sans text-lg font-medium text-green-deep transition-colors hover:text-green-mid">
 						About Us
 						<ChevronDown
 							className={`h-3.5 w-3.5 transition-transform duration-300 ${aboutOpen ? "rotate-180" : ""}`}
@@ -147,7 +147,7 @@ export default function RootsForwardHeader() {
 								key={item.label}
 								type="button"
 								onClick={() => goTo(item.href)}
-								className="w-full py-3 pl-4 text-left font-sans text-base text-green-mid transition-colors hover:text-green-deep">
+								className="w-full py-3 pl-4 text-left font-sans text-lg text-green-mid transition-colors hover:text-green-deep">
 								{item.label}
 							</button>
 						))}

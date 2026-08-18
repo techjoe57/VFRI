@@ -16,7 +16,7 @@ export default function InquiryHero() {
 					Service Enquiry
 				</p>
 
-				<h1 className="font-display text-4xl md:text-5xl lg:text-6xl max-w-3xl leading-tight text-white">
+				<h1 className="font-display text-4xl max-w-3xl leading-tight text-white xl:text-6xl min-[1440px]:text-7xl">
 					Request Our
 					<span className="text-gold">
 						{" "}Professional Services
