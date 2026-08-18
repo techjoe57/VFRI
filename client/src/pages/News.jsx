@@ -6,10 +6,10 @@ export default function News() {
 	const gridRef = useReveal();
 
 	return (
-		<section id="news" className="w-full min-h-screen bg-cream pb-16">
+		<section id="news" className="w-full bg-cream pb-16">
 			<div
 				ref={headRef}
-				className="relative w-full overflow-hidden bg-cover bg-center bg-no-repeat px-6 pb-8 pt-32 text-white sm:pt-[110px]"
+				className="relative w-full overflow-hidden bg-cover bg-center bg-no-repeat px-6 pb-8 pt-32 text-white sm:pt-28"
 				style={{
 					backgroundImage: "url('/images/about/victoria_falls.jpg')",
 				}}>
@@ -26,7 +26,7 @@ export default function News() {
 						News & Publications
 					</h2>
 
-					<p className="mx-auto max-w-2xl text-xs font-light leading-relaxed text-white/90 sm:text-sm">
+					<p className="mx-auto max-w-2xl text-sm font-light leading-relaxed text-white/90 sm:text-base md:text-lg">
 						Latest institutional updates, research outputs, and public
 						engagement activities.
 					</p>
@@ -36,13 +36,13 @@ export default function News() {
 			<div className="w-full px-6 pt-8 md:px-12">
 				<div
 					ref={gridRef}
-					className="reveal grid grid-cols-1 gap-6 lg:grid-cols-2">
+					className="reveal grid grid-cols-1 items-stretch gap-6 lg:grid-cols-2">
 					{NEWS.map(
 						({ title, date, summary, tag, image, link, linkLabel }) => (
 							<div
 								key={title}
 								className="group relative flex flex-col gap-5 overflow-hidden rounded-sm border border-black/[0.06] bg-white p-6 transition-all duration-200 hover:shadow-xl md:flex-row md:items-stretch">
-								<div className="relative h-40 w-full shrink-0 overflow-hidden rounded-sm md:h-auto md:w-48">
+								<div className="relative h-40 w-full shrink-0 overflow-hidden rounded-sm md:h-auto md:w-1/3">
 									<img
 										src={image}
 										alt={title}
@@ -50,19 +50,19 @@ export default function News() {
 									/>
 								</div>
 								<div className="absolute bottom-0 left-0 top-0 w-0.5 bg-gradient-to-b from-gold to-crimson-mid" />
-								<div className="flex flex-1 flex-col">
+								<div className="flex flex-1 flex-col justify-center">
 									<div className="mb-3 flex items-start justify-between gap-3">
 										<span className="meta-label text-gold">{tag}</span>
-										<span className="flex-shrink-0 text-[0.6rem] text-ink-light">
+										<span className="flex-shrink-0 text-[0.8rem] text-ink-mid">
 											{date}
 										</span>
 									</div>
 
-									<h3 className="card-title mb-1 text-lg font-semibold text-crimson-deep transition-colors group-hover:text-crimson-dark">
+									<h3 className="card-title mb-1 text-xl font-semibold text-crimson-deep transition-colors group-hover:text-crimson-dark">
 										{title}
 									</h3>
 
-									<p className="text-left text-sm leading-relaxed text-ink-light">
+									<p className="text-left text-base leading-relaxed text-ink-mid">
 										{summary}
 									</p>
 
@@ -71,7 +71,7 @@ export default function News() {
 											href={link}
 											target="_blank"
 											rel="noopener noreferrer"
-											className="mt-4 inline-flex self-start text-xs font-semibold uppercase tracking-[0.14em] text-gold transition-colors hover:text-crimson-deep">
+											className="mt-4 inline-flex self-start text-sm font-semibold uppercase tracking-[0.14em] text-gold transition-colors hover:text-crimson-deep">
 											{linkLabel || "Read more"}
 										</a>
 									)}

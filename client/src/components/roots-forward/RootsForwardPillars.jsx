@@ -14,9 +14,9 @@ export default function RootsForwardPillars() {
 
 	return (
 		<section id="whats-included" className="scroll-mt-28 bg-cream md:scroll-mt-32">
-			<div className="rf-section-py mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-20">
+			<div className="rf-section-py w-full px-6 md:px-12">
 				{/* INTRO */}
-				<div ref={introRef} className="rf-fade-up mx-auto w-full max-w-2xl text-left">
+				<div ref={introRef} className="rf-fade-up w-full text-left">
 					<h2 className="font-sans text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl">
 						Three weeks. Three things.
 					</h2>
@@ -56,7 +56,7 @@ export default function RootsForwardPillars() {
 							className="rf-fade-up rf-delay-1 relative order-1 pt-2 lg:order-2">
 							<span
 								aria-hidden="true"
-								className="pointer-events-none absolute -top-6 -left-1 select-none text-[80px] font-bold leading-none text-gold/10 md:-top-8 md:text-[100px]">
+								className="pointer-events-none absolute -top-6 -left-1 select-none text-[5rem] font-bold leading-none text-gold/10 md:-top-8 md:text-[6.25rem]">
 								01
 							</span>
 							<div className="relative">
@@ -108,7 +108,7 @@ export default function RootsForwardPillars() {
 							className="rf-fade-up rf-delay-1 relative order-1 pt-2 lg:order-1">
 							<span
 								aria-hidden="true"
-								className="pointer-events-none absolute -top-6 -left-1 select-none text-[80px] font-bold leading-none text-green-mid/10 md:-top-8 md:text-[100px]">
+								className="pointer-events-none absolute -top-6 -left-1 select-none text-[5rem] font-bold leading-none text-green-mid/10 md:-top-8 md:text-[6.25rem]">
 								02
 							</span>
 							<div className="relative">
@@ -158,7 +158,7 @@ export default function RootsForwardPillars() {
 							className="rf-fade-up rf-delay-1 relative order-1 pt-2 lg:order-2">
 							<span
 								aria-hidden="true"
-								className="pointer-events-none absolute -top-6 -left-1 select-none text-[80px] font-bold leading-none text-crimson-mid/10 md:-top-8 md:text-[100px]">
+								className="pointer-events-none absolute -top-6 -left-1 select-none text-[5rem] font-bold leading-none text-crimson-mid/10 md:-top-8 md:text-[6.25rem]">
 								03
 							</span>
 							<div className="relative">

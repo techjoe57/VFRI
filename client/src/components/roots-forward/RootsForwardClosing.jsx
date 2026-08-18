@@ -42,7 +42,7 @@ export default function RootsForwardClosing() {
 				</svg>
 			</div>
 
-			<div className="rf-section-py relative mx-auto flex w-full max-w-2xl flex-col items-center px-6 text-center md:px-12">
+			<div className="rf-section-py relative flex w-full flex-col items-center px-6 text-center md:px-12">
 				<span
 					ref={accentRef}
 					aria-hidden="true"

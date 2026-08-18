@@ -8,12 +8,12 @@ export default function Team({ compact = false }) {
 	return (
 		<section
 			id="team"
-			className={`relative overflow-hidden bg-green-deep/90 backdrop-blur-sm ${compact ? "pb-16 pt-3" : "pt-36 pb-16 sm:pt-28"}`}
+			className={`relative w-full overflow-hidden bg-green-deep/90 backdrop-blur-sm ${compact ? "pb-16 pt-3" : "min-h-screen pt-36 pb-16 sm:pt-28"}`}
 		>
 			{/* Kente bottom */}
 			<div className="absolute bottom-0 left-0 right-0 h-1.5 kente-bar" />
 
-			<div className="relative z-10 max-w-7xl mx-auto px-6">
+			<div className="relative z-10 w-full px-6 md:px-12">
 				{/* Heading */}
 				<div
 					ref={headRef}
@@ -90,7 +90,7 @@ export default function Team({ compact = false }) {
 
 								<h3 className="card-title mb-1 text-white">{name}</h3>
 
-								<p className="text-sm leading-relaxed text-white/65">{bio}</p>
+								<p className="text-base leading-relaxed text-white/70">{bio}</p>
 							</div>
 						</div>
 					))}

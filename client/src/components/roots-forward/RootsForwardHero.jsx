@@ -10,8 +10,8 @@ export default function RootsForwardHero() {
 
 	return (
 		<section className="relative overflow-hidden bg-cream">
-			<div className="mx-auto flex w-full max-w-7xl justify-center px-6 pt-28 pb-5 md:px-12 md:pt-32 lg:px-20">
-				<div className="grid w-full max-w-4xl gap-8 lg:grid-cols-2 lg:items-end lg:gap-8">
+			<div className="flex w-full px-6 pt-28 pb-5 md:px-12 md:pt-32">
+				<div className="grid w-full gap-8 lg:grid-cols-2 lg:items-end lg:gap-8">
 					{/* TEXT */}
 					<div className="relative z-10 order-1 flex flex-col items-start gap-4 lg:order-1">
 						<span
@@ -74,7 +74,7 @@ export default function RootsForwardHero() {
 					{/* IMAGE TREATMENT */}
 					<div
 						ref={imageRef}
-						className="rf-reveal-scale rf-delay-0 relative order-2 h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:order-2 lg:aspect-[4/5] lg:max-h-[480px]">
+						className="rf-reveal-scale rf-delay-0 relative order-2 h-[270px] w-full overflow-hidden rounded-3xl bg-cream-dark md:h-auto md:aspect-[16/10] lg:order-2 lg:aspect-[4/5] lg:max-h-[26.75rem]">
 						<img
 							src="/images/roots-forward/roots-forward-hero.jpg"
 							alt="Young people from the diaspora collaborating together during a Roots Forward session"

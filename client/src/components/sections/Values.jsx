@@ -32,7 +32,7 @@ export default function Values() {
 				{title}
 			</h4>
 
-			<p className="text-sm leading-6 text-white/65">
+			<p className="text-base leading-6 text-white/70">
 				{desc}
 			</p>
 		</div>
@@ -41,7 +41,7 @@ export default function Values() {
 	return (
 		<section
 			id="values"
-			className="relative overflow-hidden bg-green-deep/90 pb-3 pt-5 backdrop-blur-sm"
+			className="relative w-full overflow-hidden bg-green-deep/90 pb-3 pt-5 backdrop-blur-sm"
 		>
 			{/* Kente */}
 			<div className="absolute top-0 left-0 right-0 h-1.5 kente-bar" />
@@ -51,7 +51,7 @@ export default function Values() {
 				<div className="absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold/5 blur-3xl" />
 			</div>
 
-			<div className="relative z-10 max-w-7xl mx-auto px-6">
+			<div className="relative z-10 w-full px-6 md:px-12">
 				{/* Heading */}
 				<div
 					ref={headRef}

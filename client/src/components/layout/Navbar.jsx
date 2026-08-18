@@ -93,11 +93,11 @@ export default function Navbar() {
 
 	return (
 		<nav
-			className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300
-      ${scrolled ? "py-1.5 px-5 md:px-10" : "py-2.5 px-5 md:px-10"}
+			className={`fixed inset-x-0 top-0 z-50 flex w-full max-w-none items-center justify-between transition-all duration-300
+      ${scrolled ? "py-1.5 px-6 md:px-12" : "py-2.5 px-6 md:px-12"}
       bg-gold backdrop-blur-md border-b border-gold/20`}>
 			<div className="flex min-w-0 flex-1 items-center gap-2 no-underline pr-3 sm:gap-3">
-				<div className="relative h-14 w-14 flex-shrink-0 transition-all duration-300 sm:h-[72px] sm:w-[72px]">
+				<div className="relative h-14 w-14 flex-shrink-0 transition-all duration-300 sm:h-[4rem] sm:w-[4rem]">
 					<img
 						src="/logo2.png"
 						alt="Logo"

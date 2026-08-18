@@ -48,7 +48,7 @@ export default function RootsForwardOutcomes() {
 				Forward
 			</span>
 
-			<div className="rf-section-py relative mx-auto w-full max-w-3xl px-6 md:px-12">
+			<div className="rf-section-py relative w-full px-6 md:px-12">
 				<span
 					aria-hidden="true"
 					className="mb-5 block h-px w-16 bg-gradient-to-r from-transparent via-gold to-transparent"
@@ -59,7 +59,7 @@ export default function RootsForwardOutcomes() {
 						What you leave with
 					</h2>
 
-					<p className="mt-6 max-w-2xl font-sans text-2xl font-semibold leading-snug text-ink md:mt-8 md:text-3xl">
+					<p className="mt-6 font-sans text-2xl font-semibold leading-snug text-ink md:mt-8 md:text-3xl">
 						Not a certificate you file away. Something you made,
 						presented, and can point to.
 					</p>

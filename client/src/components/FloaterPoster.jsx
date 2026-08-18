@@ -42,8 +42,8 @@ export default function FloatingPoster() {
 					flex
 					h-16
 					w-16
-					sm:h-[72px]
-					sm:w-[72px]
+					sm:h-20
+					sm:w-20
 					items-center
 					justify-center
 					rounded-full
@@ -118,9 +118,9 @@ export default function FloatingPoster() {
 						>
 							<span
 								className="
-									mb-1
-									text-[9px]
-									font-semibold
+								mb-1
+								text-[0.55rem]
+								font-semibold
 									uppercase
 									tracking-[0.28em]
 									text-gold-light
@@ -184,39 +184,17 @@ export default function FloatingPoster() {
 					aria-label="Event announcement"
 				>
 					{/* Modal content */}
-					<div
+<div
 						className="
 							relative
 							flex
 							max-h-[92vh]
-							max-w-[min(92vw,720px)]
+							max-w-[92vw]
 							items-center
 							justify-center
-							overflow-hidden
-							rounded-sm
-							border
-							border-gold/40
-							bg-green-deep
-							p-1
-							shadow-[0_25px_80px_rgba(0,0,0,0.6)]
 						"
 						onClick={(event) => event.stopPropagation()}
 					>
-						{/* Decorative gradient edge */}
-						<div
-							className="
-								pointer-events-none
-								absolute
-								inset-0
-								rounded-sm
-								bg-gradient-to-br
-								from-green-mid/70
-								via-gold/50
-								to-crimson-mid/70
-								opacity-60
-							"
-						/>
-
 						{/* Poster */}
 						<img
 							src="/images/pop-up/student-essay-competition.png"
@@ -224,8 +202,9 @@ export default function FloatingPoster() {
 							className="
 								relative
 								z-10
+								h-[80vh]
 								w-[80vw]
-								h-auto
+								max-h-[88vh]
 								rounded-sm
 								object-contain
 							"
@@ -242,15 +221,18 @@ export default function FloatingPoster() {
 								top-3
 								z-20
 								flex
-								h-9
-								w-9
+								h-10
+								w-10
+								sm:h-12
+								sm:w-12
 								items-center
 								justify-center
 								rounded-full
 								border
 								border-white/20
 								bg-black/60
-								text-xl
+								text-2xl
+								sm:text-3xl
 								text-white
 								backdrop-blur-sm
 								transition-all

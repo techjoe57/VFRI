@@ -5,9 +5,9 @@ import Navbar from "./Navbar";
 export default function Layout() {
 	return (
 		
-		<div className="flex flex-col min-h-screen bg-cream">
+		<div className="flex min-h-[100dvh] w-full max-w-full flex-col bg-cream">
 			<Navbar />
-			<main className="flex-1 flex flex-col">
+			<main className="flex w-full flex-1 flex-col">
 				<Outlet />
 			</main>
 			<Footer />

@@ -115,7 +115,7 @@ export default function InquiryForm() {
 			<section
 				id="inquiry-form"
 				className="page-section bg-cream">
-				<div className="max-w-4xl mx-auto">
+				<div className="w-full">
 					<SuccessMessage />
 				</div>
 			</section>
@@ -129,7 +129,7 @@ export default function InquiryForm() {
 		<section
 			id="inquiry-form"
 			className="page-section bg-cream">
-			<div className="max-w-4xl mx-auto">
+			<div className="w-full">
 				<div className="bg-white rounded-sm shadow-xl p-6 md:p-8">
 					<h2 className="section-title text-center text-green-deep mb-3">
 						Service Request Form
