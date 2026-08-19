@@ -301,3 +301,378 @@
 		transition: none;
 	}
 }
+/* =========================================
+   FOCUS HEADER
+   ========================================= */
+
+.focus-label {
+	animation:
+		focusLabelSlide 0.8s
+		cubic-bezier(0.22, 1, 0.36, 1)
+		both;
+	animation-delay: 0.05s;
+}
+
+.focus-heading {
+	animation:
+		focusHeadingSlide 0.9s
+		cubic-bezier(0.22, 1, 0.36, 1)
+		both;
+	animation-delay: 0.15s;
+}
+
+.focus-line {
+	animation:
+		focusLineExpand 0.8s
+		cubic-bezier(0.22, 1, 0.36, 1)
+		both;
+	animation-delay: 0.35s;
+}
+
+.focus-description {
+	animation:
+		focusDescriptionSlide 0.8s
+		cubic-bezier(0.22, 1, 0.36, 1)
+		both;
+	animation-delay: 0.45s;
+}
+
+
+/* Left → right */
+
+@keyframes focusLabelSlide {
+	from {
+		opacity: 0;
+		transform: translateX(-80px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+/* Right → left */
+
+@keyframes focusHeadingSlide {
+	from {
+		opacity: 0;
+		transform: translateX(90px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+/* Line grows outward */
+
+@keyframes focusLineExpand {
+	from {
+		opacity: 0;
+		width: 0;
+	}
+
+	to {
+		opacity: 1;
+		width: 4rem;
+	}
+}
+
+
+/* Description rises */
+
+@keyframes focusDescriptionSlide {
+	from {
+		opacity: 0;
+		transform: translateY(28px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+	.focus-label,
+	.focus-heading,
+	.focus-line,
+	.focus-description {
+		animation: none;
+		opacity: 1;
+		transform: none;
+	}
+}
+/* =========================================
+   YET SOME MORE FOCUS HEADER ANIMATIONS
+   ========================================= */
+
+.focus-label {
+	animation:
+		focusLabelSlide 0.8s
+		cubic-bezier(0.22, 1, 0.36, 1)
+		both;
+	animation-delay: 0.05s;
+}
+
+.focus-heading {
+	animation:
+		focusHeadingSlide 0.9s
+		cubic-bezier(0.22, 1, 0.36, 1)
+		both;
+	animation-delay: 0.15s;
+}
+
+.focus-line {
+	animation:
+		focusLineExpand 0.8s
+		cubic-bezier(0.22, 1, 0.36, 1)
+		both;
+	animation-delay: 0.35s;
+}
+
+.focus-description {
+	animation:
+		focusDescriptionSlide 0.8s
+		cubic-bezier(0.22, 1, 0.36, 1)
+		both;
+	animation-delay: 0.45s;
+}
+
+
+/* Label enters from the left */
+
+@keyframes focusLabelSlide {
+	from {
+		opacity: 0;
+		transform: translateX(-80px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+/* Heading enters from the right */
+
+@keyframes focusHeadingSlide {
+	from {
+		opacity: 0;
+		transform: translateX(90px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+/* Decorative line expands */
+
+@keyframes focusLineExpand {
+	from {
+		opacity: 0;
+		width: 0;
+	}
+
+	to {
+		opacity: 1;
+		width: 4rem;
+	}
+}
+
+
+/* Description rises */
+
+@keyframes focusDescriptionSlide {
+	from {
+		opacity: 0;
+		transform: translateY(28px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+/* =========================================
+   DECORATIVE BACKGROUND MOTION
+   ========================================= */
+
+.focus-orbit-slow {
+	animation: focusOrbitSlow 12s ease-in-out infinite;
+}
+
+.focus-orbit-reverse {
+	animation: focusOrbitReverse 15s ease-in-out infinite;
+}
+
+@keyframes focusOrbitSlow {
+	0%,
+	100% {
+		transform: translateY(-50%) translateX(0);
+	}
+
+	50% {
+		transform: translateY(-50%) translateX(18px);
+	}
+}
+
+@keyframes focusOrbitReverse {
+	0%,
+	100% {
+		transform: translateY(-50%) translateX(0);
+	}
+
+	50% {
+		transform: translateY(-50%) translateX(-22px);
+	}
+}
+
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+	.focus-label,
+	.focus-heading,
+	.focus-line,
+	.focus-description,
+	.focus-orbit-slow,
+	.focus-orbit-reverse {
+		animation: none;
+		opacity: 1;
+		transform: none;
+	}
+}
+/* =========================================================
+   FOCUS HEADER MOTION
+   ========================================================= */
+
+.focus-label-enter {
+	animation: focusLabelEnter 0.65s ease-out both;
+	animation-delay: 0.05s;
+}
+
+.focus-heading-enter {
+	animation: focusHeadingEnter 0.75s ease-out both;
+	animation-delay: 0.12s;
+}
+
+.focus-line-enter {
+	animation: focusLineEnter 0.65s ease-out both;
+	animation-delay: 0.25s;
+}
+
+.focus-description-enter {
+	animation: focusDescriptionEnter 0.7s ease-out both;
+	animation-delay: 0.32s;
+}
+
+
+/* What We Do enters from the left */
+
+@keyframes focusLabelEnter {
+	from {
+		opacity: 0;
+		transform: translateX(-35px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+/* Focus Areas enters from the right */
+
+@keyframes focusHeadingEnter {
+	from {
+		opacity: 0;
+		transform: translateX(35px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+/* Accent expands */
+
+@keyframes focusLineEnter {
+	from {
+		opacity: 0;
+		transform: scaleX(0);
+	}
+
+	to {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+}
+
+
+/* Description rises slightly */
+
+@keyframes focusDescriptionEnter {
+	from {
+		opacity: 0;
+		transform: translateY(14px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+   ========================================================= */
+
+.focus-bg-image {
+	transform: scale(1.02);
+	animation: focusImageDrift 18s ease-in-out infinite alternate;
+}
+
+@keyframes focusImageDrift {
+	from {
+		transform: scale(1.02) translateX(0);
+	}
+
+	to {
+		transform: scale(1.06) translateX(-0.5%);
+	}
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+	.focus-label-enter,
+	.focus-heading-enter,
+	.focus-line-enter,
+	.focus-description-enter,
+	.focus-bg-image {
+		animation: none;
+		transform: none;
+		opacity: 1;
+	}
+}

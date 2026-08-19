@@ -87,25 +87,24 @@ export default function Hero() {
 				ref={leftRef}
 				className="reveal relative z-[5] flex flex-col justify-center px-6 py-6 sm:px-8 md:px-12 md:py-8 lg:px-16 lg:py-6"
 			>
-				<span className="section-label mb-5 lg:mb-3">
+				<span className="section-label mb-5 lg:mb-4">
 					African Research Institute
 				</span>
 
-				<h1 className="mb-6 font-sans text-3xl leading-tight text-white sm:text-4xl lg:mb-4 lg:text-5xl">
+				<h1 className="mb-6 font-sans text-3xl font-semibold leading-[1.25] tracking-tight text-white sm:text-4xl lg:mb-5 lg:text-5xl">
 					Victoria Falls Regional Institute
-					<br />
-					<em className="not-italic font-light text-gold-light text-2xl sm:text-3xl lg:text-4xl">
+					<span className="mt-2 block font-light leading-snug tracking-normal text-gold-light text-2xl sm:text-3xl lg:mt-3 lg:text-4xl">
 						for Strategic Studies
-					</em>
+					</span>
 				</h1>
 
-				<p className="mb-8 max-w-xl text-lg leading-7 text-white/80 md:text-xl lg:mb-5">
+				<p className="mb-8 max-w-xl text-lg leading-8 tracking-normal text-white/80 md:text-xl lg:mb-6">
 					Advancing African-led institutions through capacity
 					building, research, and dialogue that connects global
 					policy making with strategic transformation.
 				</p>
 
-				<div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap lg:gap-3">
+				<div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap lg:gap-4">
 					<button
 						onClick={() => navigate("/service-inquiry")}
 						className="btn-primary text-green-deep"
@@ -127,20 +126,20 @@ export default function Hero() {
 				ref={rightRef}
 				className="reveal relative z-10 flex items-center justify-center px-6 pb-12 pt-4 sm:px-8 md:justify-end md:px-10 md:py-0 lg:px-16"
 			>
-				<div className="flex w-full flex-col gap-1">
+				<div className="flex w-full flex-col gap-3 lg:gap-2.5">
 					{cards.map(({ icon: Icon, title, desc }) => (
 						<div
 							key={title}
-							className="flex flex-col justify-center rounded-sm border border-gold/30 bg-white/10 p-3 backdrop-blur-sm transition-colors duration-300 hover:border-gold/50 hover:bg-gold/10 lg:p-2.5"
+							className="flex flex-col justify-center gap-1.5 rounded-md border border-gold/30 bg-white/10 p-4 backdrop-blur-sm transition-colors duration-300 hover:border-gold/50 hover:bg-gold/10 lg:p-3.5"
 						>
-							<div className="mb-1 flex items-center gap-3 lg:mb-0.5">
+							<div className="flex items-center gap-3">
 								<Icon className="shrink-0 text-base text-gold" />
-								<h4 className="font-sans text-xl leading-snug text-white">
+								<h4 className="font-sans text-xl font-semibold tracking-normal text-white lg:text-xl">
 									{title}
 								</h4>
 							</div>
 
-							<p className="text-base leading-snug text-white/70">
+							<p className="text-md leading-relaxed tracking-normal text-white/70 lg:text-base">
 								{desc}
 							</p>
 						</div>
