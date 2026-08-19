@@ -153,8 +153,7 @@ export const FOCUS_AREAS = [
 	{
 		num: "05",
 		title: "Development & Humanitarian Affairs",
-		desc: "Bridging academic research and humanitarian action from fieldwork in conflict zones to development policy recommendations.",
-		image: "/images/focus/development.jpg",
+        desc: "We build and strengthen strategic partnerships that bring together researchers, institutions, communities, policymakers, and development actors. Through collaboration, knowledge exchange, and shared expertise, we create stronger pathways for evidence to inform practice, policy, and sustainable development across Africa.",		image: "/images/focus/development.jpg",
 	},
 ];
 
