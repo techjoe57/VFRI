@@ -89,7 +89,7 @@ export default function Focus() {
 						text-5xl
 						font-extralight
 						tracking-tight
-						text-gold/70
+						text-gold/70 xl:text-6xl min-[2560px]:text-7xl
 					"
 				>
 					{num}
@@ -106,16 +106,16 @@ export default function Focus() {
 					{title}
 				</h3>
 
-				<p
+<p
 					className="
 						min-h-[6rem]
-						text-base
+						text-lg
 						leading-7
-						text-white/75
+						text-white/75 xl:text-xl min-[2560px]:text-2xl
 					"
 				>
-					{desc}
-				</p>
+				{desc}
+			</p>
 			</div>
 		</div>
 	);

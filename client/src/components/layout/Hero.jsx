@@ -91,14 +91,14 @@ export default function Hero() {
 					African Research Institute
 				</span>
 
-				<h1 className="mb-6 font-sans text-3xl font-semibold leading-[1.25] tracking-tight text-white sm:text-4xl lg:mb-5 lg:text-5xl">
+				<h1 className="mb-6 font-sans text-3xl font-semibold leading-[1.25] tracking-tight text-white sm:text-4xl lg:mb-5 xl:text-5xl min-[2560px]:text-6xl">
 					Victoria Falls Regional Institute
-					<span className="mt-2 block font-light leading-snug tracking-normal text-gold-light text-2xl sm:text-3xl lg:mt-3 lg:text-4xl">
+					<span className="mt-2 block font-light leading-snug tracking-normal text-gold-light text-2xl sm:text-3xl lg:mt-3 xl:text-4xl min-[2560px]:text-5xl">
 						for Strategic Studies
 					</span>
 				</h1>
 
-				<p className="mb-8 max-w-xl text-lg leading-8 tracking-normal text-white/80 md:text-xl lg:mb-6">
+				<p className="mb-8 max-w-xl text-xl leading-8 text-white/80 xl:text-2xl min-[2560px]:text-3xl lg:mb-5">
 					Advancing African-led institutions through capacity
 					building, research, and dialogue that connects global
 					policy making with strategic transformation.
@@ -134,9 +134,9 @@ export default function Hero() {
 						>
 							<div className="flex items-center gap-3">
 								<Icon className="shrink-0 text-base text-gold" />
-								<h4 className="font-sans text-xl font-semibold tracking-normal text-white lg:text-xl">
-									{title}
-								</h4>
+<h4 className="font-sans text-base font-semibold tracking-normal text-white lg:text-xl xl:text-2xl min-[2560px]:text-3xl">
+								{title}
+							</h4>
 							</div>
 
 							<p className="text-md leading-relaxed tracking-normal text-white/70 lg:text-base">

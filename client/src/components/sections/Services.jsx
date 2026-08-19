@@ -41,15 +41,15 @@ export default function Services() {
 
 			{/* Content */}
 			<div className="relative z-10 mt-auto flex w-full flex-col p-5">
-				<p className="mb-3 text-5xl font-extralight tracking-tight text-gold/70">
+				<p className="mb-3 text-5xl font-extralight tracking-tight text-gold/70 xl:text-6xl min-[2560px]:text-7xl">
 					{num}
 				</p>
 				<h3 className="card-title mb-1 min-h-[2.75rem] text-white">
 					{title}
 				</h3>
-				<p className="min-h-[6rem] text-base leading-7 text-white/75">
-					{desc}
-				</p>
+<p className="min-h-[6rem] text-lg leading-7 text-white/75 xl:text-xl min-[2560px]:text-2xl">
+				{desc}
+			</p>
 			</div>
 		</div>
 	);
@@ -122,6 +122,8 @@ export default function Services() {
 					className="
 						mb-4
 						text-5xl
+						xl:text-6xl
+						min-[2560px]:text-7xl
 						font-extralight
 						text-gold/80
 						transition-colors
@@ -135,12 +137,12 @@ export default function Services() {
 					Let's Work Together
 				</h3>
 
-				<p className="text-base leading-7 text-white/75">
-					We partner with institutions across
-					Africa and beyond on research,
-					training, strategic dialogue, and
-					long-term knowledge exchange.
-				</p>
+<p className="text-lg leading-7 text-white/75 xl:text-xl min-[2560px]:text-2xl">
+				We partner with institutions across
+				Africa and beyond on research,
+				training, strategic dialogue, and
+				long-term knowledge exchange.
+			</p>
 
 				<Link
 					to="/service-inquiry"

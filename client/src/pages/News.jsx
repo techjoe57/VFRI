@@ -22,11 +22,11 @@ export default function News() {
 						</span>
 					</div>
 
-					<h2 className="mb-2 font-serif text-3xl font-normal tracking-wide text-white sm:text-4xl md:text-5xl">
+					<h2 className="mb-2 font-serif text-3xl font-normal tracking-wide text-white sm:text-4xl xl:text-5xl min-[2560px]:text-6xl">
 						News & Publications
 					</h2>
 
-					<p className="mx-auto max-w-2xl text-lg font-light leading-relaxed text-white/90 sm:text-xl md:text-2xl">
+					<p className="mx-auto max-w-2xl text-lg font-light leading-relaxed text-white/90 sm:text-xl xl:text-2xl min-[2560px]:text-3xl">
 						Latest institutional updates, research outputs, and public
 						engagement activities.
 					</p>
@@ -62,7 +62,7 @@ export default function News() {
 										{title}
 									</h3>
 
-									<p className="text-left text-base leading-relaxed text-ink-mid">
+									<p className="text-left text-lg leading-relaxed text-ink-mid xl:text-xl min-[2560px]:text-2xl">
 										{summary}
 									</p>
 

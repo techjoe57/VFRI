@@ -73,11 +73,11 @@ export default function RootsForwardConnection() {
 
 			<div className="rf-section-py relative w-full px-6 md:px-12">
 				<div ref={bodyRef} className="rf-fade-up rf-delay-0">
-					<h2 className="font-sans text-2xl font-semibold leading-snug text-ink md:text-3xl">
+					<h2 className="font-sans text-2xl font-semibold leading-snug text-ink xl:text-3xl min-[2560px]:text-4xl">
 						Growing up between two places
 					</h2>
 
-					<div className="mt-8 flex flex-col gap-6 text-lg leading-relaxed text-ink-mid md:text-xl">
+					<div className="mt-8 flex flex-col gap-6 text-lg leading-relaxed text-ink-mid xl:text-xl min-[2560px]:text-2xl">
 						<p>
 							Maybe you know home through your family, the food,
 							the music and the stories, but you haven't really
@@ -98,7 +98,7 @@ export default function RootsForwardConnection() {
 						aria-hidden="true"
 						className="kente-bar mb-6 block h-1.5 w-16 rounded-sm"
 					/>
-					<p className="font-sans text-2xl font-medium leading-snug text-ink md:text-3xl">
+					<p className="font-sans text-2xl font-medium leading-snug text-ink xl:text-3xl min-[2560px]:text-4xl">
 						That doesn't make you any less connected. There's
 						simply more to discover.
 					</p>

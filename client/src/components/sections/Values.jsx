@@ -32,7 +32,7 @@ export default function Values() {
 				{title}
 			</h4>
 
-			<p className="text-base leading-6 text-white/70">
+			<p className="text-lg leading-6 text-white/70 xl:text-xl min-[2560px]:text-2xl">
 				{desc}
 			</p>
 		</div>

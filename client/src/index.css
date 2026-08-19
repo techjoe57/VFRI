@@ -13,7 +13,7 @@
 	html {
 		scroll-behavior: smooth;
 		scroll-padding-top: 8rem;
-		font-size: 15px;
+		font-size: 100%;
 		color-scheme: light;
 		margin: 0;
 		padding: 0;
@@ -31,15 +31,26 @@
 		}
 	}
 
-	/* Fluid desktop scale — from lg up, root grows linearly with the
+	/* Fluid desktop scale — from 2560px up, root grows linearly with the
 	   viewport so every rem value (type, card padding, gaps, images)
-	   scales together. 15px at 1024px, ~17px at 1440px, ~20px at
-	   1920px, ~23px at 2560px. Linear ramp keeps the 1024–1440 range
-	   (the gap-heavy midsize desks) moving instead of flat-lining at
-	   the base the way a pure vw/vh clamp did. */
-	@media (min-width: 1024px) {
+	   scales together. Because the ramp is anchored on 1rem instead of an
+	   absolute px, it respects the browser's own font size setting — a
+	   user who increases their default sees the whole site grow with it.
+	   Linear ramp keeps things moving instead of flat-lining the way a
+	   pure vw/vh clamp did. */
+	@media (min-width: 2560px) {
 		html {
-			font-size: clamp(15px, calc(15px + (100vw - 1024px) * 0.0054), 84px);
+			font-size: clamp(1rem, calc(1rem + (100vw - 1024px) * 0.0054), 84px);
+		}
+	}
+
+	/* 1024–2559 (all desktop up to ultrawide): every text renders one
+	   step smaller (text-base ≈ text-sm, i.e. ×0.875 on the ramp above)
+	   so the type never feels oversized on laptops/monitors — the fuller
+	   scale (and larger text tiers) apply at 2560+ instead. */
+	@media (min-width: 1024px) and (max-width: 2559px) {
+		html {
+			font-size: calc(0.875rem + (100vw - 1024px) * 0.004725);
 		}
 	}
 
@@ -120,19 +131,19 @@
 	flex-shrink: 0;
 }
 	.section-title {
-		@apply font-sans text-3xl font-light leading-tight md:text-4xl lg:text-5xl;
+		@apply font-sans text-3xl font-light leading-tight xl:text-5xl min-[2560px]:text-6xl;
 	}
 
 	.section-copy {
-		@apply mx-auto max-w-4xl text-base leading-7 text-ink-mid md:text-lg;
+		@apply mx-auto max-w-4xl text-lg leading-7 text-ink-mid xl:text-xl min-[2560px]:text-2xl;
 	}
 
 	.dark-section-copy {
-		@apply mx-auto max-w-4xl text-base leading-7 text-white/75 md:text-lg;
+		@apply mx-auto max-w-4xl text-lg leading-7 text-white/75 xl:text-xl min-[2560px]:text-2xl;
 	}
 
 	.card-title {
-		@apply font-sans text-xl leading-snug;
+		@apply font-sans text-xl leading-snug xl:text-2xl min-[2560px]:text-3xl;
 	}
 
 	.meta-label {

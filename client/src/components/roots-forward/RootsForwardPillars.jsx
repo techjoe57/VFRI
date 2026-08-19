@@ -17,10 +17,10 @@ export default function RootsForwardPillars() {
 			<div className="rf-section-py w-full px-6 md:px-12">
 				{/* INTRO */}
 				<div ref={introRef} className="rf-fade-up w-full text-left">
-					<h2 className="font-sans text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl">
+					<h2 className="font-sans text-3xl font-bold leading-tight tracking-tight text-ink xl:text-4xl min-[2560px]:text-5xl">
 						Three weeks. Three things.
 					</h2>
-					<p className="mt-4 text-base leading-relaxed text-ink-mid md:text-lg">
+					<p className="mt-4 text-lg leading-relaxed text-ink-mid xl:text-xl min-[2560px]:text-2xl">
 						Roots Forward brings together heritage, practical
 						skills and the things that help you move forward.
 					</p>
@@ -56,24 +56,24 @@ export default function RootsForwardPillars() {
 							className="rf-fade-up rf-delay-1 relative order-1 pt-2 lg:order-2">
 							<span
 								aria-hidden="true"
-								className="pointer-events-none absolute -top-6 -left-1 select-none text-[5rem] font-bold leading-none text-gold/10 md:-top-8 md:text-[6.25rem]">
+								className="pointer-events-none absolute -top-6 -left-1 select-none text-[5rem] font-bold leading-none text-gold/10 md:-top-8 xl:text-[6.25rem] min-[2560px]:text-[7rem]">
 								01
 							</span>
 							<div className="relative">
-								<span className="text-xs font-semibold uppercase tracking-[0.14em] text-gold">
+								<span className="text-sm font-semibold uppercase tracking-[0.14em] text-gold min-[2560px]:text-base">
 									Part One
 								</span>
-								<h3 className="mt-3 font-sans text-3xl font-bold text-ink md:text-4xl">
+								<h3 className="mt-3 font-sans text-4xl font-bold text-ink xl:text-5xl min-[2560px]:text-6xl">
 									Roots
 								</h3>
-								<p className="mt-4 max-w-md text-base leading-relaxed text-ink-mid md:text-lg">
+								<p className="mt-4 max-w-md text-xl leading-relaxed text-ink-mid xl:text-2xl min-[2560px]:text-3xl">
 									Your history, languages, music and
 									stories. Learn about Shona, Ndebele and
 									Bemba culture, the kingdoms and
 									independence movements, and hear from
 									elders who still carry those stories.
 								</p>
-								<p className="mt-3 max-w-md text-base font-medium leading-relaxed text-gold md:text-lg">
+								<p className="mt-3 max-w-md text-xl font-medium leading-relaxed text-gold xl:text-2xl min-[2560px]:text-3xl">
 									Not a museum tour. A homecoming.
 								</p>
 							</div>
@@ -108,22 +108,22 @@ export default function RootsForwardPillars() {
 							className="rf-fade-up rf-delay-1 relative order-1 pt-2 lg:order-1">
 							<span
 								aria-hidden="true"
-								className="pointer-events-none absolute -top-6 -left-1 select-none text-[5rem] font-bold leading-none text-green-mid/10 md:-top-8 md:text-[6.25rem]">
+								className="pointer-events-none absolute -top-6 -left-1 select-none text-[5rem] font-bold leading-none text-green-mid/10 md:-top-8 xl:text-[6.25rem] min-[2560px]:text-[7rem]">
 								02
 							</span>
 							<div className="relative">
-								<span className="text-xs font-semibold uppercase tracking-[0.14em] text-green-mid">
+								<span className="text-sm font-semibold uppercase tracking-[0.14em] text-green-mid min-[2560px]:text-base">
 									Part Two
 								</span>
-								<h3 className="mt-3 font-sans text-3xl font-bold text-ink md:text-4xl">
+							<h3 className="mt-3 font-sans text-4xl font-bold text-ink xl:text-5xl min-[2560px]:text-6xl">
 									Skills
 								</h3>
-								<p className="mt-4 max-w-md text-base leading-relaxed text-ink-mid md:text-lg">
+								<p className="mt-4 max-w-md text-xl leading-relaxed text-ink-mid xl:text-2xl min-[2560px]:text-3xl">
 									Get hands-on with AI tools, content
 									creation, coding basics and online
 									safety.
 								</p>
-								<p className="mt-3 max-w-md text-base font-medium leading-relaxed text-green-mid md:text-lg">
+								<p className="mt-3 max-w-md text-xl font-medium leading-relaxed text-green-mid xl:text-2xl min-[2560px]:text-3xl">
 									See what people across Africa are already
 									building, from M-Pesa to Flutterwave.
 								</p>
@@ -158,21 +158,21 @@ export default function RootsForwardPillars() {
 							className="rf-fade-up rf-delay-1 relative order-1 pt-2 lg:order-2">
 							<span
 								aria-hidden="true"
-								className="pointer-events-none absolute -top-6 -left-1 select-none text-[5rem] font-bold leading-none text-crimson-mid/10 md:-top-8 md:text-[6.25rem]">
+								className="pointer-events-none absolute -top-6 -left-1 select-none text-[5rem] font-bold leading-none text-crimson-mid/10 md:-top-8 xl:text-[6.25rem] min-[2560px]:text-[7rem]">
 								03
 							</span>
 							<div className="relative">
-								<span className="text-xs font-semibold uppercase tracking-[0.14em] text-crimson-mid">
+								<span className="text-sm font-semibold uppercase tracking-[0.14em] text-crimson-mid min-[2560px]:text-base">
 									Part Three
 								</span>
-								<h3 className="mt-3 font-sans text-3xl font-bold text-ink md:text-4xl">
+								<h3 className="mt-3 font-sans text-4xl font-bold text-ink xl:text-5xl min-[2560px]:text-6xl">
 									Future
 								</h3>
-								<p className="mt-4 max-w-md text-base leading-relaxed text-ink-mid md:text-lg">
+								<p className="mt-4 max-w-md text-xl leading-relaxed text-ink-mid xl:text-2xl min-[2560px]:text-3xl">
 									Build confidence in leadership, public
 									speaking, personal finance and wellbeing.
 								</p>
-								<p className="mt-3 max-w-md text-base font-medium leading-relaxed text-crimson-mid md:text-lg">
+								<p className="mt-3 max-w-md text-xl font-medium leading-relaxed text-crimson-mid xl:text-2xl min-[2560px]:text-3xl">
 									Learn from diaspora professionals who have
 									been where you are, then work with your
 									team to build and pitch a real project.

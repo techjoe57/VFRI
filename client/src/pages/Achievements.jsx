@@ -24,11 +24,11 @@ export default function Achievements() {
 						</span>
 					</div>
 
-					<h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal mb-2 tracking-wide text-white">
+					<h2 className="font-serif text-3xl sm:text-4xl xl:text-5xl min-[2560px]:text-6xl font-normal mb-2 tracking-wide text-white">
 						Achievements
 					</h2>
 
-					<p className="mx-auto max-w-2xl text-lg sm:text-xl md:text-2xl font-light leading-relaxed text-white/90">
+					<p className="mx-auto max-w-2xl text-lg sm:text-xl xl:text-2xl min-[2560px]:text-3xl font-light leading-relaxed text-white/90">
 						From university keynotes in Zimbabwe to cross-border student
 						competitions in Nairobi — VFRI turns its mission into
 						measurable impact on the ground.
@@ -56,7 +56,7 @@ export default function Achievements() {
 								<h3 className="card-title mb-1 text-xl font-semibold text-crimson-deep transition-colors group-hover:text-crimson-dark">
 									{title}
 								</h3>
-								<p className="text-left text-base leading-relaxed text-ink-mid">
+								<p className="text-left text-lg leading-relaxed text-ink-mid xl:text-xl min-[2560px]:text-2xl">
 									{desc}
 								</p>
 							</div>

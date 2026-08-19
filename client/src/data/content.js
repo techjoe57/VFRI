@@ -59,7 +59,7 @@ export const cards = [
 	{
 		icon: GraduationCap,
 		title: "Systems Strengthening Courses",
-		desc: "We run Capacity-building programmmes for individuals, organisations and businesses to foster skills and knowledge transfer.",
+		desc: "We run Capacity building programmmes for individuals, organisations and businesses to foster skills and knowledge transfer.",
 	},
 ];
 
